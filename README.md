@@ -1,6 +1,7 @@
 # Text-to-SQL Pipeline with Data Augmentation
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![CI](https://github.com/Readrid/aug-text-to-sql/actions/workflows/github_ci.yml/badge.svg)
 
 
 ! WORK IN PROGRESS !
