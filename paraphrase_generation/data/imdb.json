@@ -1,0 +1,359 @@
+{
+  "data": [
+    {
+      "sentence": "What year is the movie \" movie_title0 \" from ?",
+      "paraphases": [
+        "What year was the movie \" movie_title0 \" produced"
+      ]
+    },
+    {
+      "sentence": "What year was \" actor_name0 \" born ?",
+      "paraphases": [
+        "In what year was \" actor_name0 \" born"
+      ]
+    },
+    {
+      "sentence": "What is the nationality of the actress \" actor_name0 \" ?",
+      "paraphases": [
+        "What is the nationality of the actor \" actor_name0 \" ?"
+      ]
+    },
+    {
+      "sentence": "Find all movies produced in movie_release_year0"
+    },
+    {
+      "sentence": "Find all actors born in \" actor_birth_city0 \"",
+      "paraphases": [
+        "Find all actors born in actor_birth_city0",
+        "Which actors were born in actor_birth_city0"
+      ]
+    },
+    {
+      "sentence": "Find all actors who are from actor_nationality0",
+      "paraphases": [
+        "Find all actors from actor_nationality0",
+        "Give me the name of all the actors from actor_nationality0"
+      ]
+    },
+    {
+      "sentence": "Find all actors who were born in actor_birth_year0"
+    },
+    {
+      "sentence": "When was \" writer_name0 \" born ?",
+      "paraphases": [
+        "In what year was \" writer_name0 \" born ?"
+      ]
+    },
+    {
+      "sentence": "Where is the birth place of \" writer_name0 \"",
+      "paraphases": [
+        "In what city was \" writer_name0 \" born ?"
+      ]
+    },
+    {
+      "sentence": "What is the nationality of \" writer_name0 \" ?"
+    },
+    {
+      "sentence": "How much was the budget of \" movie_title0 \""
+    },
+    {
+      "sentence": "Find all movies directed by \" director_name0 \" after movie_release_year0"
+    },
+    {
+      "sentence": "Who is the director of the movie \" movie_title0 \" ?",
+      "paraphases": [
+        "Who directed the movie \" movie_title0 \" ?",
+        "List \" movie_title0 \" directors"
+      ]
+    },
+    {
+      "sentence": "Find the actor who played \" cast_role0 \" in the movie \" movie_title0 \"",
+      "paraphases": [
+        "Who acted \" cast_role0 \" in the movie \" movie_title0 \" ?",
+        "Who was the actor that played \" cast_role0 \" in the movie \" movie_title0 \" ?",
+        "Who acts as \" cast_role0 \" in the movie \" movie_title0 \" ?",
+        "Who is the actor playing \" cast_role0 \" in \" movie_title0 \" ?"
+      ]
+    },
+    {
+      "sentence": "What is the genre of the movie \" movie_title0 \" ?"
+    },
+    {
+      "sentence": "Who was the director of the movie movie_title0 from movie_release_year0 ?"
+    },
+    {
+      "sentence": "Find all movies written by \" writer_name0 \""
+    },
+    {
+      "sentence": "Find all movies written and produced by \" producer_name0 \""
+    },
+    {
+      "sentence": "Find all movies featuring \" actor_name0 \"",
+      "paraphases": [
+        "Find all movies featuring \" actor_name0 \"",
+        "What are all the movies featuring \" actor_name0 \" ?",
+        "Find all movies featuring \" actor_name0 \"",
+        "Find all movies in which \" actor_name0 \" appears"
+      ]
+    },
+    {
+      "sentence": "What was the budget of the movie movie_title0 from movie_release_year0 ?"
+    },
+    {
+      "sentence": "Find all genre0 produced in year movie_release_year0",
+      "paraphases": [
+        "List all the genre0 movies which released in movie_release_year0"
+      ]
+    },
+    {
+      "sentence": "Find all actors born in \" actor_birth_city0 \" after actor_birth_year0",
+      "paraphases": [
+        "Who are the actors born in \" actor_birth_city0 \" after actor_birth_year0 ?",
+        "Find all actors from actor_birth_city0 born after actor_birth_year0"
+      ]
+    },
+    {
+      "sentence": "Find all movies by directors born in \" director_birth_city0 \""
+    },
+    {
+      "sentence": "What company produced the movie \" movie_title0 \" ?"
+    },
+    {
+      "sentence": "Find all movies that were produced by company_name0",
+      "paraphases": [
+        "Find all movies produced by company_name0"
+      ]
+    },
+    {
+      "sentence": "Find all actors who were born in \" actor_birth_city0 \" in actor_birth_year0"
+    },
+    {
+      "sentence": "Find all movies about keyword0",
+      "paraphases": [
+        "Find all movies about keyword0",
+        "Find all movies about keyword0",
+        "What are the movies related to keyword0"
+      ]
+    },
+    {
+      "sentence": "Find all movies produced by \" producer_name0 \" after movie_release_year0"
+    },
+    {
+      "sentence": "Which movies did \" director_name0 \" direct ?"
+    },
+    {
+      "sentence": "Find all movies directed by \" director_name0 \" and featuring \" actor_name0 \"",
+      "paraphases": [
+        "What are all the movies directed by \" director_name0 \" featuring \" actor_name0 \" ?",
+        "How many movies are there that are directed by \" director_name0 \" and featuring \" actor_name0 \" ?",
+        "List all the movies directed by \" director_name0 \" in which \" actor_name0 \" played"
+      ]
+    },
+    {
+      "sentence": "What are all the tv series created by \" producer_name0 \" ?"
+    },
+    {
+      "sentence": "Who acts \" cast_role0 \" in the series tv_series_title0 ?"
+    },
+    {
+      "sentence": "Who is the writer of the movie \" movie_title0 \"",
+      "paraphases": [
+        "Who is the writer of \" movie_title0 \""
+      ]
+    },
+    {
+      "sentence": "What are the series featuring \" actor_name0 \" ?",
+      "paraphases": [
+        "What are the series in which \" actor_name0 \" is an actor ?"
+      ]
+    },
+    {
+      "sentence": "Find the directors of all movies featuring \" actor_name0 \""
+    },
+    {
+      "sentence": "Find the producers of all movies in which \" actor_name0 \" is an actor"
+    },
+    {
+      "sentence": "What company produced the series tv_series_title0 ?",
+      "paraphases": [
+        "which company funded the \" tv_series_title0 \" series"
+      ]
+    },
+    {
+      "sentence": "Find all tv series produced by company_name0"
+    },
+    {
+      "sentence": "Who is the director of the series \" tv_series_title0 \" produced by company_name0 ?"
+    },
+    {
+      "sentence": "Who is the director of the tv series \" tv_series_title0 \" from tv_series_release_year0 ?"
+    },
+    {
+      "sentence": "Find all the actor_gender0 actors from actor_birth_city0"
+    },
+    {
+      "sentence": "Find all actors from actor_nationality0 born after actor_birth_year0"
+    },
+    {
+      "sentence": "Find all the actor_gender0 actors born in \" actor_birth_city0 \" after actor_birth_year0"
+    },
+    {
+      "sentence": "Find all the actor_gender0 actors in the movie \" movie_title0 \""
+    },
+    {
+      "sentence": "Find all the directors who are from director_nationality0"
+    },
+    {
+      "sentence": "Find the actors who played in the movie \" movie_title0 \""
+    },
+    {
+      "sentence": "Find all actors from actor_nationality0 who acted in \" movie_title0 \" movies"
+    },
+    {
+      "sentence": "find all films in which \" actor_name0 \" acted as \" cast_role0 \""
+    },
+    {
+      "sentence": "where is the director of \" movie_title0 \" from"
+    },
+    {
+      "sentence": "who acted the role of \" cast_role0 \""
+    },
+    {
+      "sentence": "what are the genres of movies directed by \" director_name0 \""
+    },
+    {
+      "sentence": "Which movie had the character \" cast_role0 \""
+    },
+    {
+      "sentence": "What are the major roles in the movie \" movie_title0 \""
+    },
+    {
+      "sentence": "List all director_gender0 directors who worked with the \" company_name0 \" company"
+    },
+    {
+      "sentence": "List all the directors of movies about keyword0"
+    },
+    {
+      "sentence": "What is the number of movies in which \" actor_name0 \" acted after movie_release_year0 ?"
+    },
+    {
+      "sentence": "What is the number of actors in the movie \" movie_title0 \" ?",
+      "paraphases": [
+        "How many actors are in the movie \" movie_title0 \" ?"
+      ]
+    },
+    {
+      "sentence": "How many movies did \" director_name0 \" direct ?",
+      "paraphases": [
+        "How many movies did \" director_name0 \" direct ?",
+        "How many movies did \" director_name0 \" direct ?"
+      ]
+    },
+    {
+      "sentence": "How many movies were produced in the year movie_release_year0 ?",
+      "paraphases": [
+        "What is the number of movies produced in movie_release_year0 ?"
+      ]
+    },
+    {
+      "sentence": "What is the number of movies directed by \" director_name0 \" per year ?"
+    },
+    {
+      "sentence": "How many movies did \" actor_name0 \" act in ?",
+      "paraphases": [
+        "What is the number of movies in which \" actor_name0 \" acted ?",
+        "What is the number of movies featuring \" actor_name0 \" ?",
+        "How many movies did \" actor_name0 \" act in"
+      ]
+    },
+    {
+      "sentence": "How many actors were born in \" actor_birth_city0 \" after actor_birth_year0 ?"
+    },
+    {
+      "sentence": "How many movies did \" actor_name0 \" act in before movie_release_year0 ?"
+    },
+    {
+      "sentence": "What is the number of movies that \" actor_name0 \" acts in per year ?"
+    },
+    {
+      "sentence": "How many movies about keyword0 were produced in movie_release_year0 ?"
+    },
+    {
+      "sentence": "How many movies about keyword0 were released after movie_release_year0 ?"
+    },
+    {
+      "sentence": "How many movies did \" director_name0 \" direct after movie_release_year0 ?"
+    },
+    {
+      "sentence": "How many movies did \" director_name0 \" direct before movie_release_year0 ?"
+    },
+    {
+      "sentence": "How many movies did \" director_name0 \" direct before movie_release_year1 and after movie_release_year0 ?"
+    },
+    {
+      "sentence": "How many movies did company_name0 produce ?"
+    },
+    {
+      "sentence": "How many actor_gender0 actors were born in \" actor_birth_city0 \" after actor_birth_year0 ?"
+    },
+    {
+      "sentence": "find the number of actors from actor_nationality0 who played in \" director_name0 \" movies"
+    },
+    {
+      "sentence": "How many companies participated in producing \" movie_title0 \""
+    },
+    {
+      "sentence": "How many actors from actor_nationality0 have acted in \" movie_title0 \""
+    },
+    {
+      "sentence": "Find the number of companies which worked with \" actor_name0 \""
+    },
+    {
+      "sentence": "Find all movies that star both \" actor_name0 \" and \" actor_name1 \"",
+      "paraphases": [
+        "Find all movies featuring \" actor_name0 \" and \" actor_name1 \"",
+        "Find all movies featuring both \" actor_name0 \" and \" actor_name1 \"",
+        "Find all movies featuring \" actor_name1 \" and \" actor_name0 \""
+      ]
+    },
+    {
+      "sentence": "Find all actors who acted in the same movie as \" actor_name0 \""
+    },
+    {
+      "sentence": "What movies have the same director as the movie \" movie_title0 \" ?"
+    },
+    {
+      "sentence": "What is the maximum number of movies in which \" actor_name0 \" act in a given year ?"
+    },
+    {
+      "sentence": "Find the actor with most number of films"
+    },
+    {
+      "sentence": "Who acted in the most number of movies directed by \" Jim Jarmusch \""
+    },
+    {
+      "sentence": "Find the movie which is classified in the most number of genres"
+    },
+    {
+      "sentence": "which movie has the most number of actors from actor_nationality0 ?"
+    },
+    {
+      "sentence": "Find the actors who played in the latest movie by \" director_name0 \""
+    },
+    {
+      "sentence": "Find the name and budget of the latest movie by \" director_name0 \""
+    },
+    {
+      "sentence": "Who is directed the latest movie by \" company_name0 \""
+    },
+    {
+      "sentence": "What is the latest movie by \" director_name0 \""
+    },
+    {
+      "sentence": "Which producer has worked with the most number of directors ?"
+    },
+    {
+      "sentence": "Find the latest movie which \" actor_name0 \" acted in"
+    }
+  ]
+}

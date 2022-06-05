@@ -1,0 +1,944 @@
+[
+  [
+    "papers that are coauthored by authorname0 and authorname1",
+    "papers written by authorname0 and authorname1",
+    "what are the papers that have authorname0 and authorname1 as co-authors",
+    "What papers have authorname0 and authorname1 written ?",
+    "what paper did authorname0 and authorname1 write together ?",
+    "Has authorname0 and authorname1 written a paper together ?",
+    "Papers by authorname0 and authorname1",
+    "papers by authors authorname0 and authorname1",
+    "What papers were written by authors authorname0 and authorname1",
+    "papers by authorname0 and authorname1",
+    "papers written by authors authorname0 and authorname1",
+    "When did authorname0 and authorname1 collaborate ?",
+    "what are the collaborations of authorname0 and authorname1 ?",
+    "Have authorname0 and authorname1 written a paper together ?",
+    "authorname0 and authorname1 as co-authors",
+    "Does authorname0 ever collaborated with authorname1 ?",
+    "Which papers have authorname0 and authorname1 as co-authors ?",
+    "papers coauthored by authorname0 and authorname1",
+    "What papers have been written by authorname0 and authorname1 ?",
+    "What papers have been written by both authorname0 and authorname1 ?",
+    "What papers have been written by authorname0 and authorname1 ."
+  ],
+  [
+    "who has written the most keyphrasename0 papers ?",
+    "who is the most published author in keyphrasename0 ?",
+    "who has the most publications in keyphrasename0 ?",
+    "who has written the most papers on keyphrasename0 ?",
+    "List prominent scholars in keyphrasename0 ?",
+    "who has written the most papers on keyphrasename0 ?",
+    "who wrote the most papers on keyphrasename0 ?",
+    "Who are the authors with the most published papers in keyphrasename0 ?",
+    "top keyphrasename0 author",
+    "top author in keyphrasename0",
+    "who published the most in keyphrasename0 ?",
+    "who published the most papers in keyphrasename0 ?"
+  ],
+  [
+    "How many citation authorname0 has ?",
+    "authorname0 citation count",
+    "how many citations does authorname0 have ?",
+    "how many citations does authorname0 have ?",
+    "How many citations does authorname0 have ?",
+    "How many citations does authorname0 have ?",
+    "number of citations of authorname0",
+    "How many citations does authorname0 have",
+    "How many times was authorname0 cited ?",
+    "How many citations does authorname0 have ?",
+    "How many citations does authorname0 has ?",
+    "How many citations does authorname0 has ?",
+    "number of citations of authorname0",
+    "How many citations does authorname0 has ?",
+    "how many citations does authorname0 have ?"
+  ],
+  [
+    "venuename0 papers",
+    "papers at venuename0",
+    "papers in venuename0",
+    "venuename0",
+    "Papers about venuename0",
+    "Show me venuename0 papers .",
+    "what papers did venuename0 publish ?",
+    "list papers published in venuename0",
+    "venuename0",
+    "Papers on venuename0",
+    "venuename0 papers"
+  ],
+  [
+    "What papers has authorname0 written ?",
+    "What papers has written by authorname0 ?",
+    "What papers has authorname0 written ?",
+    "papers by authorname0",
+    "What papers has authorname0 written ?",
+    "what did authorname0 write ?",
+    "papers where authorname0 is an author",
+    "papers where authorname0 is an author",
+    "Papers authored by authorname0",
+    "What papers has authorname0 written ?",
+    "authorname0 papers",
+    "Papers by authorname0",
+    "Papers written by authorname0",
+    "papers by authorname0",
+    "papers by authorname0",
+    "papers by authorname0",
+    "which papers has authorname0 written ?",
+    "papers by authorname0",
+    "papers by authorname0",
+    "papers written by authorname0",
+    "papers by authorname0",
+    "What has authorname0 published ?",
+    "papers written by authorname0",
+    "papers by authorname0",
+    "What papers has authorname0 written ?",
+    "papers by authorname0",
+    "Does authorname0 have any papers published ?",
+    "authorname0 's papers",
+    "papers by authorname0",
+    "show me papers by authorname0 .",
+    "authorname0 's papers",
+    "What papers has authorname0 written ?",
+    "Papers written by authorname0",
+    "papers by authorname0",
+    "What papers are authored by authorname0 ?",
+    "papers by authorname0 ?",
+    "What papers has authorname0 written ?",
+    "authorname0 papers",
+    "papers by authorname0",
+    "papers by authorname0",
+    "papers by authorname0",
+    "papers by authorname0",
+    "Papers written by authorname0",
+    "What papers has authorname0 written ?",
+    "What papers has authorname0 written ?"
+  ],
+  [
+    "What was authorname0 's latest paper ?",
+    "What was authorname0 's latest paper ?",
+    "Latest paper by authorname0",
+    "What is the latest paper by authorname0 ?",
+    "What is authorname0 's latest paper ?",
+    "What is authorname0 's latest paper ?",
+    "What is the latest paper by authorname0 ?",
+    "What is authorname0 's latest paper ?",
+    "What is authorname0 's latest paper ?",
+    "What are the latest papers by authorname0 ?",
+    "most recent papers by authorname0"
+  ],
+  [
+    "are there any keyphrasename0 papers since year0 ?",
+    "keyphrasename0 papers later than year0",
+    "keyphrasename0 later than year0",
+    "keyphrasename0 papers published after year0",
+    "keyphrasename0 papers since year0",
+    "keyphrasename0 papers published after year0"
+  ],
+  [
+    "How many papers did authorname0 publish at venuename0 ?",
+    "How many papers does authorname0 have in venuename0 ?",
+    "How many papers has authorname0 published in venuename0 ?",
+    "How many papers does authorname0 have in venuename0 ?",
+    "how many papers does authorname0 have at venuename0",
+    "how many papers does authorname0 have in venuename0 ?",
+    "How many papers does authorname0 have in venuename0 ?",
+    "how many authorname0 papers are in venuename0 ?",
+    "How many papers authorname0 has in venuename0 ?",
+    "How many papers does authorname0 have in venuename0 ?",
+    "How many papers does authorname0 have in venuename0",
+    "How many papers does authorname0 have in venuename0 ?",
+    "How many papers has authorname0 published in venuename0 ?"
+  ],
+  [
+    "List all academic papers on title0",
+    "title0"
+  ],
+  [
+    "which venuename0 year0 papers have the most citations ?",
+    "Which paper from venuename0 year0 was cited most ?",
+    "most cited venuename0 year0 papers",
+    "which venuename0 year0 papers have been cited the most ?"
+  ],
+  [
+    "What papers were published at venuename0 in year0 about title0 applied to datasetname0 ?",
+    "What papers were published at venuename0 '16 about title0 applied to datasetname0 ?"
+  ],
+  [
+    "How many papers are in keyphrasename0 ?",
+    "How many papers are about keyphrasename0 ?",
+    "how many papers about keyphrasename0 ?",
+    "How many papers are related to keyphrasename0 ?"
+  ],
+  [
+    "How many papers has authorname0 written ?",
+    "How many papers does authorname0 have ?",
+    "How many papers does authorname0 have ?",
+    "How many papers has authorname0 ?",
+    "How many papers has authorname0 published ?",
+    "How many papers has authorname0 ?",
+    "How many papers has authorname0 published ?",
+    "How many papers does authorname0 have ?",
+    "How many papers does authorname0 have ?",
+    "how many papers has authorname0 written ?",
+    "How many papers does authorname0 have ?",
+    "Has authorname0 published any papers ?",
+    "how many papers has authorname0 published ?",
+    "How many papers has authorname0 published ?",
+    "How many papers does authorname0 have ?",
+    "How many papers does authorname0 have ?",
+    "how many papers does authorname0 have ?",
+    "how many papers has authorname0 published ?",
+    "how many papers has authorname0 published ?",
+    "How many papers has authorname0 published ?",
+    "How many paper does authorname0 have ?",
+    "How many papers has authorname0 published ?",
+    "How many papers does authorname0 have ?",
+    "How many publications does authorname0 have ?",
+    "How many publications does authorname0 have ?",
+    "How many papers does authorname0 have",
+    "How many papers has authorname0 published ?",
+    "How many papers has authorname0 written ?",
+    "number of papers written by authorname0",
+    "How many papers has authorname0 written ?",
+    "How many papers does authorname0 have ?",
+    "How many papers does authorname0 have ?",
+    "How many papers has authorname0 written ?",
+    "How many papers does authorname0 have ?",
+    "How many papers has authorname0 published ?",
+    "How many papers does authorname0 have ?",
+    "How many papers does authorname0 have ?",
+    "How many papers has authorname0 published ?",
+    "How many papers does authorname0 have ?",
+    "How many papers has authorname0 published ?"
+  ],
+  [
+    "what kind of papers does authorname0 publish",
+    "Keyphrases used by authorname0",
+    "Keyphrases used by authorname0",
+    "What keywords are in papers by authorname0 ?",
+    "keywords used by authorname0",
+    "what keywords are used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keywords used by authorname0",
+    "keywords used by authorname0",
+    "keyphrases by authorname0",
+    "keyphrases by authorname0",
+    "give me the keywords used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "keyphrases used by authorname0",
+    "What topic does authorname0 write about ?",
+    "what topics does authorname0 publish in",
+    "keyphrases used by authorname0",
+    "keywords in the papers written by authorname0",
+    "keyphrases used by authorname0 .",
+    "keywords used by authorname0",
+    "keyphrases used by authorname0",
+    "topics used by authorname0"
+  ],
+  [
+    "What conference does authorname0 publish in ?",
+    "conferences that authorname0 has published in",
+    "In which conferences does authorname0 typically publish ?",
+    "in what conferences does authorname0 publish ?",
+    "What conferences does authorname0 publish in ?",
+    "What conference does authorname0 publish in ?",
+    "What conferences does authorname0 publish in ?",
+    "At which conferences does authorname0 publish ?",
+    "What conferences does authorname0 submit to ?",
+    "What conferences does authorname0 publish in ?"
+  ],
+  [
+    "How many papers by authorname0 contain the keyphrases keyphrasename0 ?",
+    "How many papers does authorname0 have in keyphrasename0 area ?",
+    "How many keyphrasename0 papers has authorname0 written ?",
+    "How many paper has authorname0 written about keyphrasename0 ?"
+  ],
+  [
+    "What conferences did authorname0 submit to in year0 ?",
+    "Where did authorname0 publish in year0",
+    "What conferences did authorname0 publish in in year0 ?",
+    "Where did authorname0 publish in year0",
+    "Where did authorname0 publish in year0",
+    "Where did authorname0 publish in year0 ?",
+    "What conferences did authorname0 publish in in year0 ?"
+  ],
+  [
+    "what are most cited papers of authorname0 and authorname1 ?",
+    "what are commonly cited papers by authorname0 and authorname1 ?",
+    "what papers are typically cited by authorname0 and authorname1",
+    "most cited by authorname0 and authorname1"
+  ],
+  [
+    "venuename0 papers in year0 on keyphrasename0",
+    "What papers were published in venuename0 in year0 about keyphrasename0 ?",
+    "papers on keyphrasename0 appeared at venuename0 last year",
+    "keyphrasename0 papers from venuename0 year0",
+    "papers about keyphrasename0 in venuename0 year0",
+    "venuename0 papers in year0 on keyphrasename0",
+    "papers about keyphrasename0 in venuename0 year0",
+    "venuename0 papers in year0 on keyphrasename0",
+    "venuename0 papers in year0 in keyphrasename0",
+    "venuename0 papers in year0 about keyphrasename0",
+    "What papers were published at venuename0 in year0 were about keyphrasename0 ?",
+    "papers on keyphrasename0 appeared at venuename0 in year0",
+    "how many keyphrasename0 papers did venuename0 year0 have ?",
+    "who published keyphrasename0 papers at venuename0 year0",
+    "which papers in venuename0 year0 had keyphrasename0 in them ?",
+    "what were some keyphrasename0 based papers in venuename0 year0 ?",
+    "venuename0 papers in year0 on keyphrasename0",
+    "venuename0 papers in year0 about keyphrasename0",
+    "keyphrasename0 papers from venuename0 year0"
+  ],
+  [
+    "List the popular publications on keyphrasename0",
+    "Which paper should I read about keyphrasename0 ?",
+    "top keyphrasename0 papers",
+    "Which paper should I read about keyphrasename0 ?"
+  ],
+  [
+    "List papers that has a keyword keyphrasename0",
+    "keyphrasename0 research papers",
+    "papers on keyphrasename0",
+    "papers related to keyphrasename0",
+    "papers about keyphrasename0",
+    "papers about keyphrasename0",
+    "Papers about keyphrasename0",
+    "papers about keyphrasename0",
+    "papers published in the area of keyphrasename0",
+    "keyphrasename0 experiments",
+    "Show me the papers on keyphrasename0",
+    "papers that used keyphrasename0",
+    "papers that mention keyphrasename0",
+    "papers related to keyphrasename0",
+    "keyphrasename0 papers",
+    "papers on keyphrasename0",
+    "Show me keyphrasename0 papers .",
+    "keyphrasename0 publications",
+    "Fetch me some papers on keyphrasename0",
+    "papers on keyphrasename0 experiments",
+    "What papers talk about keyphrasename0 ?",
+    "keyphrasename0 papers",
+    "List papers that has a keyword keyphrasename0",
+    "papers on keyphrasename0",
+    "papers on keyphrasename0",
+    "What is the paper about keyphrasename0 ?",
+    "Papers about keyphrasename0",
+    "Which papers are about about keyphrasename0 ?",
+    "list papers that used keyphrasename0",
+    "What papers talk about keyphrasename0 ?",
+    "papers for keyphrasename0",
+    "keyphrasename0 papers",
+    "keyphrasename0 papers",
+    "List papers that has keyword keyphrasename0",
+    "What papers talk about keyphrasename0 ?",
+    "papers with keyphrasename0 in keyphrases"
+  ],
+  [
+    "What has authorname0 published in the last misc0 years ?",
+    "What has authorname0 published in the last misc0 years ?",
+    "What has authorname0 published in the last misc0 years ?",
+    "papers written by authorname0 within the last misc0 years"
+  ],
+  [
+    "recent research interests of authorname0",
+    "recent papers by authorname0",
+    "recent papers written by authorname0"
+  ],
+  [
+    "authorname0",
+    "list papers by authorname0",
+    "List of papers by authorname0",
+    "conference papers of authorname0"
+  ],
+  [
+    "how many keyphrasename0 papers in venuename0 year0",
+    "how many keyphrasename0 papers appeared in the proceeeding of venuename0 year0 ?",
+    "how many keyphrasename0 papers were published at venuename0 year0 ?"
+  ],
+  [
+    "authorname0 keyphrasename0 paper",
+    "keyphrasename0 by authorname0",
+    "papers by authorname0 about keyphrasename0",
+    "authorname0 's paper about keyphrasename0",
+    "What are the papers of authorname0 in keyphrasename0 ?",
+    "papers authorname0 wrote about keyphrasename0",
+    "authorname0 's papers on keyphrasename0",
+    "What is the paper about keyphrasename0 from authorname0 ?",
+    "papers by authorname0 in keyphrasename0 topic",
+    "I want the papers on keyphrasename0 by authorname0",
+    "keyphrasename0 papers by authorname0",
+    "What papers has authorname0 written on keyphrasename0 ?",
+    "What papers has authorname0 written about keyphrasename0 ?",
+    "keyphrasename0 paper by authorname0",
+    "Does authorname0 do keyphrasename0 ?"
+  ],
+  [
+    "What papers has authorname0 written in year0",
+    "papers by authorname0 in year0",
+    "What did authorname0 published in year0 ?",
+    "Papers written by authorname0 in year0",
+    "What are the papers of authorname0 in year0",
+    "papers by authorname0 from year0",
+    "Papers written by authorname0 in year0",
+    "Papers published in year0 by authorname0",
+    "what has authorname0 done in the past year",
+    "What papers did authorname0 publish last year ?",
+    "papers published in year0 by authorname0",
+    "authorname0 's papers in year0 ?",
+    "authorname0 's papers in year0",
+    "authorname0 publication year0",
+    "Papers authored by authorname0 in year0",
+    "Papers from authorname0 in year0",
+    "what papers are published by authorname0 in year0"
+  ],
+  [
+    "What keyphrasename0 paper published in venuename0 ?",
+    "List the papers on keyphrasename0 that were published in venuename0",
+    "what are the papers in venuename0 about keyphrasename0 ?",
+    "Papers about keyphrasename0 in venuename0",
+    "papers at venuename0 related to keyphrasename0",
+    "papers about keyphrasename0 published at venuename0",
+    "keyphrasename0 papers in venuename0",
+    "keyphrasename0 papers in venuename0",
+    "papers on keyphrasename0 venuename0",
+    "keyphrasename0 papers used in venuename0",
+    "keyphrasename0 papers in venuename0"
+  ],
+  [
+    "keyphrases used by authorname0 in year0",
+    "Keyphrases used by authorname0 in year0",
+    "keyphrases used by authorname0 in year0",
+    "keyphrases authorname0 used in papers written last year",
+    "What are keyphrases by authorname0 in year0 ?"
+  ],
+  [
+    "which papers use datasetname0 or datasetname1 ?",
+    "papers using datasetname0 and datasetname1",
+    "papers about datasetname0 and datasetname1",
+    "papers using datasetname0 or datasetname1",
+    "papers that use datasetname0 or datasetname1"
+  ],
+  [
+    "journal articles by authorname0",
+    "Journal Papers by authorname0"
+  ],
+  [
+    "best paper in venuename0 year0 ?",
+    "What was the best paper at venuename0 year0 ?"
+  ],
+  [
+    "who published at venuename0 year0 ?",
+    "venuename0 year0 authors",
+    "authors of venuename0 year0 papers",
+    "List of authors venuename0 year0",
+    "authors of venuename0 year0 papers",
+    "author published venuename0 year0",
+    "who had papers at venuename0 year0 ?",
+    "List of authors in venuename0 year0"
+  ],
+  [
+    "How many papers run experiments on datasetname0 ?",
+    "How many papers used datasetname0 dataset ?",
+    "How many papers written on datasetname0 ?",
+    "how many papers are based on datasetname0",
+    "how many papers use datasetname0 ?"
+  ],
+  [
+    "How many papers did authorname0 cite ?",
+    "how many papers does authorname0 cite",
+    "how many papers has authorname0 cited ?"
+  ],
+  [
+    "does authorname0 or authorname1 have more papers ?",
+    "has authorname0 or authorname1 published more papers ?",
+    "Does authorname0 have more papers than authorname1 ?",
+    "Who has more papers : authorname0 or authorname1 ?",
+    "Is it true that authorname0 has more citations than authorname1 ?",
+    "Is it true that authorname0 has more citations than authorname1 ?"
+  ],
+  [
+    "keyphrasename0 dataset",
+    "data sets for keyphrasename0",
+    "list datasets for keyphrasename0",
+    "datasets for keyphrasename0",
+    "Datasets with keyphrasename0 information",
+    "datasets used by keyphrasename0 papers",
+    "datasets for keyphrasename0",
+    "datasets in keyphrasename0 papers",
+    "keyphrasename0 datasets",
+    "datasets in papers about keyphrasename0",
+    "datasets used for keyphrasename0",
+    "datasets used for keyphrasename0",
+    "large-scale datasets used in keyphrasename0",
+    "datasets with keyphrasename0",
+    "datasets used for evaluating keyphrasename0",
+    "data sets for keyphrasename0"
+  ],
+  [
+    "where does authorname0 publish ?",
+    "in what venues does authorname0 publish ?",
+    "in what venues does authorname0 publish ?",
+    "Where does authorname0 publish ?"
+  ],
+  [
+    "how many papers appeared at venuename0 last year",
+    "How many papers were at venuename0 year0 ?",
+    "how many papers accepted in venuename0 year0",
+    "How many papers were published in venuename0 in year0 ?",
+    "How many papers on venuename0 in year0 ?",
+    "how many papers in venuename0 year0",
+    "How many papers were accepted at venuename0 year0 ?",
+    "How many papers are presented in venuename0 year0 ?",
+    "How many papers published in venuename0 in year0 ?",
+    "how many papers published in venuename0 year0 ?",
+    "How many papers were published in venuename0 year0 conference ?",
+    "How many papers was published in venuename0 in year0"
+  ],
+  [
+    "what was the first keyphrasename0 paper ?",
+    "what year was the first keyphrasename0 paper published ?"
+  ],
+  [
+    "datasets mentioned at venuename0",
+    "what datasets do papers at venuename0 use most ?"
+  ],
+  [
+    "How many papers were written on keyphrasename0 in the past year ?",
+    "How many papers were published on keyphrasename0 in year0 ?",
+    "How many papers were written on keyphrasename0 in year0 ?",
+    "How many papers were written on the keyphrasename0 this year ?",
+    "how many papers on keyphrasename0 have been published in the past year ?"
+  ],
+  [
+    "which year had the most venuename0 papers ?",
+    "what year had the most venuename0 papers ?",
+    "what year had the most number of venuename0 papers ?",
+    "when were most venuename0 papers published ?"
+  ],
+  [
+    "who writes papers with authorname0 ?",
+    "Who is a coauthor with authorname0 ?",
+    "Who are authorname0 's co-authors",
+    "Who has coauthored with authorname0 ?",
+    "co-authors of authorname0",
+    "author who wrote papers with authorname0",
+    "authors who collaborated with authorname0",
+    "who does authorname0 author with ?",
+    "Who are authorname0 's coauthors",
+    "who are all the co-authors of authorname0 ?",
+    "who does authorname0 work with ?",
+    "who does authorname0 collaborate with ?",
+    "co-authors of authorname0",
+    "Who has coauthored with authorname0 ?",
+    "Who are authorname0 's coauthors ?",
+    "coauthors of authorname0"
+  ],
+  [
+    "what datasets did authorname0 use ?",
+    "what datasets are used in papers by authorname0",
+    "what datasets did authorname0 use in his papers ?",
+    "what datasets were used by authorname0 ?",
+    "datasets used in papers written by authorname0 ?",
+    "Datasets by authorname0",
+    "What datasets have authorname0 used"
+  ],
+  [
+    "find me paper on using keyphrasename0 for keyphrasename1",
+    "keyphrasename0 for keyphrasename1",
+    "keyphrasename1 papers using keyphrasename0",
+    "are there keyphrasename0 papers that use keyphrasename1 ?",
+    "keyphrasename0 in keyphrasename1 papers",
+    "What is the paper of both keyphrasename0 and keyphrasename1 ?",
+    "has any paper tried keyphrasename0 for keyphrasename1 ?",
+    "What are some survey papers on keyphrasename0 problems in keyphrasename1 ?",
+    "keyphrasename1 for keyphrasename0",
+    "has any paper tried keyphrasename0 for keyphrasename1 ?",
+    "Is there a paper on keyphrasename0 and keyphrasename1 ?"
+  ],
+  [
+    "recent keyphrasename0 papers",
+    "recent keyphrasename0 papers",
+    "new keyphrasename0 papers",
+    "What are the latest publications on keyphrasename0 ?",
+    "Most recent keyphrasename0 conference ?",
+    "Show me some recent papers on keyphrasename0 ?",
+    "What are some recent papers written in keyphrasename0 ?",
+    "What is the most recent paper of keyphrasename0 ?",
+    "What are recent papers on keyphrasename0 ?",
+    "Current research on keyphrasename0",
+    "What are recent papers on keyphrasename0 ?",
+    "latest keyphrasename0 papers",
+    "newest keyphrasename0 papers"
+  ],
+  [
+    "What years did authorname0 publish papers in ?",
+    "In what years did authorname0 publish a paper ?",
+    "In what years did authorname0 publish a paper ?"
+  ],
+  [
+    "How many papers does authorname0 publish each year ?",
+    "number of papers by year from authorname0",
+    "how many papers authorname0 published each year ?"
+  ],
+  [
+    "papers citing authorname0",
+    "What papers cite authorname0 ?",
+    "Which papers cite authorname0 ?",
+    "citations for authorname0",
+    "Which papers cite authorname0 ?"
+  ],
+  [
+    "who has the most papers in keyphrasename0 after year0 ?",
+    "who has written the most papers on keyphrasename0 since year0 ?",
+    "who published the most in keyphrasename0 after year0 ?",
+    "who has written the most papers on keyphrasename0 since year0 ?"
+  ],
+  [
+    "How many citations does authorname0 's keyphrasename0 paper have ?",
+    "How many citations does authorname0 's keyphrasename0 paper have ?"
+  ],
+  [
+    "keyphrasename0 papers earlier than year0",
+    "papers before year0 about keyphrasename0",
+    "keyphrasename0 papers from before year0",
+    "papers about keyphrasename0 from before year0",
+    "keyphrasename0 papers before year0"
+  ],
+  [
+    "most cited papers on keyphrasename0",
+    "keyphrasename0 top papers",
+    "List top papers for keyphrasename0",
+    "keyphrasename0 papers that have the most citations",
+    "What is the paper about keyphrasename0 of the most citation ?",
+    "Paper on keyphrasename0 with most citations",
+    "keyphrasename0 papers with most citations",
+    "most cited keyphrasename0 papers",
+    "what are the keyphrasename0 papers that have the most citations ?",
+    "highly cited keyphrasename0 papers",
+    "most cited papers for keyphrasename0",
+    "most cited papers for keyphrasename0",
+    "Most cited papers on keyphrasename0",
+    "most cited keyphrasename0 papers"
+  ],
+  [
+    "What is the most cited paper by authorname0 ?",
+    "What is the highest cited paper by authorname0 ?",
+    "What is the most cited paper of authorname0 ?",
+    "What is authorname0 's highest cited paper ?",
+    "What paper by authorname0 has the most citation ?",
+    "what is the most cited paper of authorname0 ?",
+    "what is authorname0 's most cited paper ?"
+  ],
+  [
+    "How many papers did authorname0 publish in year0 ?",
+    "How many papers does authorname0 have in year0 ?",
+    "How many papers did authorname0 publish in year0",
+    "How many papers does authorname0 have in year0 ?"
+  ],
+  [
+    "Which is the earliest paper by authorname0 ?",
+    "earliest paper written by authorname0",
+    "most recent papers of authorname0",
+    "Which is the first paper by authorname0 ?",
+    "Earliest paper published by authorname0",
+    "What was authorname0 's first publication ?"
+  ],
+  [
+    "How many papers has authorname0 and authorname1 written together ?",
+    "how many papers authorname0 and authorname1 coauthored ?",
+    "how many papers did authorname0 and authorname1 write together",
+    "How many papers by authorname0 and authorname1",
+    "how many papers has authorname0 and authorname1 written together ?",
+    "How many papers have authorname0 and authorname1 ?",
+    "How many papers do authorname0 and authorname1 have ?",
+    "How many papers did authorname0 co-authored with authorname1",
+    "How many papers have authorname0 and authorname1 written ?"
+  ],
+  [
+    "count of venuename0 papers by author",
+    "how many venuename0 papers by author",
+    "number of venuename0 papers by author"
+  ],
+  [
+    "who wrote the most papers for venuename0 year0",
+    "who published papers in venuename0 year0",
+    "who wrote the most venuename0 papers in year0",
+    "most published author at venuename0 year0",
+    "who published the most papers in venuename0 year0",
+    "Who published the most papers in year0 at venuename0 ?"
+  ],
+  [
+    "How many papers in venuename0 year0 ?",
+    "number of papers published in venuename0 year0"
+  ],
+  [
+    "papers from year0",
+    "year0 papers",
+    "papers from year0",
+    "year0 papers"
+  ],
+  [
+    "What papers does authorname0 have in venuename0 ?",
+    "what paper has authorname0 published in venuename0 journal ?",
+    "what paper has authorname0 published in venuename0 ?",
+    "papers by authorname0 published at venuename0",
+    "Does authorname0 publish in venuename0 ?",
+    "What has authorname0 published at venuename0 ?",
+    "What papers does authorname0 have in venuename0 ?",
+    "What papers has authorname0 written at venuename0 ?",
+    "Which paper did authorname0 present at venuename0 ?",
+    "What has authorname0 published at venuename0 ?"
+  ],
+  [
+    "What is the paper with the most citation about keyphrasename0 ?",
+    "Fetch me the most cited publications for keyphrasename0"
+  ],
+  [
+    "keyphrases used by authorname0 and authorname1",
+    "keywords shared by authorname0 and authorname1"
+  ],
+  [
+    "most common topics at venuename0 year0",
+    "most popular topics at venuename0 year0",
+    "hot topics at venuename0 year0",
+    "popular topics at venuename0 year0",
+    "which topics were most popular at venuename0 year0",
+    "topics popular at venuename0 year0"
+  ],
+  [
+    "Papers on datasetname0",
+    "which papers used datasetname0 ?",
+    "papers about datasetname0",
+    "papers about datasetname0",
+    "List the papers that used datasetname0 dataset",
+    "papers using datasetname0",
+    "papers that use datasetname0",
+    "datasetname0 papers",
+    "papers that used datasetname0",
+    "List the papers that used datasetname0 dataset",
+    "Papers that use the datasetname0 dataset"
+  ],
+  [
+    "how is the most cited author in venuename0 ?",
+    "who is the most cited author at venuename0 ?"
+  ],
+  [
+    "what are some keyphrasename0 papers that authorname0 did not write ?",
+    "are there any keyphrasename0 papers not written by authorname0 ?",
+    "what are keyphrasename0 papers not written by authorname0",
+    "keyphrasename0 papers not written by authorname0",
+    "keyphrasename0 papers not written by authorname0"
+  ],
+  [
+    "who works on keyphrasename0 for keyphrasename1",
+    "authors in keyphrasename0 for keyphrasename1",
+    "who publishes in keyphrasename0 for keyphrasename1",
+    "keyphrasename1 authors using keyphrasename0",
+    "who writes about keyphrasename0 for keyphrasename1"
+  ],
+  [
+    "When was authorname0 's first publication ?",
+    "When was authorname0 's first paper written ?"
+  ],
+  [
+    "Who cites authorname0 the most",
+    "Who cites authorname0 most ?",
+    "Who cites authorname0 most ?",
+    "Who cites authorname0 most ?"
+  ],
+  [
+    "how many papers are in venuename0 ?",
+    "how many papers does venuename0 have ?",
+    "how many papers are published in venuename0 ?",
+    "number of papers in venuename0 conference"
+  ],
+  [
+    "what papers have fewer than misc0 citations by venuename0 papers ?",
+    "venuename0 papers with less than misc0 citations",
+    "what venuename0 papers have less than misc0 citations ?",
+    "what papers have fewer than misc0 citations by venuename0 papers",
+    "what papers have fewer than misc0 citations by venuename0 papers"
+  ],
+  [
+    "What are the limit0 most recent papers of authorname0 ?",
+    "What are the limit0 most recent papers of authorname0 ?"
+  ],
+  [
+    "What were the papers published at venuename0 year0 ?",
+    "Papers from venuename0 year0 conference",
+    "papers published at venuename0 year0",
+    "What are the papers from venuename0 year0 ?",
+    "Papers from venuename0 year0 ?",
+    "Which papers were accepted in venuename0 year0 ?",
+    "What papers were published during the conference venuename0 year0 ?",
+    "papers in venuename0 year0",
+    "List of papers in venuename0 year0",
+    "venuename0 papers in year0",
+    "what papers are published in venuename0 year0",
+    "papers from venuename0 year0",
+    "papers from venuename0 year0",
+    "venuename0 papers year0",
+    "venuename0 year0 conference",
+    "venuename0 best paper award year0",
+    "venuename0 year0 list of papers"
+  ],
+  [
+    "List today 's journals",
+    "List the journals published in March , year0"
+  ],
+  [
+    "Who writes a lot of papers in keyphrasename0 ?",
+    "Who writes a lot of papers in keyphrasename0 ?"
+  ],
+  [
+    "Who wrote keyphrasename0 ?",
+    "Authors of papers on keyphrasename0",
+    "people working on keyphrasename0",
+    "Who publishes in keyphrasename0 ?",
+    "who publishes papers about keyphrasename0"
+  ],
+  [
+    "how many papers by authorname1 are cited by authorname0",
+    "how many of authorname1 's papers cite authorname0"
+  ],
+  [
+    "What conference does authorname0 publish the most in",
+    "what venue does authorname0 publish the most in",
+    "What conferences does authorname0 publish in the most ?"
+  ],
+  [
+    "Since year0 who has published works about keyphrasename0 ( Inflammatory Bowel Disease ) and keyphrasename1 ?",
+    "Since year0 who has published works about keyphrasename0 and keyphrasename1 ?"
+  ],
+  [
+    "What is the earliest keyphrasename1 paper for keyphrasename0 ?",
+    "Earliest keyphrasename0 paper with keyphrasename1",
+    "Which keyphrasename0 papers first used keyphrasename1 ?",
+    "Which paper first used keyphrasename1 for keyphrasename0 ?"
+  ],
+  [
+    "What journals are authorname0 's articles published in ?",
+    "What journals has authorname0 published in ?",
+    "In what scholarly journals does authorname0 publish ?"
+  ],
+  [
+    "What authors wrote papers about keyphrasename0 in year0 ?",
+    "What authors wrote papers about keyphrasename0 in year0 ?",
+    "Who wrote on the topic of keyphrasename0 in year0 ?"
+  ],
+  [
+    "keyphrasename0 year0 papers",
+    "keyphrasename0 year0 papers",
+    "What papers were written on keyphrasename0 in year0 ?",
+    "keyphrasename0 year0 papers"
+  ],
+  [
+    "who writes for venuename0 or venuename1 ?",
+    "who publishes in venuename0 or venuename1 ?",
+    "who published in venuename0 or venuename1 ?"
+  ],
+  [
+    "Find journals about keyphrasename0 .",
+    "List the journals related to keyphrasename0"
+  ],
+  [
+    "which venuename0 year0 papers about keyphrasename0 used datasetname0 ?",
+    "keyphrasename0 papers using datasetname0 published at venuename0 year0",
+    "keyphrasename0 papers from venuename0 year0 using datasetname0",
+    "keyphrasename0 papers from venuename0 year0 that used datasetname0",
+    "papers about keyphrasename0 that used datasetname0 and were published at venuename0 year0"
+  ],
+  [
+    "in what journals does authorname0 publish ?",
+    "Which journals did authorname0 submit papers to ?"
+  ],
+  [
+    "venuename0 authors",
+    "who are the authors at venuename0 ?",
+    "who authored papers at venuename0 ?",
+    "who publishes in venuename0 ?",
+    "who has papers at venuename0 ?"
+  ],
+  [
+    "How many publications were added to the journalname0 journal this year ?",
+    "How many articles were published in the journalname0 journal in year0 ?"
+  ],
+  [
+    "papers published in venuename0 year0 by authorname0",
+    "Does authorname0 have a paper in venuename0 in year0 ?",
+    "papers of authorname0 in venuename0 year0"
+  ],
+  [
+    "Who has published more papers in venuename0 ?",
+    "Who has published more papers in venuename0 ?",
+    "Who has written the most papers at venuename0 ?",
+    "how is the most prolific author in venuename0 ?",
+    "who published the most at venuename0"
+  ],
+  [
+    "In what year did authorname0 publish the most papers",
+    "What year did authorname0 publish the most papers",
+    "What year did authorname0 publish the most papers"
+  ],
+  [
+    "first keyphrasename0 paper",
+    "What was the first paper on keyphrasename0 written ?",
+    "When was keyphrasename0 proposed ?",
+    "when was the first keyphrasename0 paper published ?"
+  ],
+  [
+    "what papers do keyphrasename0 papers typically cite ?",
+    "papers typically cited by keyphrasename0 papers"
+  ],
+  [
+    "venue for keyphrasename0",
+    "conferences for keyphrasename0",
+    "what conferences are related to keyphrasename0",
+    "What was the conference name that approved keyphrasename0 ?"
+  ],
+  [
+    "papers with more than misc0 citations",
+    "papers with more than misc0 citations"
+  ],
+  [
+    "Which authors published papers in year0 ?",
+    "who wrote papers in year0"
+  ],
+  [
+    "what keyphrase does authorname0 write about that gets most citations ?",
+    "main topics of work by authorname0"
+  ],
+  [
+    "When was authorname0 keyphrasename0 published ?",
+    "When did authorname0 publish his keyphrasename0 paper ?",
+    "When does authorname0 publish the keyphrasename0 paper ?"
+  ],
+  [
+    "Who has published both in venuename0 and venuename1 ?",
+    "who writes for venuename0 and venuename1"
+  ],
+  [
+    "the papers at venuename0 in year0 using datasetname0 dataset",
+    "which papers in venuename0 year0 use datasetname0 ?",
+    "venuename0 year0 papers using datasetname0"
+  ],
+  [
+    "How many papers has authorname0 co-authored since year0 ?",
+    "How many papers has authorname0 co-authored since year0 ?"
+  ],
+  [
+    "papers with at least misc0 citations",
+    "papers cited by at least misc0 papers"
+  ]
+]
