@@ -4,12 +4,12 @@ from transformers import BertModel
 
 class HydraNet(nn.Module):
     def __init__(
-            self,
-            pretrained_bert_model: str = "bert-base-cased",
-            where_column_num: int = 4,
-            agg_num: int = 6,
-            op_num: int = 4,
-            drop_rate: float = 0.2,
+        self,
+        pretrained_bert_model: str = "bert-base-cased",
+        where_column_num: int = 4,
+        agg_num: int = 6,
+        op_num: int = 4,
+        drop_rate: float = 0.2,
     ):
         super(HydraNet, self).__init__()
         self.base_model = BertModel.from_pretrained(pretrained_bert_model)
@@ -24,17 +24,17 @@ class HydraNet(nn.Module):
         self.start_end = nn.Linear(bert_hid_size, 2)
 
     def forward(
-            self,
-            input_ids,
-            input_mask,
-            segment_ids,
-            agg=None,
-            select=None,
-            where=None,
-            where_num=None,
-            op=None,
-            value_start=None,
-            value_end=None,
+        self,
+        input_ids,
+        input_mask,
+        segment_ids,
+        agg=None,
+        select=None,
+        where=None,
+        where_num=None,
+        op=None,
+        value_start=None,
+        value_end=None,
     ):
         bert_output, pooled_output = self.base_model(
             input_ids=input_ids, attention_mask=input_mask, token_type_ids=segment_ids, return_dict=False
