@@ -7,6 +7,7 @@ def read_json(path: str):
     jsonFile.close()
     return data
 
+
 def write_file(path: str, data):
     with open(path, "w") as outfile:
         outfile.write(data)
