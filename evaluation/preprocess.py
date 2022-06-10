@@ -2,6 +2,8 @@ from typing import Dict
 
 from tqdm import tqdm
 
+from evaluation.canonicalization import make_canonical
+
 
 def subtle_query(text: str, variables: Dict[str, str]) -> str:
     for variable in variables.items():
@@ -16,40 +18,75 @@ def subtle_sql(text: str, variables):
         return subtle_query(text, variables)
 
 
-def make_canonical(query):
-    return query
-
-
 def preprocess_data(data):
-    not_annotated_data = {
-        "train": {"sentences": [], "sql": []},
-        "dev": {"sentences": [], "sql": []},
-        "test": {"sentences": [], "sql": []},
-    }
-    annotated_data = {
-        "train": {"sentences": [], "sql": []},
-        "dev": {"sentences": [], "sql": []},
-        "test": {"sentences": [], "sql": []},
+    processed_data = {
+        "train": {"sentences": [], "sql": [], "variables": []},
+        "dev": {"sentences": [], "sql": [], "variables": []},
+        "test": {"sentences": [], "sql": [], "variables": []},
     }
 
     for elem in data:
-        sentences = [subtle_query(obj["text"], obj["variables"]) for obj in elem["sentences"]]
-        sql = subtle_sql(elem["sql"][0], [obj["variables"] for obj in elem["sentences"]])
-        not_annotated_data[elem["query-split"]]["sentences"].extend(sentences)
-        not_annotated_data[elem["query-split"]]["sql"].extend(sql)
-
-    for elem in tqdm(data):
         variables = [obj["variables"] for obj in elem["sentences"]]
         sentences = [subtle_query(obj["text"], obj["variables"]) for obj in elem["sentences"]]
         sql = [elem["sql"][0] for _ in elem["sentences"]]
 
-        sql_processed = []
-        for (variable_set, sql_query) in zip(variables, sql):
-            sql_processed.append(make_canonical(sql_query))  # do canonicalization
+        processed_data[elem["query-split"]]["sentences"].extend(sentences)
+        processed_data[elem["query-split"]]["sql"].extend(sql)
+        processed_data[elem["query-split"]]["variables"].extend(variables)
 
-        sql_processed = [subtle_sql(sql_processed[i], variables[i]) for i in range(len(elem["sentences"]))]
+    return processed_data
 
-        annotated_data[elem["query-split"]]["sentences"].extend(sentences)
-        annotated_data[elem["query-split"]]["sql"].extend(sql_processed)
 
-    return not_annotated_data, annotated_data
+def get_sql(data: Dict):
+    sql = {
+        "train": [],
+        "dev": [],
+        "test": [],
+    }
+
+    for (key, value) in data.items():
+        for (variable_set, sql_query) in zip(value["variables"], value["sql"]):
+            sql[key].append(subtle_sql(sql_query, variable_set))
+
+    return sql
+
+
+def get_sql_substitution(data: Dict):
+    sql = {
+        "train": [],
+        "dev": [],
+        "test": [],
+    }
+
+    for (key, value) in data.items():
+        for (variable_set, sql_query) in zip(value["variables"], value["sql"]):
+            sql[key].append(subtle_sql(make_canonical(sql_query, variable_set), variable_set))
+
+    return sql
+
+
+def substitute_variables(variables: Dict, queries: Dict):
+    sql = {
+        "train": [],
+        "dev": [],
+        "test": [],
+    }
+
+    for (key, variables, _, queries) in zip(variables.items(), queries.items()):
+        for (variable_set, sql_query) in zip(variables, queries):
+            sql[key].append(subtle_sql(make_canonical(sql_query, variable_set), variable_set))
+
+    return sql
+
+
+def get_variables(data: Dict):
+    variables = {
+        "train": [],
+        "dev": [],
+        "test": [],
+    }
+
+    for (key, value) in data.items():
+        variables[key] = value["variables"]
+
+    return variables
