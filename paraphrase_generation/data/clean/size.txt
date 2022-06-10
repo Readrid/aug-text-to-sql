@@ -1,0 +1,6 @@
+imdb.json size is 23
+atis.json size is 377
+geography.json size is 102
+scholar.json size is 100
+spider.json size is 3621
+	Full dataset size is 4223
