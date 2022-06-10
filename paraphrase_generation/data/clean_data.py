@@ -1,7 +1,9 @@
 import json
 import random
 
-result_dict = {"data": []}
+from paraphrase_generation.data.utils import read_json, write_file
+
+result_dict_full = {"data": []}
 PARAPHRASES = "paraphrases"
 SENTENCE = "sentence"
 TAG = "tag"
@@ -19,6 +21,7 @@ def clean_imdb(data, file_name):
     5. Bring to a common appearance
     """
 
+    result_dict = {"data": []}
     for element in data[DATA]:
         dict = {}
         if "paraphases" not in element:
@@ -36,8 +39,11 @@ def clean_imdb(data, file_name):
 
         dict[SENTENCE] = sentence
         dict[PARAPHRASES] = paraphrases
-        dict[TAG] = file_name
-        result_dict["data"].append(dict)
+        result_dict[DATA].append(dict)
+        dict_full = dict.copy()
+        dict_full[TAG] = file_name
+        result_dict_full["data"].append(dict_full)
+    write_file("./clean/" + file_name, json.dumps(result_dict, indent=2))
 
 
 def clean_others(data, file_name):
@@ -50,6 +56,7 @@ def clean_others(data, file_name):
     5. Bring to a common appearance
     """
 
+    result_dict = {"data": []}
     for element in data:
         dict = {}
         element = list(set(element))
@@ -68,8 +75,11 @@ def clean_others(data, file_name):
 
         dict[SENTENCE] = sentence
         dict[PARAPHRASES] = paraphrases
-        dict[TAG] = file_name
         result_dict[DATA].append(dict)
+        dict_full = dict.copy()
+        dict_full[TAG] = file_name
+        result_dict_full["data"].append(dict_full)
+    write_file("./clean/" + file_name, json.dumps(result_dict, indent=2))
 
 
 if __name__ == "__main__":
@@ -79,23 +89,18 @@ if __name__ == "__main__":
     size_logger = ""
 
     for file_name in file_names:
-        with open(common_path + file_name) as jsonFile:
-            data = json.load(jsonFile)
-        jsonFile.close()
+        data = read_json(common_path + file_name)
 
-        old_size = len(result_dict[DATA])
+        old_size = len(result_dict_full[DATA])
 
         if file_name == "imdb.json":
             clean_imdb(data, file_name)
         else:
             clean_others(data, file_name)
 
-        size_logger += f"{file_name} size is {len(result_dict[DATA]) - old_size}\n"
+        size_logger += f"{file_name} size is {len(result_dict_full[DATA]) - old_size}\n"
 
-    size_logger += f"\tFull dataset size is {len(result_dict[DATA])}\n"
-    with open("./clean/size.txt", "w") as outfile:
-        outfile.write(size_logger)
+    size_logger += f"\tFull dataset size is {len(result_dict_full[DATA])}\n"
+    write_file("./clean/size.txt", size_logger)
 
-    json_object = json.dumps(result_dict, indent=2)
-    with open("./clean/dataset.json", "w") as outfile:
-        outfile.write(json_object)
+    write_file("./clean/dataset.json", json.dumps(result_dict_full, indent=2))
