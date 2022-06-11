@@ -7,6 +7,10 @@ from transformers import AutoTokenizer
 
 from utils import concat
 
+from input_examples import InputExample, SQLQuery
+
+QueryRepresentation = Dict[str, Union[List[Tuple[int, int]], List[Tuple[int, int, Union[float, int, str]]]]]
+
 
 class SQLFeaturizer(object):
     agg_ops = ["", "max", "min", "count", "sum", "avg"]
@@ -15,22 +19,27 @@ class SQLFeaturizer(object):
     def __init__(self, schema: pd.DataFrame):
 
         self.tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+        self.schema = schema
 
         self.col2id = dict()
         self.col2type = dict()
-        for i, row in schema.iterrows():
+        for i, row in self.schema.iterrows():
             self.col2id[concat([SQLFeaturizer.__type2canon(row.Type), row.TableName, row.FieldName])] = i
             self.col2type[concat([row.TableName, row.FieldName])] = SQLFeaturizer.__type2canon(row.Type)
         self.agg2id = lambda x: self.agg_ops.index(x)
         self.cond_ops2id = lambda x: self.cond_ops.index(x)
 
-    def process_sql_queries(self, sql_queries: Dict[str, List[str]]):
-        result = {"train": [], "dev": [], "test": []}
+    def get_input_examples(self, questions: List[str], sql_queries: List[QueryRepresentation]) -> List[InputExample]:
+        result = []
+        for question, query in zip(questions, sql_queries):
+            result.append(InputExample(question, SQLQuery(**query, schema=self.schema)))
+        return result
 
-        for query_split in result.keys():
-            for i, sql_q in enumerate(sql_queries[query_split]):
-                sel, conds = self.__process_sql_query(sql_q)
-                result[query_split].append({"sel": sel, "conds": conds})
+    def process_sql_queries(self, sql_queries: List[str]) -> List[QueryRepresentation]:
+        result = []
+        for i, sql_q in enumerate(sql_queries):
+            sel, conds = self.__process_sql_query(sql_q)
+            result.append({"sel": sel, "conds": conds})
 
         return result
 
