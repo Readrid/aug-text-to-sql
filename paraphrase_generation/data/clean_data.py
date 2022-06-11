@@ -37,12 +37,7 @@ def clean_imdb(data, file_name):
         paraphrases = list(map(lambda s: s.replace('" ', ""), paraphrases))
         paraphrases = list(map(lambda s: s.replace(' "', ""), paraphrases))
 
-        dict[SENTENCE] = sentence
-        dict[PARAPHRASES] = paraphrases
-        result_dict[DATA].append(dict)
-        dict_full = dict.copy()
-        dict_full[TAG] = file_name
-        result_dict_full["data"].append(dict_full)
+        filter_and_write_to_dict(sentence, paraphrases, dict, result_dict, result_dict_full)
     write_file("./clean/" + file_name, json.dumps(result_dict, indent=2))
 
 
@@ -73,13 +68,22 @@ def clean_others(data, file_name):
         sentence = sentence.lower()
         paraphrases = list(map(lambda s: s.lower(), paraphrases))
 
-        dict[SENTENCE] = sentence
-        dict[PARAPHRASES] = paraphrases
-        result_dict[DATA].append(dict)
-        dict_full = dict.copy()
-        dict_full[TAG] = file_name
-        result_dict_full["data"].append(dict_full)
+        filter_and_write_to_dict(sentence, paraphrases, dict, result_dict, result_dict_full)
+
     write_file("./clean/" + file_name, json.dumps(result_dict, indent=2))
+
+
+def filter_and_write_to_dict(sentence, paraphrases, dict, result_dict, result_dict_full):
+    paraphrases = list(set(paraphrases))
+    if sentence in paraphrases:
+        paraphrases.remove(sentence)
+
+    dict[SENTENCE] = sentence
+    dict[PARAPHRASES] = paraphrases
+    result_dict[DATA].append(dict)
+    dict_full = dict.copy()
+    dict_full[TAG] = file_name
+    result_dict_full["data"].append(dict_full)
 
 
 if __name__ == "__main__":

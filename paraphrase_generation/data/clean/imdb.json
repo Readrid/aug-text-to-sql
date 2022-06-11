@@ -21,7 +21,6 @@
     {
       "sentence": "find all actors born in actor_birth_city0",
       "paraphrases": [
-        "find all actors born in actor_birth_city0",
         "which actors were born in actor_birth_city0"
       ]
     },
@@ -54,18 +53,17 @@
     {
       "sentence": "find the actor who played cast_role0 in the movie movie_title0",
       "paraphrases": [
-        "who is the actor playing cast_role0 in movie_title0 ?",
-        "who was the actor that played cast_role0 in the movie movie_title0 ?",
         "who acts as cast_role0 in the movie movie_title0 ?",
+        "who was the actor that played cast_role0 in the movie movie_title0 ?",
+        "who is the actor playing cast_role0 in movie_title0 ?",
         "who acted cast_role0 in the movie movie_title0 ?"
       ]
     },
     {
       "sentence": "find all movies featuring actor_name0",
       "paraphrases": [
-        "find all movies in which actor_name0 appears",
-        "find all movies featuring actor_name0",
-        "what are all the movies featuring actor_name0 ?"
+        "what are all the movies featuring actor_name0 ?",
+        "find all movies in which actor_name0 appears"
       ]
     },
     {
@@ -77,8 +75,8 @@
     {
       "sentence": "find all actors born in actor_birth_city0 after actor_birth_year0",
       "paraphrases": [
-        "find all actors from actor_birth_city0 born after actor_birth_year0",
-        "who are the actors born in actor_birth_city0 after actor_birth_year0 ?"
+        "who are the actors born in actor_birth_city0 after actor_birth_year0 ?",
+        "find all actors from actor_birth_city0 born after actor_birth_year0"
       ]
     },
     {
@@ -90,15 +88,14 @@
     {
       "sentence": "find all movies about keyword0",
       "paraphrases": [
-        "find all movies about keyword0",
         "what are the movies related to keyword0"
       ]
     },
     {
       "sentence": "find all movies directed by director_name0 and featuring actor_name0",
       "paraphrases": [
-        "how many movies are there that are directed by director_name0 and featuring actor_name0 ?",
         "what are all the movies directed by director_name0 featuring actor_name0 ?",
+        "how many movies are there that are directed by director_name0 and featuring actor_name0 ?",
         "list all the movies directed by director_name0 in which actor_name0 played"
       ]
     },
@@ -128,9 +125,7 @@
     },
     {
       "sentence": "how many movies did director_name0 direct ?",
-      "paraphrases": [
-        "how many movies did director_name0 direct ?"
-      ]
+      "paraphrases": []
     },
     {
       "sentence": "how many movies were produced in the year movie_release_year0 ?",
@@ -141,9 +136,9 @@
     {
       "sentence": "how many movies did actor_name0 act in ?",
       "paraphrases": [
+        "how many movies did actor_name0 act in",
         "what is the number of movies in which actor_name0 acted ?",
-        "what is the number of movies featuring actor_name0 ?",
-        "how many movies did actor_name0 act in"
+        "what is the number of movies featuring actor_name0 ?"
       ]
     },
     {
