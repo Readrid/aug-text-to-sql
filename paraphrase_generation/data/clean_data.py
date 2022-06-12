@@ -1,5 +1,6 @@
 import json
 import random
+import string
 
 from paraphrase_generation.data.utils import read_json, write_file
 
@@ -22,6 +23,7 @@ def clean_imdb(data, file_name):
     """
 
     result_dict = {"data": []}
+    table = str.maketrans(dict.fromkeys(string.punctuation))
     for element in data[DATA]:
         dict = {}
         if "paraphases" not in element:
@@ -34,8 +36,10 @@ def clean_imdb(data, file_name):
         paraphrases = list(map(lambda s: s.lower(), paraphrases))
         sentence = sentence.replace('" ', "")
         sentence = sentence.replace(' "', "")
+        sentence = sentence.translate(table).strip()
         paraphrases = list(map(lambda s: s.replace('" ', ""), paraphrases))
         paraphrases = list(map(lambda s: s.replace(' "', ""), paraphrases))
+        paraphrases = list(map(lambda s: s.translate(table).strip(), paraphrases))
 
         filter_and_write_to_dict(sentence, paraphrases, dict, result_dict, result_dict_full)
     write_file("./clean/" + file_name, json.dumps(result_dict, indent=2))
@@ -52,6 +56,7 @@ def clean_others(data, file_name):
     """
 
     result_dict = {"data": []}
+    table = str.maketrans(dict.fromkeys(string.punctuation))
     for element in data:
         dict = {}
         element = list(set(element))
@@ -65,8 +70,8 @@ def clean_others(data, file_name):
         if len(paraphrases) < MIN_СNT_PARAPHRASES:
             continue
 
-        sentence = sentence.lower()
-        paraphrases = list(map(lambda s: s.lower(), paraphrases))
+        sentence = sentence.lower().translate(table).strip()
+        paraphrases = list(map(lambda s: s.lower().translate(table).strip(), paraphrases))
 
         filter_and_write_to_dict(sentence, paraphrases, dict, result_dict, result_dict_full)
 
