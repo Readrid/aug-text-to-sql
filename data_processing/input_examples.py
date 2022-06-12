@@ -12,7 +12,7 @@ class SQLQuery(object):
         conds: List[Tuple[int, int, Union[float, int, str]]],
         tables: List[str],
         schema: pd.DataFrame,
-        col2id: Dict[str, id],
+        col2id: Dict[str, int],
     ):
         self.sel = sel
         self.conds = conds

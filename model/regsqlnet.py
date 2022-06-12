@@ -89,7 +89,7 @@ class RegSQLNet(nn.Module):
         log_sigmoid = nn.LogSigmoid()
 
         return {
-            "column_func": log_sigmoid(column_func_logit),
+            "column_func": log_sigmoid(column_func_logit),  # P(c_i | q)
             "agg": agg_logit.log_softmax(1),
             "op": op_logit.log_softmax(1),
             "where_num": where_num_logit.log_softmax(1),  # P(n_w | c_i, q)
