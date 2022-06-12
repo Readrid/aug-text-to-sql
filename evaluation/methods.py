@@ -1,21 +1,12 @@
-from psycopg2 import OperationalError
+from database_connection.abstract_connector import AbstractDbConnector
 
 
-def execute_query(connection, query):
-    connection.autocommit = True
-    cursor = connection.cursor()
-    try:
-        return cursor.execute(query)
-    except OperationalError as _:
-        return None
-
-
-def execution_accuracy(connection, pred_queries, real_queries):
+def execution_accuracy(db_connector: AbstractDbConnector, pred_queries, real_queries):
     number_matches = 0
 
     for (pred_query, real_query) in zip(pred_queries, real_queries):
-        pred_result = execute_query(connection, pred_query)
-        real_result = execute_query(connection, real_query)
+        pred_result = db_connector.execute(pred_query)
+        real_result = db_connector.execute(real_query)
         if pred_result == real_result and pred_result is not None:
             number_matches += 1
 
