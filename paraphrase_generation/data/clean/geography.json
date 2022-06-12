@@ -1,0 +1,875 @@
+{
+  "data": [
+    {
+      "sentence": "what is the city in state_name0 with the largest population",
+      "paraphrases": [
+        "what cities in state_name0 have the highest number of citizens",
+        "where is the most populated area of state_name0",
+        "what state_name0 city has the largest population",
+        "what is the biggest city in state_name0",
+        "what cities in state_name0 have the highest populations",
+        "what is the largest city of state_name0",
+        "what is the largest city in state_name0 by population",
+        "what is the largest city in state_name0",
+        "what is the most populous city in state_name0",
+        "which city in state_name0 has the largest population"
+      ]
+    },
+    {
+      "sentence": "what is the size of state_name0",
+      "paraphrases": [
+        "what is the area of the state_name0 state",
+        "how large is state_name0",
+        "what is the area of state_name0",
+        "how big is state_name0",
+        "what is the area of state_name0 in square kilometers"
+      ]
+    },
+    {
+      "sentence": "how many people reside in state_name0",
+      "paraphrases": [
+        "what is the population of state_name0",
+        "how many citizens in state_name0",
+        "what can you tell me about the population of state_name0",
+        "how many people are there in state_name0",
+        "how many people stay in state_name0",
+        "how many residents live in state_name0",
+        "how many people live in state_name0",
+        "how much population does state_name0 have",
+        "how many people are in the state of state_name0",
+        "how many citizens live in state_name0",
+        "what are the population of state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the least populous state",
+      "paraphrases": [
+        "what state has the smallest population",
+        "what is the state with the lowest population"
+      ]
+    },
+    {
+      "sentence": "what cities are located in state_name0",
+      "paraphrases": [
+        "give me the cities which are in state_name0",
+        "tell me what cities are in state_name0",
+        "what cities in state_name0",
+        "give me the cities in state_name0",
+        "what are the cities in state_name0"
+      ]
+    },
+    {
+      "sentence": "list the states",
+      "paraphrases": [
+        "give me all the states of usa",
+        "what are the states"
+      ]
+    },
+    {
+      "sentence": "what are the states that the river_name0 run through",
+      "paraphrases": [
+        "what states does the river_name0 run through",
+        "what states does the river_name0 river run through",
+        "through which states does the river_name0 run",
+        "which states does the river_name0 run through",
+        "what states does the river_name0 river go through",
+        "what states border the river_name0 river",
+        "what states are next to the river_name0",
+        "what states have rivers named river_name0",
+        "which states do river_name0 river flow through",
+        "through which states does the river_name0 flow",
+        "which state has the river_name0 river",
+        "where is the river_name0 river",
+        "which states border the river_name0 river",
+        "which states does the river_name0 river run through",
+        "which states does the river_name0 river pass through"
+      ]
+    },
+    {
+      "sentence": "what state has the highest population",
+      "paraphrases": [
+        "what is the most populous state in the us",
+        "what state is the largest in population",
+        "which state has the most population",
+        "which state has the biggest population",
+        "what is the most populous state",
+        "what state has the largest population",
+        "which state has the most people",
+        "which state has the greatest population",
+        "what state has the most people"
+      ]
+    },
+    {
+      "sentence": "how long is the longest river in the usa",
+      "paraphrases": [
+        "what is the length of the longest river in the usa"
+      ]
+    },
+    {
+      "sentence": "what is the longest river in state_name0",
+      "paraphrases": [
+        "what is the biggest river in state_name0",
+        "what is the longest river flowing through state_name0",
+        "what are the biggest rivers in state_name0",
+        "what is the longest river that flows through state_name0",
+        "what is the largest river in state_name0 state"
+      ]
+    },
+    {
+      "sentence": "how many rivers are found in state_name0",
+      "paraphrases": [
+        "how many rivers are in state_name0",
+        "how many rivers in state_name0",
+        "how many rivers run through state_name0",
+        "how many rivers are there in state_name0",
+        "how many rivers does state_name0 have",
+        "give me the number of rivers in state_name0"
+      ]
+    },
+    {
+      "sentence": "what states are next to state_name0",
+      "paraphrases": [
+        "what states surround state_name0",
+        "what are the neighboring states for state_name0",
+        "what is the adjacent state of state_name0",
+        "give me the states that border state_name0",
+        "which states adjoin state_name0",
+        "what states neighbor state_name0",
+        "what states border state_name0",
+        "which state borders state_name0",
+        "which state border state_name0",
+        "what state borders state_name0",
+        "states bordering state_name0",
+        "which states border state_name0"
+      ]
+    },
+    {
+      "sentence": "what are all the rivers in state_name0",
+      "paraphrases": [
+        "what are the rivers in the state of state_name0",
+        "what rivers run through state_name0",
+        "what are the rivers in state_name0",
+        "what river runs through state_name0",
+        "what rivers are there in state_name0",
+        "what is the river that cross over state_name0",
+        "what are the rivers of state_name0",
+        "what river flows through state_name0",
+        "what rivers flow through state_name0",
+        "which rivers flow through state_name0",
+        "what rivers are in state_name0",
+        "rivers in state_name0",
+        "which rivers are in state_name0",
+        "name the rivers in state_name0",
+        "name all the rivers in state_name0"
+      ]
+    },
+    {
+      "sentence": "what states in the united states have a city of city_name0",
+      "paraphrases": [
+        "what states have a city named city_name0",
+        "what state has the city city_name0",
+        "what states have cities named city_name0",
+        "which states have cities named city_name0",
+        "city_name0 is in what state",
+        "where is city_name0",
+        "what state is city_name0 located in",
+        "what state is city_name0 in",
+        "what states have towns named city_name0",
+        "in which state is city_name0",
+        "which state is city_name0 in",
+        "which state is the city city_name0 located in"
+      ]
+    },
+    {
+      "sentence": "what is the population of the largest state",
+      "paraphrases": [
+        "what is the population of the state with the largest area"
+      ]
+    },
+    {
+      "sentence": "population of city_name0",
+      "paraphrases": [
+        "how big is the city of city_name0",
+        "how many inhabitants does city_name0 have",
+        "number of citizens in city_name0",
+        "what is the population of city_name0 city",
+        "number of people in city_name0",
+        "how many citizens in city_name0",
+        "what is the population of city_name0",
+        "how many people in city_name0",
+        "people in city_name0",
+        "how many people lived in city_name0",
+        "what is the population in city_name0",
+        "how many people live in city_name0"
+      ]
+    },
+    {
+      "sentence": "which states does the longest river run through",
+      "paraphrases": [
+        "which states lie on the largest river in the united states",
+        "which states does the longest river cross",
+        "what are the states through which the longest river runs",
+        "which state has the longest river"
+      ]
+    },
+    {
+      "sentence": "what is the population density of the smallest state",
+      "paraphrases": [
+        "what is the population density of the state with the smallest area"
+      ]
+    },
+    {
+      "sentence": "what states high point are higher than that of state_name0",
+      "paraphrases": [
+        "which states have points that are higher than the highest point in state_name0",
+        "which states have points higher than the highest point in state_name0"
+      ]
+    },
+    {
+      "sentence": "how high is the highest point of state_name0",
+      "paraphrases": [
+        "how high is the highest point in state_name0",
+        "what is the highest point in state_name0 in meters",
+        "what is the highest elevation in state_name0",
+        "how tall is the highest point in state_name0"
+      ]
+    },
+    {
+      "sentence": "which is the longest river in usa",
+      "paraphrases": [
+        "what is the longest river in the us",
+        "give me the longest river that passes through the us",
+        "what is the longest river in america",
+        "what is the longest river",
+        "what is the longest river in the united states",
+        "name the longest river in us",
+        "what river is the longest one in the united states"
+      ]
+    },
+    {
+      "sentence": "what state has the city with the largest population",
+      "paraphrases": [
+        "what state has the largest city",
+        "which state has the largest city",
+        "what state has the city with the most population"
+      ]
+    },
+    {
+      "sentence": "what is the biggest state in continental us",
+      "paraphrases": [
+        "what is the biggest state in the usa",
+        "what is the largest state",
+        "what is the largest state in the us",
+        "what state has the largest area",
+        "what is the largest state in usa",
+        "give me the largest state",
+        "state the state with the largest area",
+        "what is the biggest state",
+        "what is the state with the largest area",
+        "what state is the biggest"
+      ]
+    },
+    {
+      "sentence": "what are the highest points of states surrounding state_name0",
+      "paraphrases": [
+        "what are the high points of states surrounding state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the highest point in the states bordering state_name0",
+      "paraphrases": [
+        "what is the highest point in states bordering state_name0"
+      ]
+    },
+    {
+      "sentence": "which state has the sparsest population density",
+      "paraphrases": [
+        "which state has the smallest population density",
+        "what state has the smallest population density",
+        "what state has the sparsest population density",
+        "which state has the least population density",
+        "what state has the least population density",
+        "what state has the lowest population density",
+        "which state has the lowest population density",
+        "what is the state with the lowest population density"
+      ]
+    },
+    {
+      "sentence": "where is the highest point in state_name0",
+      "paraphrases": [
+        "what is the high point of state_name0",
+        "what is the highest mountain in state_name0",
+        "could you tell me what is the highest point in the state of state_name0",
+        "what is the highest point in state_name0"
+      ]
+    },
+    {
+      "sentence": "name the states which have no surrounding states",
+      "paraphrases": [
+        "which states border no other states",
+        "what states have no bordering state"
+      ]
+    },
+    {
+      "sentence": "which state borders the most states",
+      "paraphrases": [
+        "which state borders most states",
+        "what state borders most other states",
+        "what state borders the most states"
+      ]
+    },
+    {
+      "sentence": "how tall is highest_point0",
+      "paraphrases": [
+        "how high is highest_point0",
+        "what is the maximum elevation of highest_point0"
+      ]
+    },
+    {
+      "sentence": "what is the highest elevation in the united states",
+      "paraphrases": [
+        "how high is the highest point in america",
+        "what is the elevation of the highest point in the usa",
+        "what is the height of the highest point in the usa"
+      ]
+    },
+    {
+      "sentence": "how long is the river_name0 river",
+      "paraphrases": [
+        "what is the length of the river_name0 river",
+        "how long is the river_name0",
+        "how long is the river_name0 river in miles",
+        "what length is the river_name0",
+        "how long is river_name0"
+      ]
+    },
+    {
+      "sentence": "what is the length of the longest river that runs through state_name0",
+      "paraphrases": [
+        "how long is the longest river in state_name0"
+      ]
+    },
+    {
+      "sentence": "how many cities does the usa have",
+      "paraphrases": [
+        "how many cities are there in us",
+        "how many cities are there in the united states",
+        "how many cities are there in the us",
+        "how many cities are there in usa"
+      ]
+    },
+    {
+      "sentence": "how many rivers are called river_name0",
+      "paraphrases": [
+        "how many river_name0 rivers are there"
+      ]
+    },
+    {
+      "sentence": "how many people live in city_name0 state_name0",
+      "paraphrases": [
+        "what is the population of city_name0 state_name0"
+      ]
+    },
+    {
+      "sentence": "how many people live in the biggest city in state_name0 state",
+      "paraphrases": [
+        "how large is the largest city in state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the size of the capital of state_name0",
+      "paraphrases": [
+        "how many people live in the capital of state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the combined population of all 50 states",
+      "paraphrases": [
+        "how many people live in the united states"
+      ]
+    },
+    {
+      "sentence": "how many states does usa have",
+      "paraphrases": [
+        "how many states are there in united states",
+        "how many states are there",
+        "how many states are in the usa",
+        "how many states are in the united states",
+        "how many states are there in the usa"
+      ]
+    },
+    {
+      "sentence": "how many states does state_name0 border",
+      "paraphrases": [
+        "number of states bordering state_name0",
+        "what is the number of neighboring states for state_name0",
+        "how many states border state_name0",
+        "state_name0 borders how many states"
+      ]
+    },
+    {
+      "sentence": "what major rivers run through state_name0",
+      "paraphrases": [
+        "name the major rivers in state_name0",
+        "what are major rivers in state_name0",
+        "what are the major rivers in state_name0"
+      ]
+    },
+    {
+      "sentence": "can you tell me the capital of state_name0",
+      "paraphrases": [
+        "what is the capital of the state_name0 state",
+        "what is capital of state_name0",
+        "what is the capital of state_name0",
+        "what are the capital city in state_name0",
+        "what is the capital of the state state_name0"
+      ]
+    },
+    {
+      "sentence": "what are the capital cities of the states which border state_name0",
+      "paraphrases": [
+        "what are the capitals of states that border state_name0",
+        "which capitals are in the states that border state_name0",
+        "what are the capitals of the states that border state_name0"
+      ]
+    },
+    {
+      "sentence": "what are the major cities in state_name0",
+      "paraphrases": [
+        "show major cities in state_name0",
+        "what is the major cities in state_name0",
+        "what are the major cities in the state of state_name0",
+        "what are the major cities of state_name0",
+        "what major cities are located in state_name0",
+        "what are the names of the major cities in state_name0"
+      ]
+    },
+    {
+      "sentence": "what are the major cities in the usa",
+      "paraphrases": [
+        "what are the major cities of the us",
+        "what are the major cities of the united states"
+      ]
+    },
+    {
+      "sentence": "what are the populations of states through which the river_name0 river run",
+      "paraphrases": [
+        "what are the populations of the states through which the river_name0 river runs",
+        "what are the populations of the states through which the river_name0 river run",
+        "what are the populations of the states through which the river_name0 runs",
+        "what are the populations of states through which the river_name0 run",
+        "what are the populations of the states through which the river_name0 run",
+        "what are the populations of states through which the river_name0 river runs",
+        "what are the populations of states through which the river_name0 runs"
+      ]
+    },
+    {
+      "sentence": "what is the population of the major cities in state_name0",
+      "paraphrases": [
+        "what are the populations of all the major cities in state_name0",
+        "what are the populations of the major cities of state_name0"
+      ]
+    },
+    {
+      "sentence": "whats the largest city",
+      "paraphrases": [
+        "which us city has the highest population",
+        "what city has the most people",
+        "what is the biggest city in usa",
+        "what city has the largest population",
+        "what is the biggest city in the us",
+        "what city in the united states has the highest population",
+        "what is the most populous city",
+        "what is the biggest city in the usa"
+      ]
+    },
+    {
+      "sentence": "what is largest capital",
+      "paraphrases": [
+        "what is the largest capital",
+        "what capital is the largest in the us",
+        "what is the largest capital city in the usa",
+        "what is the biggest capital city in the us",
+        "what is the largest state capital in population",
+        "what capital has the largest population",
+        "what is the most populated capital in the usa"
+      ]
+    },
+    {
+      "sentence": "what is the capital of the state with the most inhabitants",
+      "paraphrases": [
+        "what is the capital of the state with the largest population"
+      ]
+    },
+    {
+      "sentence": "what is the total area of the usa",
+      "paraphrases": [
+        "what is the area of all the states combined",
+        "what is the combined area of all 50 states",
+        "how many square kilometers in the us"
+      ]
+    },
+    {
+      "sentence": "what is the density of the state_name0",
+      "paraphrases": [
+        "what is the population density of state_name0",
+        "what is the density of state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the tallest mountain in the united states",
+      "paraphrases": [
+        "what is the highest mountain in us",
+        "what is the tallest mountain in america",
+        "what is the highest mountain in the us"
+      ]
+    },
+    {
+      "sentence": "what is the highest point in the state with capital capital0",
+      "paraphrases": [
+        "what is the highest point in the state with the capital capital0"
+      ]
+    },
+    {
+      "sentence": "what is the highest point in the united states",
+      "paraphrases": [
+        "what is the highest point in the usa",
+        "what is the highest point of the usa",
+        "what is the highest point in the country",
+        "what is the highest point in the us"
+      ]
+    },
+    {
+      "sentence": "what is the biggest city in the smallest state",
+      "paraphrases": [
+        "what is the largest city in the smallest state in the usa"
+      ]
+    },
+    {
+      "sentence": "what is the largest state bordering state_name0",
+      "paraphrases": [
+        "what state that borders state_name0 is the largest",
+        "what is the largest state that borders state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the length of the river that flows through the most states",
+      "paraphrases": [
+        "what is the length of the river that traverses the most states",
+        "what is the length of the river that runs through the most states",
+        "what is the length of the river that runs through the most number of states"
+      ]
+    },
+    {
+      "sentence": "what is the longest river that flows through a state that borders state_name0",
+      "paraphrases": [
+        "what is the longest river in the states that border state_name0",
+        "what is the longest river that runs through a state that borders state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the lowest point of state_name0",
+      "paraphrases": [
+        "where is the lowest spot in state_name0",
+        "where is the lowest point in state_name0",
+        "what is the lowest point in state_name0",
+        "what is the lowest point in state_name0 in meters",
+        "what is the lowest point in the state of state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the lowest point of the us",
+      "paraphrases": [
+        "where is the lowest point in the us",
+        "what is the lowest point in the united states",
+        "what is the lowest point in usa"
+      ]
+    },
+    {
+      "sentence": "which is the lowest point of the states that the river_name0 runs through",
+      "paraphrases": [
+        "what is the lowest point of all states through which the river_name0 river runs through"
+      ]
+    },
+    {
+      "sentence": "which state has the greatest density",
+      "paraphrases": [
+        "which state has the highest population density",
+        "what state has the largest population density",
+        "what is the most dense state in the usa",
+        "what state has the greatest population density",
+        "what is the state with the largest density in usa",
+        "what state has the highest population density",
+        "what is the state with the largest population density",
+        "which state has the largest density"
+      ]
+    },
+    {
+      "sentence": "what is the most populous state through which the river_name0 runs",
+      "paraphrases": [
+        "what state which the river_name0 runs through has the largest population"
+      ]
+    },
+    {
+      "sentence": "how many people live in the state with the largest population density",
+      "paraphrases": [
+        "what is the population of the state with the highest population density"
+      ]
+    },
+    {
+      "sentence": "what city has the least population",
+      "paraphrases": [
+        "what is the smallest city in the us",
+        "what is the city with the smallest population",
+        "what is the smallest city in the usa"
+      ]
+    },
+    {
+      "sentence": "which state has the smallest area that borders state_name0",
+      "paraphrases": [
+        "what is the smallest state bordering state_name0",
+        "what is the smallest state that borders state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the state with the smallest area",
+      "paraphrases": [
+        "which state is the smallest",
+        "which is the smallest state",
+        "what is the smallest state by area",
+        "what is the smallest state in the usa",
+        "what state has the smallest area"
+      ]
+    },
+    {
+      "sentence": "which river goes through the most states",
+      "paraphrases": [
+        "which river runs through most states",
+        "which river traverses most states",
+        "what river flows through the most states",
+        "what river traverses the most states",
+        "which river runs through the most states",
+        "what river runs through the most states"
+      ]
+    },
+    {
+      "sentence": "what rivers are in states that border state_name0",
+      "paraphrases": [
+        "what rivers flow through states that state_name0 borders",
+        "which rivers run through states bordering state_name0"
+      ]
+    },
+    {
+      "sentence": "what rivers traverses the state which borders the most states",
+      "paraphrases": [
+        "what river traverses the state which borders the most states"
+      ]
+    },
+    {
+      "sentence": "what state that borders state_name0 has the highest population",
+      "paraphrases": [
+        "which of the states bordering state_name0 has the largest population",
+        "what state bordering state_name0 has the largest population",
+        "what is the most populated state bordering state_name0"
+      ]
+    },
+    {
+      "sentence": "which state 's capital city is the largest",
+      "paraphrases": [
+        "what state has the largest capital"
+      ]
+    },
+    {
+      "sentence": "which state has the most major cities",
+      "paraphrases": [
+        "what state has the most major cities"
+      ]
+    },
+    {
+      "sentence": "which states border states through which the river_name0 traverses",
+      "paraphrases": [
+        "what states border states that the river_name0 runs through",
+        "what states border states which the river_name0 runs through"
+      ]
+    },
+    {
+      "sentence": "what are the states that border the state with the greatest population",
+      "paraphrases": [
+        "what states border the most populous state"
+      ]
+    },
+    {
+      "sentence": "what states border the states with the most cities",
+      "paraphrases": [
+        "what states border the state with the most cities"
+      ]
+    },
+    {
+      "sentence": "which states border the state with the smallest area",
+      "paraphrases": [
+        "what states border the state with the smallest area"
+      ]
+    },
+    {
+      "sentence": "which state has the highest peak in the country",
+      "paraphrases": [
+        "where is the highest mountain of the united states"
+      ]
+    },
+    {
+      "sentence": "what rivers do not run through state_name0",
+      "paraphrases": [
+        "which rivers do not run through state_name0"
+      ]
+    },
+    {
+      "sentence": "which rivers run through states that border the state with the capital capital0",
+      "paraphrases": [
+        "what rivers run through the states that border the state with the capital capital0"
+      ]
+    },
+    {
+      "sentence": "what state has highest elevation",
+      "paraphrases": [
+        "which state has the highest point",
+        "which state has the highest elevation",
+        "what is the state with the highest elevation in the united states",
+        "what is the state that contains the highest point",
+        "what state has the highest elevation",
+        "what state contains the highest point in the us",
+        "in which state does the highest point in usa exist"
+      ]
+    },
+    {
+      "sentence": "what is the state with the lowest point",
+      "paraphrases": [
+        "which state has the lowest elevation",
+        "what is the name of the state with the lowest point"
+      ]
+    },
+    {
+      "sentence": "which state has the most major rivers",
+      "paraphrases": [
+        "what state has the most major rivers running through it",
+        "which state has the most major rivers running through it"
+      ]
+    },
+    {
+      "sentence": "where is mount mountain_name0 located",
+      "paraphrases": [
+        "where is mount mountain_name0",
+        "in what state is mount mountain_name0",
+        "which state is mount mountain_name0 in"
+      ]
+    },
+    {
+      "sentence": "which states have a river",
+      "paraphrases": [
+        "what states have rivers running through them"
+      ]
+    },
+    {
+      "sentence": "what is the largest city in states that border state_name0",
+      "paraphrases": [
+        "what is the largest city in a state that borders state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the shortest river",
+      "paraphrases": [
+        "what is the shortest river in the usa",
+        "what is the shortest river in the united states",
+        "which is the shortest river",
+        "what is the shortest river in the us"
+      ]
+    },
+    {
+      "sentence": "what state is capital0 the capital of",
+      "paraphrases": [
+        "capital0 is the capital of which state",
+        "what state has the capital capital0",
+        "what states capital is capital0"
+      ]
+    },
+    {
+      "sentence": "what is the capital of the state with the highest elevation",
+      "paraphrases": [
+        "what is the capital of the state with the highest point"
+      ]
+    },
+    {
+      "sentence": "how many states have cities named city_name0",
+      "paraphrases": [
+        "how many states have a city named city_name0",
+        "how many states have a city called city_name0",
+        "how many states have cities or towns named city_name0"
+      ]
+    },
+    {
+      "sentence": "what state has the most rivers running through it",
+      "paraphrases": [
+        "which state contains most rivers",
+        "what state has the most rivers",
+        "which state has the most rivers",
+        "which state has the most rivers running through it",
+        "what state is the state with the most rivers"
+      ]
+    },
+    {
+      "sentence": "how many major cities are there in state_name0",
+      "paraphrases": [
+        "how many big cities are in state_name0",
+        "how many major cities are in state_name0"
+      ]
+    },
+    {
+      "sentence": "how many states does the river_name0 river run through",
+      "paraphrases": [
+        "how many states does the river_name0 run through",
+        "how many states does the river_name0 river flow through"
+      ]
+    },
+    {
+      "sentence": "what are the major lakes in united states ",
+      "paraphrases": [
+        "show me all the major lakes in the us "
+      ]
+    },
+    {
+      "sentence": "what state has the shortest river",
+      "paraphrases": [
+        "what states does the shortest river run through"
+      ]
+    },
+    {
+      "sentence": "which rivers run through the state with the lowest elevation in the usa",
+      "paraphrases": [
+        "what rivers run through the state with the lowest point in the usa"
+      ]
+    },
+    {
+      "sentence": "what is the largest state traversed by the river_name0 river",
+      "paraphrases": [
+        "what is the largest of the state that the river_name0 runs through"
+      ]
+    },
+    {
+      "sentence": "what is the capital city of the largest state in the us",
+      "paraphrases": [
+        "what is the capital of the largest state"
+      ]
+    },
+    {
+      "sentence": "how many cities does state_name0 have",
+      "paraphrases": [
+        "how many cities are in state_name0"
+      ]
+    },
+    {
+      "sentence": "what is the area of the largest state",
+      "paraphrases": [
+        "what is the size of the largest state in the usa"
+      ]
+    }
+  ]
+}

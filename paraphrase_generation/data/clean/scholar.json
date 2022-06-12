@@ -1,0 +1,942 @@
+{
+  "data": [
+    {
+      "sentence": "what papers have authorname0 and authorname1 written ?",
+      "paraphrases": [
+        "papers by authors authorname0 and authorname1",
+        "what are the collaborations of authorname0 and authorname1 ?",
+        "what papers have been written by authorname0 and authorname1 .",
+        "which papers have authorname0 and authorname1 as co-authors ?",
+        "papers coauthored by authorname0 and authorname1",
+        "what papers were written by authors authorname0 and authorname1",
+        "does authorname0 ever collaborated with authorname1 ?",
+        "papers written by authors authorname0 and authorname1",
+        "what papers have been written by authorname0 and authorname1 ?",
+        "has authorname0 and authorname1 written a paper together ?",
+        "papers written by authorname0 and authorname1",
+        "what are the papers that have authorname0 and authorname1 as co-authors",
+        "what papers have been written by both authorname0 and authorname1 ?",
+        "when did authorname0 and authorname1 collaborate ?",
+        "have authorname0 and authorname1 written a paper together ?",
+        "papers by authorname0 and authorname1",
+        "papers that are coauthored by authorname0 and authorname1",
+        "what paper did authorname0 and authorname1 write together ?",
+        "authorname0 and authorname1 as co-authors"
+      ]
+    },
+    {
+      "sentence": "top keyphrasename0 author",
+      "paraphrases": [
+        "who has written the most papers on keyphrasename0 ?",
+        "who are the authors with the most published papers in keyphrasename0 ?",
+        "who is the most published author in keyphrasename0 ?",
+        "who published the most in keyphrasename0 ?",
+        "who has the most publications in keyphrasename0 ?",
+        "who has written the most keyphrasename0 papers ?",
+        "list prominent scholars in keyphrasename0 ?",
+        "who wrote the most papers on keyphrasename0 ?",
+        "top author in keyphrasename0",
+        "who published the most papers in keyphrasename0 ?"
+      ]
+    },
+    {
+      "sentence": "number of citations of authorname0",
+      "paraphrases": [
+        "how many citation authorname0 has ?",
+        "authorname0 citation count",
+        "how many citations does authorname0 have ?",
+        "how many times was authorname0 cited ?",
+        "how many citations does authorname0 have",
+        "how many citations does authorname0 has ?"
+      ]
+    },
+    {
+      "sentence": "list papers published in venuename0",
+      "paraphrases": [
+        "venuename0 papers",
+        "papers about venuename0",
+        "what papers did venuename0 publish ?",
+        "papers in venuename0",
+        "papers on venuename0",
+        "papers at venuename0",
+        "show me venuename0 papers ."
+      ]
+    },
+    {
+      "sentence": "papers where authorname0 is an author",
+      "paraphrases": [
+        "what papers has written by authorname0 ?",
+        "papers by authorname0",
+        "authorname0 papers",
+        "papers written by authorname0",
+        "what did authorname0 write ?",
+        "authorname0 's papers",
+        "papers by authorname0 ?",
+        "does authorname0 have any papers published ?",
+        "what has authorname0 published ?",
+        "which papers has authorname0 written ?",
+        "papers authored by authorname0",
+        "what papers are authored by authorname0 ?",
+        "show me papers by authorname0 .",
+        "what papers has authorname0 written ?"
+      ]
+    },
+    {
+      "sentence": "what are the latest papers by authorname0 ?",
+      "paraphrases": [
+        "what was authorname0 's latest paper ?",
+        "most recent papers by authorname0",
+        "what is authorname0 's latest paper ?",
+        "latest paper by authorname0",
+        "what is the latest paper by authorname0 ?"
+      ]
+    },
+    {
+      "sentence": "keyphrasename0 papers since year0",
+      "paraphrases": [
+        "keyphrasename0 later than year0",
+        "keyphrasename0 papers later than year0",
+        "are there any keyphrasename0 papers since year0 ?",
+        "keyphrasename0 papers published after year0"
+      ]
+    },
+    {
+      "sentence": "how many papers has authorname0 published in venuename0 ?",
+      "paraphrases": [
+        "how many papers did authorname0 publish at venuename0 ?",
+        "how many papers does authorname0 have in venuename0",
+        "how many papers authorname0 has in venuename0 ?",
+        "how many papers does authorname0 have at venuename0",
+        "how many papers does authorname0 have in venuename0 ?",
+        "how many authorname0 papers are in venuename0 ?"
+      ]
+    },
+    {
+      "sentence": "which paper from venuename0 year0 was cited most ?",
+      "paraphrases": [
+        "most cited venuename0 year0 papers",
+        "which venuename0 year0 papers have the most citations ?",
+        "which venuename0 year0 papers have been cited the most ?"
+      ]
+    },
+    {
+      "sentence": "what papers were published at venuename0 '16 about title0 applied to datasetname0 ?",
+      "paraphrases": [
+        "what papers were published at venuename0 in year0 about title0 applied to datasetname0 ?"
+      ]
+    },
+    {
+      "sentence": "how many papers are about keyphrasename0 ?",
+      "paraphrases": [
+        "how many papers are in keyphrasename0 ?",
+        "how many papers about keyphrasename0 ?",
+        "how many papers are related to keyphrasename0 ?"
+      ]
+    },
+    {
+      "sentence": "how many publications does authorname0 have ?",
+      "paraphrases": [
+        "number of papers written by authorname0",
+        "how many papers does authorname0 have",
+        "how many paper does authorname0 have ?",
+        "how many papers has authorname0 published ?",
+        "how many papers does authorname0 have ?",
+        "has authorname0 published any papers ?",
+        "how many papers has authorname0 written ?",
+        "how many papers has authorname0 ?"
+      ]
+    },
+    {
+      "sentence": "what topic does authorname0 write about ?",
+      "paraphrases": [
+        "keyphrases used by authorname0 .",
+        "what kind of papers does authorname0 publish",
+        "keywords in the papers written by authorname0",
+        "keywords used by authorname0",
+        "what keywords are used by authorname0",
+        "keyphrases used by authorname0",
+        "keyphrases by authorname0",
+        "give me the keywords used by authorname0",
+        "what keywords are in papers by authorname0 ?",
+        "topics used by authorname0",
+        "what topics does authorname0 publish in"
+      ]
+    },
+    {
+      "sentence": "in which conferences does authorname0 typically publish ?",
+      "paraphrases": [
+        "conferences that authorname0 has published in",
+        "at which conferences does authorname0 publish ?",
+        "what conferences does authorname0 submit to ?",
+        "what conferences does authorname0 publish in ?",
+        "what conference does authorname0 publish in ?",
+        "in what conferences does authorname0 publish ?"
+      ]
+    },
+    {
+      "sentence": "how many keyphrasename0 papers has authorname0 written ?",
+      "paraphrases": [
+        "how many papers does authorname0 have in keyphrasename0 area ?",
+        "how many paper has authorname0 written about keyphrasename0 ?",
+        "how many papers by authorname0 contain the keyphrases keyphrasename0 ?"
+      ]
+    },
+    {
+      "sentence": "where did authorname0 publish in year0 ?",
+      "paraphrases": [
+        "where did authorname0 publish in year0",
+        "what conferences did authorname0 publish in in year0 ?",
+        "what conferences did authorname0 submit to in year0 ?"
+      ]
+    },
+    {
+      "sentence": "what papers are typically cited by authorname0 and authorname1",
+      "paraphrases": [
+        "what are most cited papers of authorname0 and authorname1 ?",
+        "most cited by authorname0 and authorname1",
+        "what are commonly cited papers by authorname0 and authorname1 ?"
+      ]
+    },
+    {
+      "sentence": "what were some keyphrasename0 based papers in venuename0 year0 ?",
+      "paraphrases": [
+        "what papers were published in venuename0 in year0 about keyphrasename0 ?",
+        "what papers were published at venuename0 in year0 were about keyphrasename0 ?",
+        "venuename0 papers in year0 on keyphrasename0",
+        "who published keyphrasename0 papers at venuename0 year0",
+        "venuename0 papers in year0 in keyphrasename0",
+        "venuename0 papers in year0 about keyphrasename0",
+        "how many keyphrasename0 papers did venuename0 year0 have ?",
+        "which papers in venuename0 year0 had keyphrasename0 in them ?",
+        "papers about keyphrasename0 in venuename0 year0",
+        "papers on keyphrasename0 appeared at venuename0 last year",
+        "keyphrasename0 papers from venuename0 year0",
+        "papers on keyphrasename0 appeared at venuename0 in year0"
+      ]
+    },
+    {
+      "sentence": "top keyphrasename0 papers",
+      "paraphrases": [
+        "list the popular publications on keyphrasename0",
+        "which paper should i read about keyphrasename0 ?"
+      ]
+    },
+    {
+      "sentence": "papers that used keyphrasename0",
+      "paraphrases": [
+        "papers with keyphrasename0 in keyphrases",
+        "what papers talk about keyphrasename0 ?",
+        "papers for keyphrasename0",
+        "list papers that used keyphrasename0",
+        "what is the paper about keyphrasename0 ?",
+        "papers published in the area of keyphrasename0",
+        "papers about keyphrasename0",
+        "show me keyphrasename0 papers .",
+        "papers on keyphrasename0 experiments",
+        "keyphrasename0 papers",
+        "keyphrasename0 experiments",
+        "list papers that has keyword keyphrasename0",
+        "keyphrasename0 research papers",
+        "fetch me some papers on keyphrasename0",
+        "papers on keyphrasename0",
+        "which papers are about about keyphrasename0 ?",
+        "papers related to keyphrasename0",
+        "papers that mention keyphrasename0",
+        "keyphrasename0 publications",
+        "show me the papers on keyphrasename0",
+        "list papers that has a keyword keyphrasename0"
+      ]
+    },
+    {
+      "sentence": "papers written by authorname0 within the last misc0 years",
+      "paraphrases": [
+        "what has authorname0 published in the last misc0 years ?"
+      ]
+    },
+    {
+      "sentence": "recent papers written by authorname0",
+      "paraphrases": [
+        "recent papers by authorname0",
+        "recent research interests of authorname0"
+      ]
+    },
+    {
+      "sentence": "list papers by authorname0",
+      "paraphrases": [
+        "conference papers of authorname0",
+        "list of papers by authorname0"
+      ]
+    },
+    {
+      "sentence": "how many keyphrasename0 papers in venuename0 year0",
+      "paraphrases": [
+        "how many keyphrasename0 papers appeared in the proceeeding of venuename0 year0 ?",
+        "how many keyphrasename0 papers were published at venuename0 year0 ?"
+      ]
+    },
+    {
+      "sentence": "what papers has authorname0 written about keyphrasename0 ?",
+      "paraphrases": [
+        "papers by authorname0 about keyphrasename0",
+        "papers authorname0 wrote about keyphrasename0",
+        "what are the papers of authorname0 in keyphrasename0 ?",
+        "does authorname0 do keyphrasename0 ?",
+        "what papers has authorname0 written on keyphrasename0 ?",
+        "keyphrasename0 by authorname0",
+        "authorname0 keyphrasename0 paper",
+        "authorname0 's paper about keyphrasename0",
+        "papers by authorname0 in keyphrasename0 topic",
+        "keyphrasename0 paper by authorname0",
+        "what is the paper about keyphrasename0 from authorname0 ?",
+        "authorname0 's papers on keyphrasename0",
+        "keyphrasename0 papers by authorname0",
+        "i want the papers on keyphrasename0 by authorname0"
+      ]
+    },
+    {
+      "sentence": "papers published in year0 by authorname0",
+      "paraphrases": [
+        "papers by authorname0 from year0",
+        "what papers did authorname0 publish last year ?",
+        "authorname0 's papers in year0 ?",
+        "what did authorname0 published in year0 ?",
+        "authorname0 publication year0",
+        "papers from authorname0 in year0",
+        "papers written by authorname0 in year0",
+        "papers by authorname0 in year0",
+        "what are the papers of authorname0 in year0",
+        "what papers are published by authorname0 in year0",
+        "what has authorname0 done in the past year",
+        "what papers has authorname0 written in year0",
+        "papers authored by authorname0 in year0",
+        "authorname0 's papers in year0"
+      ]
+    },
+    {
+      "sentence": "keyphrasename0 papers in venuename0",
+      "paraphrases": [
+        "papers on keyphrasename0 venuename0",
+        "papers at venuename0 related to keyphrasename0",
+        "keyphrasename0 papers used in venuename0",
+        "list the papers on keyphrasename0 that were published in venuename0",
+        "what are the papers in venuename0 about keyphrasename0 ?",
+        "papers about keyphrasename0 published at venuename0",
+        "papers about keyphrasename0 in venuename0",
+        "what keyphrasename0 paper published in venuename0 ?"
+      ]
+    },
+    {
+      "sentence": "keyphrases used by authorname0 in year0",
+      "paraphrases": [
+        "keyphrases authorname0 used in papers written last year",
+        "what are keyphrases by authorname0 in year0 ?"
+      ]
+    },
+    {
+      "sentence": "papers using datasetname0 or datasetname1",
+      "paraphrases": [
+        "which papers use datasetname0 or datasetname1 ?",
+        "papers that use datasetname0 or datasetname1",
+        "papers about datasetname0 and datasetname1",
+        "papers using datasetname0 and datasetname1"
+      ]
+    },
+    {
+      "sentence": "journal articles by authorname0",
+      "paraphrases": [
+        "journal papers by authorname0"
+      ]
+    },
+    {
+      "sentence": "what was the best paper at venuename0 year0 ?",
+      "paraphrases": [
+        "best paper in venuename0 year0 ?"
+      ]
+    },
+    {
+      "sentence": "author published venuename0 year0",
+      "paraphrases": [
+        "authors of venuename0 year0 papers",
+        "who published at venuename0 year0 ?",
+        "list of authors in venuename0 year0",
+        "list of authors venuename0 year0",
+        "venuename0 year0 authors",
+        "who had papers at venuename0 year0 ?"
+      ]
+    },
+    {
+      "sentence": "how many papers use datasetname0 ?",
+      "paraphrases": [
+        "how many papers used datasetname0 dataset ?",
+        "how many papers are based on datasetname0",
+        "how many papers run experiments on datasetname0 ?",
+        "how many papers written on datasetname0 ?"
+      ]
+    },
+    {
+      "sentence": "how many papers has authorname0 cited ?",
+      "paraphrases": [
+        "how many papers did authorname0 cite ?",
+        "how many papers does authorname0 cite"
+      ]
+    },
+    {
+      "sentence": "is it true that authorname0 has more citations than authorname1 ?",
+      "paraphrases": [
+        "does authorname0 have more papers than authorname1 ?",
+        "has authorname0 or authorname1 published more papers ?",
+        "does authorname0 or authorname1 have more papers ?",
+        "who has more papers : authorname0 or authorname1 ?"
+      ]
+    },
+    {
+      "sentence": "keyphrasename0 datasets",
+      "paraphrases": [
+        "list datasets for keyphrasename0",
+        "datasets used for keyphrasename0",
+        "datasets with keyphrasename0",
+        "keyphrasename0 dataset",
+        "datasets in keyphrasename0 papers",
+        "datasets used by keyphrasename0 papers",
+        "large-scale datasets used in keyphrasename0",
+        "datasets with keyphrasename0 information",
+        "data sets for keyphrasename0",
+        "datasets for keyphrasename0",
+        "datasets in papers about keyphrasename0",
+        "datasets used for evaluating keyphrasename0"
+      ]
+    },
+    {
+      "sentence": "where does authorname0 publish ?",
+      "paraphrases": [
+        "in what venues does authorname0 publish ?"
+      ]
+    },
+    {
+      "sentence": "how many papers published in venuename0 year0 ?",
+      "paraphrases": [
+        "how many papers were accepted at venuename0 year0 ?",
+        "how many papers was published in venuename0 in year0",
+        "how many papers were at venuename0 year0 ?",
+        "how many papers accepted in venuename0 year0",
+        "how many papers on venuename0 in year0 ?",
+        "how many papers appeared at venuename0 last year",
+        "how many papers published in venuename0 in year0 ?",
+        "how many papers were published in venuename0 year0 conference ?",
+        "how many papers are presented in venuename0 year0 ?",
+        "how many papers in venuename0 year0",
+        "how many papers were published in venuename0 in year0 ?"
+      ]
+    },
+    {
+      "sentence": "what year was the first keyphrasename0 paper published ?",
+      "paraphrases": [
+        "what was the first keyphrasename0 paper ?"
+      ]
+    },
+    {
+      "sentence": "datasets mentioned at venuename0",
+      "paraphrases": [
+        "what datasets do papers at venuename0 use most ?"
+      ]
+    },
+    {
+      "sentence": "how many papers were written on keyphrasename0 in year0 ?",
+      "paraphrases": [
+        "how many papers were published on keyphrasename0 in year0 ?",
+        "how many papers were written on keyphrasename0 in the past year ?",
+        "how many papers on keyphrasename0 have been published in the past year ?",
+        "how many papers were written on the keyphrasename0 this year ?"
+      ]
+    },
+    {
+      "sentence": "when were most venuename0 papers published ?",
+      "paraphrases": [
+        "what year had the most venuename0 papers ?",
+        "which year had the most venuename0 papers ?",
+        "what year had the most number of venuename0 papers ?"
+      ]
+    },
+    {
+      "sentence": "who is a coauthor with authorname0 ?",
+      "paraphrases": [
+        "who are authorname0 's coauthors",
+        "who does authorname0 work with ?",
+        "who are all the co-authors of authorname0 ?",
+        "who writes papers with authorname0 ?",
+        "who does authorname0 author with ?",
+        "co-authors of authorname0",
+        "who does authorname0 collaborate with ?",
+        "authors who collaborated with authorname0",
+        "coauthors of authorname0",
+        "who has coauthored with authorname0 ?",
+        "who are authorname0 's co-authors",
+        "who are authorname0 's coauthors ?",
+        "author who wrote papers with authorname0"
+      ]
+    },
+    {
+      "sentence": "what datasets did authorname0 use ?",
+      "paraphrases": [
+        "datasets used in papers written by authorname0 ?",
+        "what datasets were used by authorname0 ?",
+        "what datasets did authorname0 use in his papers ?",
+        "datasets by authorname0",
+        "what datasets have authorname0 used",
+        "what datasets are used in papers by authorname0"
+      ]
+    },
+    {
+      "sentence": "keyphrasename0 in keyphrasename1 papers",
+      "paraphrases": [
+        "keyphrasename0 for keyphrasename1",
+        "keyphrasename1 for keyphrasename0",
+        "keyphrasename1 papers using keyphrasename0",
+        "what are some survey papers on keyphrasename0 problems in keyphrasename1 ?",
+        "is there a paper on keyphrasename0 and keyphrasename1 ?",
+        "find me paper on using keyphrasename0 for keyphrasename1",
+        "what is the paper of both keyphrasename0 and keyphrasename1 ?",
+        "has any paper tried keyphrasename0 for keyphrasename1 ?",
+        "are there keyphrasename0 papers that use keyphrasename1 ?"
+      ]
+    },
+    {
+      "sentence": "show me some recent papers on keyphrasename0 ?",
+      "paraphrases": [
+        "what are the latest publications on keyphrasename0 ?",
+        "recent keyphrasename0 papers",
+        "new keyphrasename0 papers",
+        "latest keyphrasename0 papers",
+        "what are recent papers on keyphrasename0 ?",
+        "newest keyphrasename0 papers",
+        "current research on keyphrasename0",
+        "what is the most recent paper of keyphrasename0 ?",
+        "most recent keyphrasename0 conference ?",
+        "what are some recent papers written in keyphrasename0 ?"
+      ]
+    },
+    {
+      "sentence": "what years did authorname0 publish papers in ?",
+      "paraphrases": [
+        "in what years did authorname0 publish a paper ?"
+      ]
+    },
+    {
+      "sentence": "number of papers by year from authorname0",
+      "paraphrases": [
+        "how many papers authorname0 published each year ?",
+        "how many papers does authorname0 publish each year ?"
+      ]
+    },
+    {
+      "sentence": "citations for authorname0",
+      "paraphrases": [
+        "papers citing authorname0",
+        "which papers cite authorname0 ?",
+        "what papers cite authorname0 ?"
+      ]
+    },
+    {
+      "sentence": "who published the most in keyphrasename0 after year0 ?",
+      "paraphrases": [
+        "who has the most papers in keyphrasename0 after year0 ?",
+        "who has written the most papers on keyphrasename0 since year0 ?"
+      ]
+    },
+    {
+      "sentence": "papers about keyphrasename0 from before year0",
+      "paraphrases": [
+        "keyphrasename0 papers before year0",
+        "keyphrasename0 papers earlier than year0",
+        "keyphrasename0 papers from before year0",
+        "papers before year0 about keyphrasename0"
+      ]
+    },
+    {
+      "sentence": "most cited papers on keyphrasename0",
+      "paraphrases": [
+        "what are the keyphrasename0 papers that have the most citations ?",
+        "most cited keyphrasename0 papers",
+        "paper on keyphrasename0 with most citations",
+        "keyphrasename0 top papers",
+        "keyphrasename0 papers with most citations",
+        "keyphrasename0 papers that have the most citations",
+        "what is the paper about keyphrasename0 of the most citation ?",
+        "list top papers for keyphrasename0",
+        "highly cited keyphrasename0 papers",
+        "most cited papers for keyphrasename0"
+      ]
+    },
+    {
+      "sentence": "what is authorname0 's most cited paper ?",
+      "paraphrases": [
+        "what is the highest cited paper by authorname0 ?",
+        "what paper by authorname0 has the most citation ?",
+        "what is the most cited paper by authorname0 ?",
+        "what is the most cited paper of authorname0 ?",
+        "what is authorname0 's highest cited paper ?"
+      ]
+    },
+    {
+      "sentence": "how many papers does authorname0 have in year0 ?",
+      "paraphrases": [
+        "how many papers did authorname0 publish in year0",
+        "how many papers did authorname0 publish in year0 ?"
+      ]
+    },
+    {
+      "sentence": "earliest paper published by authorname0",
+      "paraphrases": [
+        "earliest paper written by authorname0",
+        "which is the first paper by authorname0 ?",
+        "what was authorname0 's first publication ?",
+        "most recent papers of authorname0",
+        "which is the earliest paper by authorname0 ?"
+      ]
+    },
+    {
+      "sentence": "how many papers did authorname0 and authorname1 write together",
+      "paraphrases": [
+        "how many papers have authorname0 and authorname1 ?",
+        "how many papers do authorname0 and authorname1 have ?",
+        "how many papers have authorname0 and authorname1 written ?",
+        "how many papers by authorname0 and authorname1",
+        "how many papers authorname0 and authorname1 coauthored ?",
+        "how many papers did authorname0 co-authored with authorname1",
+        "how many papers has authorname0 and authorname1 written together ?"
+      ]
+    },
+    {
+      "sentence": "count of venuename0 papers by author",
+      "paraphrases": [
+        "how many venuename0 papers by author",
+        "number of venuename0 papers by author"
+      ]
+    },
+    {
+      "sentence": "who published papers in venuename0 year0",
+      "paraphrases": [
+        "who wrote the most papers for venuename0 year0",
+        "who wrote the most venuename0 papers in year0",
+        "most published author at venuename0 year0",
+        "who published the most papers in venuename0 year0",
+        "who published the most papers in year0 at venuename0 ?"
+      ]
+    },
+    {
+      "sentence": "number of papers published in venuename0 year0",
+      "paraphrases": [
+        "how many papers in venuename0 year0 ?"
+      ]
+    },
+    {
+      "sentence": "year0 papers",
+      "paraphrases": [
+        "papers from year0"
+      ]
+    },
+    {
+      "sentence": "does authorname0 publish in venuename0 ?",
+      "paraphrases": [
+        "what paper has authorname0 published in venuename0 journal ?",
+        "what has authorname0 published at venuename0 ?",
+        "what papers does authorname0 have in venuename0 ?",
+        "which paper did authorname0 present at venuename0 ?",
+        "what paper has authorname0 published in venuename0 ?",
+        "papers by authorname0 published at venuename0",
+        "what papers has authorname0 written at venuename0 ?"
+      ]
+    },
+    {
+      "sentence": "what is the paper with the most citation about keyphrasename0 ?",
+      "paraphrases": [
+        "fetch me the most cited publications for keyphrasename0"
+      ]
+    },
+    {
+      "sentence": "keywords shared by authorname0 and authorname1",
+      "paraphrases": [
+        "keyphrases used by authorname0 and authorname1"
+      ]
+    },
+    {
+      "sentence": "hot topics at venuename0 year0",
+      "paraphrases": [
+        "most popular topics at venuename0 year0",
+        "topics popular at venuename0 year0",
+        "which topics were most popular at venuename0 year0",
+        "most common topics at venuename0 year0",
+        "popular topics at venuename0 year0"
+      ]
+    },
+    {
+      "sentence": "papers that used datasetname0",
+      "paraphrases": [
+        "which papers used datasetname0 ?",
+        "papers that use datasetname0",
+        "papers using datasetname0",
+        "papers about datasetname0",
+        "papers that use the datasetname0 dataset",
+        "list the papers that used datasetname0 dataset",
+        "datasetname0 papers",
+        "papers on datasetname0"
+      ]
+    },
+    {
+      "sentence": "who is the most cited author at venuename0 ?",
+      "paraphrases": [
+        "how is the most cited author in venuename0 ?"
+      ]
+    },
+    {
+      "sentence": "are there any keyphrasename0 papers not written by authorname0 ?",
+      "paraphrases": [
+        "keyphrasename0 papers not written by authorname0",
+        "what are some keyphrasename0 papers that authorname0 did not write ?",
+        "what are keyphrasename0 papers not written by authorname0"
+      ]
+    },
+    {
+      "sentence": "who writes about keyphrasename0 for keyphrasename1",
+      "paraphrases": [
+        "keyphrasename1 authors using keyphrasename0",
+        "who works on keyphrasename0 for keyphrasename1",
+        "who publishes in keyphrasename0 for keyphrasename1",
+        "authors in keyphrasename0 for keyphrasename1"
+      ]
+    },
+    {
+      "sentence": "when was authorname0 's first paper written ?",
+      "paraphrases": [
+        "when was authorname0 's first publication ?"
+      ]
+    },
+    {
+      "sentence": "who cites authorname0 the most",
+      "paraphrases": [
+        "who cites authorname0 most ?"
+      ]
+    },
+    {
+      "sentence": "how many papers are in venuename0 ?",
+      "paraphrases": [
+        "number of papers in venuename0 conference",
+        "how many papers does venuename0 have ?",
+        "how many papers are published in venuename0 ?"
+      ]
+    },
+    {
+      "sentence": "what venuename0 papers have less than misc0 citations ?",
+      "paraphrases": [
+        "venuename0 papers with less than misc0 citations",
+        "what papers have fewer than misc0 citations by venuename0 papers ?",
+        "what papers have fewer than misc0 citations by venuename0 papers"
+      ]
+    },
+    {
+      "sentence": "papers from venuename0 year0 ?",
+      "paraphrases": [
+        "papers from venuename0 year0",
+        "what papers were published during the conference venuename0 year0 ?",
+        "what papers are published in venuename0 year0",
+        "what were the papers published at venuename0 year0 ?",
+        "venuename0 best paper award year0",
+        "venuename0 papers in year0",
+        "what are the papers from venuename0 year0 ?",
+        "which papers were accepted in venuename0 year0 ?",
+        "papers in venuename0 year0",
+        "list of papers in venuename0 year0",
+        "papers from venuename0 year0 conference",
+        "venuename0 papers year0",
+        "venuename0 year0 list of papers",
+        "papers published at venuename0 year0",
+        "venuename0 year0 conference"
+      ]
+    },
+    {
+      "sentence": "list the journals published in march , year0",
+      "paraphrases": [
+        "list today 's journals"
+      ]
+    },
+    {
+      "sentence": "who publishes papers about keyphrasename0",
+      "paraphrases": [
+        "who publishes in keyphrasename0 ?",
+        "authors of papers on keyphrasename0",
+        "people working on keyphrasename0",
+        "who wrote keyphrasename0 ?"
+      ]
+    },
+    {
+      "sentence": "how many of authorname1 's papers cite authorname0",
+      "paraphrases": [
+        "how many papers by authorname1 are cited by authorname0"
+      ]
+    },
+    {
+      "sentence": "what conference does authorname0 publish the most in",
+      "paraphrases": [
+        "what conferences does authorname0 publish in the most ?",
+        "what venue does authorname0 publish the most in"
+      ]
+    },
+    {
+      "sentence": "since year0 who has published works about keyphrasename0 and keyphrasename1 ?",
+      "paraphrases": [
+        "since year0 who has published works about keyphrasename0 ( inflammatory bowel disease ) and keyphrasename1 ?"
+      ]
+    },
+    {
+      "sentence": "which paper first used keyphrasename1 for keyphrasename0 ?",
+      "paraphrases": [
+        "what is the earliest keyphrasename1 paper for keyphrasename0 ?",
+        "which keyphrasename0 papers first used keyphrasename1 ?",
+        "earliest keyphrasename0 paper with keyphrasename1"
+      ]
+    },
+    {
+      "sentence": "what journals are authorname0 's articles published in ?",
+      "paraphrases": [
+        "in what scholarly journals does authorname0 publish ?",
+        "what journals has authorname0 published in ?"
+      ]
+    },
+    {
+      "sentence": "what authors wrote papers about keyphrasename0 in year0 ?",
+      "paraphrases": [
+        "who wrote on the topic of keyphrasename0 in year0 ?"
+      ]
+    },
+    {
+      "sentence": "keyphrasename0 year0 papers",
+      "paraphrases": [
+        "what papers were written on keyphrasename0 in year0 ?"
+      ]
+    },
+    {
+      "sentence": "who published in venuename0 or venuename1 ?",
+      "paraphrases": [
+        "who writes for venuename0 or venuename1 ?",
+        "who publishes in venuename0 or venuename1 ?"
+      ]
+    },
+    {
+      "sentence": "list the journals related to keyphrasename0",
+      "paraphrases": [
+        "find journals about keyphrasename0 ."
+      ]
+    },
+    {
+      "sentence": "papers about keyphrasename0 that used datasetname0 and were published at venuename0 year0",
+      "paraphrases": [
+        "keyphrasename0 papers using datasetname0 published at venuename0 year0",
+        "keyphrasename0 papers from venuename0 year0 using datasetname0",
+        "keyphrasename0 papers from venuename0 year0 that used datasetname0",
+        "which venuename0 year0 papers about keyphrasename0 used datasetname0 ?"
+      ]
+    },
+    {
+      "sentence": "which journals did authorname0 submit papers to ?",
+      "paraphrases": [
+        "in what journals does authorname0 publish ?"
+      ]
+    },
+    {
+      "sentence": "who publishes in venuename0 ?",
+      "paraphrases": [
+        "venuename0 authors",
+        "who are the authors at venuename0 ?",
+        "who authored papers at venuename0 ?",
+        "who has papers at venuename0 ?"
+      ]
+    },
+    {
+      "sentence": "how many publications were added to the journalname0 journal this year ?",
+      "paraphrases": [
+        "how many articles were published in the journalname0 journal in year0 ?"
+      ]
+    },
+    {
+      "sentence": "papers of authorname0 in venuename0 year0",
+      "paraphrases": [
+        "papers published in venuename0 year0 by authorname0",
+        "does authorname0 have a paper in venuename0 in year0 ?"
+      ]
+    },
+    {
+      "sentence": "who has published more papers in venuename0 ?",
+      "paraphrases": [
+        "who has written the most papers at venuename0 ?",
+        "how is the most prolific author in venuename0 ?",
+        "who published the most at venuename0"
+      ]
+    },
+    {
+      "sentence": "what year did authorname0 publish the most papers",
+      "paraphrases": [
+        "in what year did authorname0 publish the most papers"
+      ]
+    },
+    {
+      "sentence": "when was the first keyphrasename0 paper published ?",
+      "paraphrases": [
+        "what was the first paper on keyphrasename0 written ?",
+        "when was keyphrasename0 proposed ?",
+        "first keyphrasename0 paper"
+      ]
+    },
+    {
+      "sentence": "what papers do keyphrasename0 papers typically cite ?",
+      "paraphrases": [
+        "papers typically cited by keyphrasename0 papers"
+      ]
+    },
+    {
+      "sentence": "what was the conference name that approved keyphrasename0 ?",
+      "paraphrases": [
+        "venue for keyphrasename0",
+        "conferences for keyphrasename0",
+        "what conferences are related to keyphrasename0"
+      ]
+    },
+    {
+      "sentence": "which authors published papers in year0 ?",
+      "paraphrases": [
+        "who wrote papers in year0"
+      ]
+    },
+    {
+      "sentence": "main topics of work by authorname0",
+      "paraphrases": [
+        "what keyphrase does authorname0 write about that gets most citations ?"
+      ]
+    },
+    {
+      "sentence": "when does authorname0 publish the keyphrasename0 paper ?",
+      "paraphrases": [
+        "when did authorname0 publish his keyphrasename0 paper ?",
+        "when was authorname0 keyphrasename0 published ?"
+      ]
+    },
+    {
+      "sentence": "who writes for venuename0 and venuename1",
+      "paraphrases": [
+        "who has published both in venuename0 and venuename1 ?"
+      ]
+    },
+    {
+      "sentence": "the papers at venuename0 in year0 using datasetname0 dataset",
+      "paraphrases": [
+        "which papers in venuename0 year0 use datasetname0 ?",
+        "venuename0 year0 papers using datasetname0"
+      ]
+    },
+    {
+      "sentence": "papers cited by at least misc0 papers",
+      "paraphrases": [
+        "papers with at least misc0 citations"
+      ]
+    }
+  ]
+}

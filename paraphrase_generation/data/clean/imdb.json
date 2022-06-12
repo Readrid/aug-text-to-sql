@@ -1,0 +1,153 @@
+{
+  "data": [
+    {
+      "sentence": "what year is the movie movie_title0 from ?",
+      "paraphrases": [
+        "what year was the movie movie_title0 produced"
+      ]
+    },
+    {
+      "sentence": "what year was actor_name0 born ?",
+      "paraphrases": [
+        "in what year was actor_name0 born"
+      ]
+    },
+    {
+      "sentence": "what is the nationality of the actress actor_name0 ?",
+      "paraphrases": [
+        "what is the nationality of the actor actor_name0 ?"
+      ]
+    },
+    {
+      "sentence": "find all actors born in actor_birth_city0",
+      "paraphrases": [
+        "which actors were born in actor_birth_city0"
+      ]
+    },
+    {
+      "sentence": "find all actors who are from actor_nationality0",
+      "paraphrases": [
+        "give me the name of all the actors from actor_nationality0",
+        "find all actors from actor_nationality0"
+      ]
+    },
+    {
+      "sentence": "when was writer_name0 born ?",
+      "paraphrases": [
+        "in what year was writer_name0 born ?"
+      ]
+    },
+    {
+      "sentence": "where is the birth place of writer_name0",
+      "paraphrases": [
+        "in what city was writer_name0 born ?"
+      ]
+    },
+    {
+      "sentence": "who is the director of the movie movie_title0 ?",
+      "paraphrases": [
+        "list movie_title0 directors",
+        "who directed the movie movie_title0 ?"
+      ]
+    },
+    {
+      "sentence": "find the actor who played cast_role0 in the movie movie_title0",
+      "paraphrases": [
+        "who acts as cast_role0 in the movie movie_title0 ?",
+        "who was the actor that played cast_role0 in the movie movie_title0 ?",
+        "who is the actor playing cast_role0 in movie_title0 ?",
+        "who acted cast_role0 in the movie movie_title0 ?"
+      ]
+    },
+    {
+      "sentence": "find all movies featuring actor_name0",
+      "paraphrases": [
+        "what are all the movies featuring actor_name0 ?",
+        "find all movies in which actor_name0 appears"
+      ]
+    },
+    {
+      "sentence": "find all genre0 produced in year movie_release_year0",
+      "paraphrases": [
+        "list all the genre0 movies which released in movie_release_year0"
+      ]
+    },
+    {
+      "sentence": "find all actors born in actor_birth_city0 after actor_birth_year0",
+      "paraphrases": [
+        "who are the actors born in actor_birth_city0 after actor_birth_year0 ?",
+        "find all actors from actor_birth_city0 born after actor_birth_year0"
+      ]
+    },
+    {
+      "sentence": "find all movies that were produced by company_name0",
+      "paraphrases": [
+        "find all movies produced by company_name0"
+      ]
+    },
+    {
+      "sentence": "find all movies about keyword0",
+      "paraphrases": [
+        "what are the movies related to keyword0"
+      ]
+    },
+    {
+      "sentence": "find all movies directed by director_name0 and featuring actor_name0",
+      "paraphrases": [
+        "what are all the movies directed by director_name0 featuring actor_name0 ?",
+        "how many movies are there that are directed by director_name0 and featuring actor_name0 ?",
+        "list all the movies directed by director_name0 in which actor_name0 played"
+      ]
+    },
+    {
+      "sentence": "who is the writer of the movie movie_title0",
+      "paraphrases": [
+        "who is the writer of movie_title0"
+      ]
+    },
+    {
+      "sentence": "what are the series featuring actor_name0 ?",
+      "paraphrases": [
+        "what are the series in which actor_name0 is an actor ?"
+      ]
+    },
+    {
+      "sentence": "what company produced the series tv_series_title0 ?",
+      "paraphrases": [
+        "which company funded the tv_series_title0 series"
+      ]
+    },
+    {
+      "sentence": "what is the number of actors in the movie movie_title0 ?",
+      "paraphrases": [
+        "how many actors are in the movie movie_title0 ?"
+      ]
+    },
+    {
+      "sentence": "how many movies did director_name0 direct ?",
+      "paraphrases": []
+    },
+    {
+      "sentence": "how many movies were produced in the year movie_release_year0 ?",
+      "paraphrases": [
+        "what is the number of movies produced in movie_release_year0 ?"
+      ]
+    },
+    {
+      "sentence": "how many movies did actor_name0 act in ?",
+      "paraphrases": [
+        "how many movies did actor_name0 act in",
+        "what is the number of movies in which actor_name0 acted ?",
+        "what is the number of movies featuring actor_name0 ?"
+      ]
+    },
+    {
+      "sentence": "find all movies that star both actor_name0 and actor_name1",
+      "paraphrases": [
+        "find all movies featuring actor_name0 and actor_name1",
+        "find all movies featuring actor_name1 and actor_name0",
+        "find all movies featuring both actor_name0 and actor_name1"
+      ]
+    }
+  ]
+}
