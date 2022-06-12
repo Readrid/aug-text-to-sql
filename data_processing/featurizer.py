@@ -3,6 +3,7 @@ from typing import Optional, Tuple, Union, List, Dict
 import numpy as np
 import pandas as pd
 import sqlparse
+import torch
 from transformers import AutoTokenizer
 
 from data_processing.input_examples import InputExample, SQLQuery
@@ -56,6 +57,10 @@ class SQLFeaturizer(object):
                 model_inputs["op"].extend(example.op)
                 model_inputs["value_start"].extend(example.value_start)
                 model_inputs["value_end"].extend(example.value_end)
+
+        model_inputs["input_ids"] = torch.LongTensor(model_inputs["input_ids"])
+        model_inputs["attention_mask"] = torch.LongTensor(model_inputs["attention_mask"])
+        model_inputs["token_type_ids"] = torch.LongTensor(model_inputs["token_type_ids"])
 
         return model_inputs
 
