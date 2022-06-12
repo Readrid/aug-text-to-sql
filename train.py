@@ -38,6 +38,7 @@ def main():
     model = RegSQLNet(**config.regsql_cnf)
     trainer = Text2SQLTrainer(model=model, train_dataset=train_dataset, eval_dataset=eval_dataset, **config.train_cnf)
     trainer.train()
+    trainer.eval(test_dataset)
 
 
 if __name__ == "__main__":
