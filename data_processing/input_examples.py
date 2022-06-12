@@ -58,6 +58,7 @@ class InputExample(object):
         self.question = question
 
         self.cand_cols = sql_query.cand_cols
+        self.tables = sql_query.tables
 
         self.select = [0] * sql_query.cand_num
         self.where = [0] * sql_query.cand_num

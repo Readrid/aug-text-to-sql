@@ -1,6 +1,4 @@
-from typing import Dict
-
-from tqdm import tqdm
+from typing import Dict, List
 
 from evaluation.canonicalization import make_canonical
 
@@ -37,56 +35,34 @@ def preprocess_data(data):
     return processed_data
 
 
-def get_sql(data: Dict):
-    sql = {
-        "train": [],
-        "dev": [],
-        "test": [],
-    }
+def get_sql(data: List):
+    sql = []
 
-    for (key, value) in data.items():
+    for value in data:
         for (variable_set, sql_query) in zip(value["variables"], value["sql"]):
-            sql[key].append(subtle_sql(sql_query, variable_set))
+            sql.append(subtle_sql(sql_query, variable_set))
 
     return sql
 
 
-def get_sql_substitution(data: Dict):
-    sql = {
-        "train": [],
-        "dev": [],
-        "test": [],
-    }
+def get_sql_substitution(data: List):
+    sql = []
 
-    for (key, value) in data.items():
+    for value in data:
         for (variable_set, sql_query) in zip(value["variables"], value["sql"]):
-            sql[key].append(subtle_sql(make_canonical(sql_query, variable_set), variable_set))
+            sql.append(subtle_sql(make_canonical(sql_query, variable_set), variable_set))
 
     return sql
 
 
-def substitute_variables(variables: Dict, queries: Dict):
-    sql = {
-        "train": [],
-        "dev": [],
-        "test": [],
-    }
+def substitute_variables(variables: List, queries: List):
+    sql = []
 
-    for (key, variables, _, queries) in zip(variables.items(), queries.items()):
-        for (variable_set, sql_query) in zip(variables, queries):
-            sql[key].append(subtle_sql(make_canonical(sql_query, variable_set), variable_set))
+    for (variable_set, query) in zip(variables, queries):
+        sql.extend(subtle_sql(make_canonical(query["sql"][0], variable_set), variable_set))
 
     return sql
 
 
-def get_variables(data: Dict):
-    variables = {
-        "train": [],
-        "dev": [],
-        "test": [],
-    }
-
-    for (key, value) in data.items():
-        variables[key] = value["variables"]
-
-    return variables
+def get_variables(data: list):
+    return list(map(lambda elem: elem["variables"], data))

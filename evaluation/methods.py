@@ -14,6 +14,4 @@ def execution_accuracy(db_connector: AbstractDbConnector, pred_queries, real_que
 
 
 def logical_form_accuracy(pred_queries, real_queries):
-    return sum(map(lambda pred_query, real_query: pred_query == real_query, zip(pred_queries, real_queries))) / len(
-        pred_queries
-    )
+    return sum(map(lambda queries: queries[0] == queries[1], zip(pred_queries, real_queries))) / len(pred_queries)
