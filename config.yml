@@ -1,0 +1,7 @@
+dataset:
+  json_data: ./data/yelp/yelp.json
+  csv_data: ./data/yelp/yelp-schema.csv
+
+max_len: 256
+batch_size: 16
+
