@@ -11,7 +11,7 @@ class RegSQLNet(nn.Module):
         agg_num: int = 6,
         op_num: int = 4,
         drop_rate: float = 0.2,
-        start_end_hidden_size = 64,
+        start_end_hidden_size=64,
     ):
         super().__init__()
         self.base_model = BertModel.from_pretrained(pretrained_bert_model)
@@ -29,17 +29,12 @@ class RegSQLNet(nn.Module):
         self.select_num = nn.Linear(bert_hid_size, max_select_num + 1)
 
         self.start = nn.Sequential(
-            nn.Linear(bert_hid_size, start_end_hidden_size),
-            nn.ReLU(),
-            nn.Linear(start_end_hidden_size, 1)
+            nn.Linear(bert_hid_size, start_end_hidden_size), nn.ReLU(), nn.Linear(start_end_hidden_size, 1)
         )
 
         self.end = nn.Sequential(
-            nn.Linear(bert_hid_size, start_end_hidden_size),
-            nn.ReLU(),
-            nn.Linear(start_end_hidden_size, 1)
+            nn.Linear(bert_hid_size, start_end_hidden_size), nn.ReLU(), nn.Linear(start_end_hidden_size, 1)
         )
-
 
     def forward(
         self,

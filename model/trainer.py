@@ -53,29 +53,46 @@ class Text2SQLTrainer(object):
         self.optimizer.zero_grad()
 
     def train(self):
+        if self.verbose:
+            print("START TRAINING")
         train_dataloader = DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=True)
         train_loop = tqdm(train_dataloader) if self.verbose else train_dataloader
         for epoch in range(self.epochs):
             cur_loss = None
             step = 0
             for batch in train_loop:
+                self.__to_device(batch)
+
                 self.model.train()
                 loss = self.model(**batch)["loss"]
                 loss = torch.mean(loss)
                 loss.backward()
+
                 torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1.0)
+
                 self.optimizer.step()
                 self.scheduler.step()
                 self.optimizer.zero_grad()
+
                 step += 1
                 cur_loss = loss.cpu().detach().numpy()
-
-                if step % 100 == 0:
+                if step % 100 == 0 and self.verbose:
                     print(f"Epoch: {epoch}, loss: {cur_loss}")
 
             print(f"Epoch: {epoch}, loss: {cur_loss}")
-            self.eval()
+            if self.eval_dataset is not None:
+                self.eval()
 
-    def eval(self):
+        if self.verbose:
+            print("TRAIN SUCCESS")
+
+    def eval(self, test_dataset=None):
+        if test_dataset is None:
+            test_dataset = self.eval_dataset
         # TODO
         pass
+
+    def __to_device(self, data):
+        data["input_ids"].to(self.device)
+        data["attention_mask"].to(self.device)
+        data["token_type_ids"].to(self.device)

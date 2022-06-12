@@ -8,7 +8,7 @@ max_len: 256
 regsql_cnf:
   pretrained_bert_model: bert-base-uncased
   max_select_num: 5
-  max_where_num: 6
+  max_where_num: 10
   op_num: 6
   agg_num: 6
   drop_rate: 0.2
