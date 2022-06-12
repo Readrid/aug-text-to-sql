@@ -28,13 +28,13 @@ class RegSQLNet(nn.Module):
         self.where_num = nn.Linear(bert_hid_size, max_where_num + 1)
         self.select_num = nn.Linear(bert_hid_size, max_select_num + 1)
 
-        self.start = nn.Sequential(
-            nn.Linear(bert_hid_size, start_end_hidden_size), nn.ReLU(), nn.Linear(start_end_hidden_size, 1)
-        )
+        # self.start = nn.Sequential(
+        #    nn.Linear(bert_hid_size, start_end_hidden_size), nn.ReLU(), nn.Linear(start_end_hidden_size, 1)
+        # )
 
-        self.end = nn.Sequential(
-            nn.Linear(bert_hid_size, start_end_hidden_size), nn.ReLU(), nn.Linear(start_end_hidden_size, 1)
-        )
+        # self.end = nn.Sequential(
+        #    nn.Linear(bert_hid_size, start_end_hidden_size), nn.ReLU(), nn.Linear(start_end_hidden_size, 1)
+        # )
 
     def forward(
         self,
@@ -54,7 +54,7 @@ class RegSQLNet(nn.Module):
             input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids, return_dict=False
         )
 
-        bert_output = self.dropout(bert_output)
+        # bert_output = self.dropout(bert_output)
         pooled_output = self.dropout(pooled_output)
 
         column_func_logit = self.column_func(pooled_output)
@@ -63,8 +63,8 @@ class RegSQLNet(nn.Module):
         where_num_logit = self.where_num(pooled_output)
         select_num_logit = self.select_num(pooled_output)
 
-        start_pred = self.start(bert_output)
-        end_pred = self.end(bert_output)
+        # start_pred = self.start(bert_output)
+        # end_pred = self.end(bert_output)
 
         loss = None
         if select is not None:
@@ -82,8 +82,9 @@ class RegSQLNet(nn.Module):
             loss += cross_entropy(select_num_logit, select_num)
             loss += cross_entropy(op_logit, op) * where.float()
 
-            loss += l1loss(start_pred, value_start)
-            loss += l1loss(end_pred, value_end)
+            # print(loss.shape)
+            # loss += l1loss(start_pred, value_start)
+            # loss += l1loss(end_pred, value_end)
 
         log_sigmoid = nn.LogSigmoid()
 
@@ -93,7 +94,7 @@ class RegSQLNet(nn.Module):
             "op": op_logit.log_softmax(1),
             "where_num": where_num_logit.log_softmax(1),  # P(n_w | c_i, q)
             "select_num": select_num_logit.log_softmax(1),  # P(n_s | c_i, q)
-            "value_start": start_pred,
-            "value_end": end_pred,
+            # "value_start": start_pred,
+            # "value_end": end_pred,
             "loss": loss,
         }

@@ -1,6 +1,5 @@
 import torch
 
-
 from torch.utils.data import DataLoader, Dataset
 from transformers import AdamW, get_cosine_schedule_with_warmup
 
@@ -29,7 +28,7 @@ class Text2SQLTrainer(object):
         self.batch_size = batch_size
         self.epochs = epochs
         self.verbose = verbose
-        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_parameters = [
@@ -55,6 +54,7 @@ class Text2SQLTrainer(object):
     def train(self):
         if self.verbose:
             print("START TRAINING")
+
         train_dataloader = DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=True)
         train_loop = tqdm(train_dataloader) if self.verbose else train_dataloader
         for epoch in range(self.epochs):
