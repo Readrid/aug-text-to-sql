@@ -7,14 +7,14 @@ from tqdm import tqdm
 from database_connection.abstract_connector import AbstractDbConnector
 from evaluation.methods import execution_accuracy, logical_form_accuracy
 from evaluation.preprocess import get_sql, get_sql_substitution, get_variables, substitute_variables
-from model import HydraNet
-from model.hydra import SQLDataset
+from model import RegSQLNet
+from model.regsqlnet import SQLDataset
 
 
 class Evaluator:
     def __init__(
         self,
-        model: HydraNet,
+        model: RegSQLNet,
         dataset: SQLDataset,
         raw_data: Dict,
         db_connector: AbstractDbConnector,
@@ -28,10 +28,10 @@ class Evaluator:
         self.model.eval()
         outputs = {}
 
-        for start_idx in range(0, inputs["input_ids"].shape[0], HydraNet.BATCH_SIZE):
+        for start_idx in range(0, inputs["input_ids"].shape[0], RegSQLNet.BATCH_SIZE):
             input_tensor = {
-                key: torch.from_numpy(inputs[key][start_idx : start_idx + HydraNet.BATCH_SIZE]).to(self.model.device)
-                for key in HydraNet.MODEL_INPUT_KEYS
+                key: torch.from_numpy(inputs[key][start_idx : start_idx + RegSQLNet.BATCH_SIZE]).to(self.model.device)
+                for key in RegSQLNet.MODEL_INPUT_KEYS
             }
 
             with torch.no_grad():

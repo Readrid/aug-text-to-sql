@@ -7,13 +7,13 @@ from transformers import AdamW, get_cosine_schedule_with_warmup
 from tqdm import tqdm
 
 from data_processing import SQLDataset
-from model.hydra import HydraNet
+from model.regsqlnet import RegSQLNet
 
 
 class Text2SQLTrainer(object):
     def __init__(
         self,
-        model: HydraNet,
+        model: RegSQLNet,
         train_dataset: SQLDataset,
         eval_dataset: Dataset = None,
         batch_size: int = 16,

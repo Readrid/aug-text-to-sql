@@ -1,1 +1,1 @@
-from model.hydra import HydraNet
+from model.regsqlnet import RegSQLNet
