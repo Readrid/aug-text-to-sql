@@ -1,10 +1,8 @@
 from typing import List
 
-import numpy as np
 from torch.utils.data import Dataset
 
-from featurizer import SQLFeaturizer
-from utils import concat
+from data_processing.featurizer import SQLFeaturizer
 
 
 class SQLDataset(Dataset):
@@ -12,19 +10,10 @@ class SQLDataset(Dataset):
 
         formatted_queries = featurizer.process_sql_queries(sql_queries)
         input_examples = featurizer.get_input_examples(sentences, formatted_queries)
-
-        candidate_cols = [concat([row.type, row.table_name, row.col_name]) for i, row in featurizer.schema.iterrows()]
-
-        self.size = len(candidate_cols) * len(input_examples)
-        questions = np.repeat([ex.question for ex in input_examples], len(candidate_cols))
-
-        self.encodings = featurizer.tokenizer(candidate_cols * len(input_examples), questions,
-                                                   return_tensors="pt", max_length=max_len,
-                                                   truncation=True, padding="max_length")
+        self.model_inputs = featurizer.get_model_input(input_examples)
 
     def __getitem__(self, index):
-        return {key: val[index] for key, val in self.encodings.items()}
+        return {key: val[index] for key, val in self.model_inputs.items()}
 
     def __len__(self):
-        return len(self.encoding.input_ids)
-
+        return len(self.model_inputs["input_ids"])

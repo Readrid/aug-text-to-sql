@@ -1,51 +1,71 @@
-import pandas as pd
-
 from typing import Optional, Tuple, Union, List, Dict
 
+import numpy as np
+import pandas as pd
 import sqlparse
 from transformers import AutoTokenizer
 
-from utils import concat
+from data_processing.input_examples import InputExample, SQLQuery
+from data_processing.utils import concat, type2canon
 
-from input_examples import InputExample, SQLQuery
-
-QueryRepresentation = Dict[str, Union[List[Tuple[int, int]], List[Tuple[int, int, Union[float, int, str]]]]]
+QueryRepresentation = Dict[str, Union[List[Tuple[int, int]], List[Tuple[int, int, Union[float, int, str]]], List[str]]]
 
 
 class SQLFeaturizer(object):
     agg_ops = ["", "max", "min", "count", "sum", "avg"]
     cond_ops = ["=", ">", "<", ">=", "<=", "OP"]
 
-    def __init__(self, schema: pd.DataFrame):
+    def __init__(self, schema: pd.DataFrame, max_len: int):
 
         self.tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
         self.schema = schema
+        self.max_len = max_len
 
         self.col2id = dict()
         self.col2type = dict()
         for i, row in self.schema.iterrows():
-            self.col2id[concat([SQLFeaturizer.__type2canon(row.Type), row.TableName, row.FieldName])] = i
-            self.col2type[concat([row.TableName, row.FieldName])] = SQLFeaturizer.__type2canon(row.Type)
+            self.col2id[concat([type2canon(row.type), row.table_name, row.col_name])] = i
+            self.col2type[concat([row.table_name, row.col_name])] = type2canon(row.type)
         self.agg2id = lambda x: self.agg_ops.index(x)
         self.cond_ops2id = lambda x: self.cond_ops.index(x)
 
-    def get_input_examples(self, questions: List[str], sql_queries: List[QueryRepresentation]) -> List[InputExample]:
-        result = []
-        for question, query in zip(questions, sql_queries):
-            result.append(InputExample(question, SQLQuery(**query, schema=self.schema)))
-        return result
+    def get_model_input(self, examples: List[InputExample], include_labels=True):
+        model_inputs = {key: [] for key in ["input_ids", "attention_mask", "token_type_ids"]}
+        if include_labels:
+            for k in ["agg", "select", "select_num", "where_num", "where", "op", "value_start", "value_end"]:
+                model_inputs[k] = []
 
-    def process_sql_queries(self, sql_queries: List[str]) -> List[QueryRepresentation]:
-        result = []
-        for i, sql_q in enumerate(sql_queries):
-            sel, conds = self.__process_sql_query(sql_q)
-            result.append({"sel": sel, "conds": conds})
+        for example in examples:
+            tokenized = self.tokenizer(
+                np.repeat(example.question, len(example.cand_cols)).tolist(),
+                example.cand_cols,
+                max_length=self.max_len,
+                truncation=True,
+                padding="max_length",
+            )
+            model_inputs["input_ids"].extend(tokenized["input_ids"])
+            model_inputs["attention_mask"].extend(tokenized["attention_mask"])
+            model_inputs["token_type_ids"].extend(tokenized["token_type_ids"])
 
-        return result
+            if include_labels:
+                model_inputs["agg"].extend(example.agg)
+                model_inputs["select"].extend(example.select)
+                model_inputs["select_num"].extend(example.select_num)
+                model_inputs["where_num"].extend(example.where_num)
+                model_inputs["where"].extend(example.where)
+                model_inputs["op"].extend(example.op)
+                model_inputs["value_start"].extend(example.value_start)
+                model_inputs["value_end"].extend(example.value_end)
 
-    def __process_sql_query(
-        self, sql_example: str, debug=False
-    ) -> Tuple[List[Tuple[int, int]], List[Tuple[int, int, Union[float, int, str]]]]:
+        return model_inputs
+
+    def get_input_examples(self, questions: List[str], sql_queries: List[SQLQuery]) -> List[InputExample]:
+        return [InputExample(question, query) for question, query in zip(questions, sql_queries)]
+
+    def process_sql_queries(self, sql_queries: List[str]) -> List[SQLQuery]:
+        return [self.__process_sql_query(sql_q) for sql_q in sql_queries]
+
+    def __process_sql_query(self, sql_example: str, debug=False) -> SQLQuery:
         sql_example = sql_example.replace(" ,", ",")
         if debug:
             print(sql_example)
@@ -71,6 +91,7 @@ class SQLFeaturizer(object):
         mode = None
         sel = []
         conds = []
+        tables = set()
 
         for line in formatted_sql:
             if line.startswith("GROUP BY") or line.startswith("ORDER BY") or line.startswith("HAVING"):
@@ -80,10 +101,12 @@ class SQLFeaturizer(object):
                 conds.append(self.__process_cond(line))
             elif mode == "FROM" or line.startswith("FROM"):
                 mode = "FROM"
+                tables.add(self.__process_from(line))
             elif mode == "SELECT" or line.startswith("SELECT"):
                 mode = "SELECT"
                 sel.append(self.__process_select_line(line))
-        return sel, conds
+
+        return SQLQuery(sel, conds, list(tables), self.schema, self.col2id)
 
     def __process_select_line(self, line: str) -> Tuple[int, Optional[int]]:
         column = line[7:]
@@ -123,13 +146,14 @@ class SQLFeaturizer(object):
 
         return (col_id, op_id, val)
 
+    def __process_from(self, line: str) -> str:
+        table_with_alias = line[5:]
+        table_name = table_with_alias.split(" AS ")[0]
+        return table_name.lower()
+
     def __parse_col_info(self, column: str) -> int:
         column = column.split(".")
         table_name = column[0].split("alias")[0]
         column_name = column[1]
         type_name = self.col2type[concat([table_name, column_name])]
         return concat([type_name, table_name, column_name])
-
-    @staticmethod
-    def __type2canon(type_name):
-        return type_name.split("(")[0]

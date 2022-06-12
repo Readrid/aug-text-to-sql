@@ -1,1 +1,2 @@
+from data_processing.featurizer import SQLFeaturizer
 from data_processing.sql_dataset import SQLDataset

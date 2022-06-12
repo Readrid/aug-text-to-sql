@@ -1,3 +1,4 @@
+import json
 from typing import Dict, List, Tuple
 
 # TODO: merge with evaluation
@@ -160,3 +161,9 @@ def concat(info):
 
 def type2canon(type_name):
     return type_name.split("(")[0]
+
+
+def load_json(file_name: str):
+    with open(file_name, "r") as f:
+        dirty_json_data = json.load(f)
+    return dirty_json_data
