@@ -1,5 +1,4 @@
 import pandas as pd
-from torch.utils.data import DataLoader
 from omegaconf import OmegaConf
 
 from data_processing import SQLFeaturizer, SQLDataset
@@ -24,25 +23,21 @@ def main():
         train_dev_test_split["train"]["sentences"],
         train_dev_test_split_queries["train"],
         featurizer,
-        max_len=config.max_len,
     )
     eval_dataset = SQLDataset(
         train_dev_test_split["dev"]["sentences"],
         train_dev_test_split_queries["dev"],
         featurizer,
-        max_len=config.max_len,
     )
     test_dataset = SQLDataset(
         train_dev_test_split["test"]["sentences"],
         train_dev_test_split_queries["test"],
         featurizer,
-        max_len=config.max_len,
     )
 
     model = RegSQLNet(**config.regsql_cnf)
     trainer = Text2SQLTrainer(model=model, train_dataset=train_dataset, eval_dataset=eval_dataset, **config.train_cnf)
     trainer.train()
-    trainer.eval(test_dataset)
 
 
 if __name__ == "__main__":

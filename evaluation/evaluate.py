@@ -4,38 +4,32 @@ import numpy as np
 import torch
 from tqdm import tqdm
 
+from data_processing import SQLDataset, SQLFeaturizer
 from database_connection.abstract_connector import AbstractDbConnector
-from evaluation.methods import execution_accuracy, logical_form_accuracy
-from evaluation.preprocess import get_sql, get_sql_substitution, get_variables, substitute_variables
+from evaluation.methods import logical_form_accuracy
 from model import RegSQLNet
-from model.regsqlnet import SQLDataset
 
 
 class Evaluator:
-    def __init__(
-        self,
-        model: RegSQLNet,
-        dataset: SQLDataset,
-        raw_data: Dict,
-        db_connector: AbstractDbConnector,
-    ):
+    def __init__(self, model: RegSQLNet, db_connector: AbstractDbConnector, batch_size: int, verbose: bool):
         self.model = model
-        self.dataset = dataset
-        self.raw_data = raw_data
         self.db_connector = db_connector
+        self.batch_size = batch_size
+        self.verbose = verbose
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    def _infer_(self, inputs):
+    def _infer_(self, model_inputs):
         self.model.eval()
         outputs = {}
 
-        for start_idx in range(0, inputs["input_ids"].shape[0], RegSQLNet.BATCH_SIZE):
-            input_tensor = {
-                key: torch.from_numpy(inputs[key][start_idx : start_idx + RegSQLNet.BATCH_SIZE]).to(self.model.device)
-                for key in RegSQLNet.MODEL_INPUT_KEYS
+        for start_idx in tqdm(range(0, model_inputs["input_ids"].shape[0], self.batch_size)):
+            batch = {
+                key: model_inputs[key][start_idx : start_idx + self.batch_size].to(self.device)
+                for key in ["input_ids", "attention_mask", "token_type_ids"]
             }
 
             with torch.no_grad():
-                model_output = self.model(**input_tensor)
+                model_output = self.model(**batch)
 
             for key, out_tensor in model_output.items():
                 if out_tensor is None:
@@ -53,102 +47,118 @@ class Evaluator:
         model_outputs = self._infer_(dataset.model_inputs)
         dataset_outputs = []
 
-        for pos in tqdm(dataset.pos):
+        for i in tqdm(range(dataset.model_inputs["input_ids"].shape[0])):
             final_output = {}
-            for k in model_outputs:
-                final_output[k] = model_outputs[k][pos[0] : pos[1], :]
+            for key in model_outputs:
+                final_output[key] = model_outputs[key][i : i + 1, :]
             dataset_outputs.append(final_output)
 
-        assert len(dataset.input_features) == len(dataset_outputs)
-
-        return dataset_outputs
+        return model_outputs, dataset_outputs
 
     def _predict_sql_(self, dataset: SQLDataset, model_outputs=None):
         if model_outputs is None:
             model_outputs = self._infer_dataset_(dataset)
 
-        sqls = []
-        for input_feature, model_output in tqdm(zip(dataset.input_features, model_outputs)):
-            agg, select, where, conditions = self._parse_output_(input_feature, model_output)
+        result = {"agg": [], "select": [], "select_num": [], "where": [], "where_num": [], "op": [], "sql": []}
+        for input_example, model_output in tqdm(zip(dataset.input_examples, model_outputs)):
+            agg, select, select_num, where, where_num, conditions = self._parse_output_(model_output)
+
+            select_blocks = [
+                f"{input_example.cand_cols[idx].split()[1].lower()}alias0.{input_example.cand_cols[idx].split()[2].lower()}"
+                for idx in select
+            ]
+            select_str = "select " + " , ".join(select_blocks)
+
+            from_tables = list(map(lambda elem: f"{elem.lower()} AS {elem.lower()}alias0", input_example.tables))
+            from_tables_str = "from " + " , ".join(from_tables)
 
             conditions_with_value_texts = []
             for wc in where:
-                _, op, vs, ve = conditions[wc]
-                word_start, word_end = input_feature.subword_to_word[wc][vs], input_feature.subword_to_word[wc][ve]
-                char_start = input_feature.word_to_char_start[word_start]
-                char_end = len(input_feature.question)
-                if word_end + 1 < len(input_feature.word_to_char_start):
-                    char_end = input_feature.word_to_char_start[word_end + 1]
-                value_span_text = input_feature.question[char_start:char_end].rstrip()
-                conditions_with_value_texts.append((wc, op, value_span_text))
+                _, op = conditions[wc]
+                value_span_text = "'text'"
+                conditions_with_value_texts.append(
+                    f"{f'{input_example.cand_cols[wc].split()[1].lower()}alias0.{input_example.cand_cols[wc].split()[2].lower()}'} {SQLFeaturizer.cond_ops[op]} {value_span_text}"
+                )
 
-            where = "WHERE " + " AND ".join(conditions_with_value_texts)
-            query = f"SELECT {select} FROM table {where}"  # TODO
-            sqls.append(query)
+            if len(conditions_with_value_texts) != 0:
+                where_str = "where " + " and ".join(conditions_with_value_texts)
+            else:
+                where_str = ""
 
-        return sqls
+            query = f"{select_str} {from_tables_str} {where_str};"
+
+            select_temp = np.zeros((len(input_example.cand_cols),))
+            select_temp[select] = 1
+
+            where_temp = np.zeros((len(input_example.cand_cols),))
+            where_temp[where] = 1
+
+            agg_temp = np.zeros((len(input_example.cand_cols),))
+            agg_temp[select] = agg
+
+            conditions_temp = np.zeros((len(input_example.cand_cols),))
+            conditions_temp[list(conditions.keys())] = np.array(list(map(lambda elem: elem[1], conditions.values())))
+
+            result["agg"].extend(agg_temp)
+            result["select"].extend(select_temp)
+            result["select_num"].extend([select_num] * len(input_example.cand_cols))
+            result["where"].extend(where_temp)
+            result["where_num"].extend([where_num] * len(input_example.cand_cols))
+            result["op"].extend(conditions_temp)
+            result["sql"].append(query)
+
+        return result
 
     @classmethod
-    def _get_where_num_(cls, output):
+    def _get_arg_num_(cls, output, key_name: str):
         relevant_prob = 1 - np.exp(output["column_func"][:, 2])
-        where_num_scores = np.average(output["where_num"], axis=0, weights=relevant_prob)
-        where_num = int(np.argmax(where_num_scores))
+        num_scores = np.average(output[key_name], axis=0, weights=relevant_prob)
+        num = int(np.argmax(num_scores))
 
-        return where_num
+        return num
 
     @classmethod
-    def _parse_output_(cls, input_feature, model_output):
-        def get_span(i):
-            offset = 0
-            segment_ids = np.array(input_feature.segment_ids[i])
-            for j in range(len(segment_ids)):
-                if segment_ids[j] == 1:
-                    offset = j
-                    break
-
-            value_start, value_end = (
-                model_output["value_start"][i, segment_ids == 1],
-                model_output["value_end"][i, segment_ids == 1],
-            )
-            l = len(value_start)
-            sum_mat = value_start.reshape((l, 1)) + value_end.reshape((1, l))
-            span = (0, 0)
-            for cur_span, _ in sorted(np.ndenumerate(sum_mat), key=lambda x: x[1], reverse=True):
-                if cur_span[1] < cur_span[0] or cur_span[0] == l - 1 or cur_span[1] == l - 1:
-                    continue
-                span = cur_span
-                break
-
-            return span[0] + offset, span[1] + offset
-
+    def _parse_output_(cls, model_output):
         select_id_prob = sorted(enumerate(model_output["column_func"][:, 0]), key=lambda x: x[1], reverse=True)
-        select = select_id_prob[0][0]
+        select_num = cls._get_arg_num_(model_output, "select_num")
+        select = [i for i, _ in select_id_prob[:select_num]]
         agg = np.argmax(model_output["agg"][select, :])
 
         where_id_prob = sorted(enumerate(model_output["column_func"][:, 1]), key=lambda x: x[1], reverse=True)
-        where_num = cls._get_where_num_(model_output)
+        where_num = cls._get_arg_num_(model_output, "where_num")
         where = [i for i, _ in where_id_prob[:where_num]]
         conditions = {}
+
         for idx in set(where):
-            span = get_span(idx)
             op = np.argmax(model_output["op"][idx, :])
-            conditions[idx] = (idx, op, span[0], span[1])
+            conditions[idx] = (idx, op)
 
-        return agg, select, where, conditions
+        return agg, select, select_num, where, where_num, conditions
 
-    def evaluate_preds(self, pred_queries):
-        real_queries = get_sql(self.raw_data)
-        exec_accuracy = execution_accuracy(self.db_connector, pred_queries, real_queries)
-        logical_accuracy = logical_form_accuracy(pred_queries, real_queries)
+    def evaluate_preds(self, prediction_result: Dict, dataset: SQLDataset):
+        result = {}
 
-        subst_real_queries = get_sql_substitution(self.raw_data)
-        variables = get_variables(self.raw_data)
-        subst_pred_queries = substitute_variables(variables, self.raw_data)
+        real_queries = dataset.sql_queries
+        pred_queries = prediction_result["sql"]
+        result["variable accuracy"] = logical_form_accuracy(pred_queries, real_queries)
 
-        match_accuracy = logical_form_accuracy(subst_pred_queries, subst_real_queries)
+        average_accuracy = 0
+        for key in ["agg", "select_num", "select", "where_num", "where", "op"]:
+            result[f"{key} accuracy"] = np.average(
+                np.array(prediction_result[key]) == np.array(dataset.model_inputs[key])
+            )
+            average_accuracy += result[f"{key} accuracy"]
+        result["average accuracy"] = average_accuracy
 
-        return exec_accuracy, logical_accuracy, match_accuracy
+        return result
 
-    def evaluate(self):
-        sqls = self._predict_sql_(self.dataset)
-        self.evaluate_preds(sqls)
+    def evaluate(self, dataset: SQLDataset) -> Dict[str, float]:
+        model_outputs, dataset_outputs = self._infer_dataset_(dataset)
+        result = self._predict_sql_(dataset, dataset_outputs)
+
+        return self.evaluate_preds(result, dataset)
+
+    def __to_device(self, data):
+        data["input_ids"].to(self.device)
+        data["attention_mask"].to(self.device)
+        data["token_type_ids"].to(self.device)

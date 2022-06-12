@@ -6,6 +6,8 @@ from transformers import AdamW, get_cosine_schedule_with_warmup
 from tqdm import tqdm
 
 from data_processing import SQLDataset
+from database_connection import SqliteConnector
+from evaluation.evaluate import Evaluator
 from model.regsqlnet import RegSQLNet
 
 
@@ -51,6 +53,13 @@ class Text2SQLTrainer(object):
 
         self.optimizer.zero_grad()
 
+        self.evaluator = Evaluator(
+            model=self.model,
+            db_connector=SqliteConnector(path="../data/atis/atis-db.added-in-2020.sqlite"),
+            batch_size=self.batch_size,
+            verbose=self.verbose,
+        )
+
     def train(self):
         if self.verbose:
             print("START TRAINING")
@@ -81,7 +90,8 @@ class Text2SQLTrainer(object):
 
             print(f"Epoch: {epoch}, loss: {cur_loss}")
             if self.eval_dataset is not None:
-                self.eval()
+                metrics = self.eval(self.eval_dataset)
+                print(metrics)
 
         if self.verbose:
             print("TRAIN SUCCESS")
@@ -89,8 +99,8 @@ class Text2SQLTrainer(object):
     def eval(self, test_dataset=None):
         if test_dataset is None:
             test_dataset = self.eval_dataset
-        # TODO
-        pass
+
+        return self.evaluator.evaluate(test_dataset)
 
     def __to_device(self, data):
         data["input_ids"].to(self.device)
