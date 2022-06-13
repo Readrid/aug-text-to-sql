@@ -1,0 +1,638 @@
+[
+  {
+    "sentence": "Find all states in which there is a business_name0",
+    "paraphrases": [
+      "what are the names of states that are on the largest river"
+    ]
+  },
+  {
+    "sentence": "Find all cities in which there is a category_name0 called \" business_name0 \"",
+    "paraphrases": [
+      "what are the names of the cities that are in about business_name0"
+    ]
+  },
+  {
+    "sentence": "Find the cities of businesses rated below business_rating0",
+    "paraphrases": [
+      "what cities have lower than average cities"
+    ]
+  },
+  {
+    "sentence": "Find all cities which has a \" business_name0 \" .",
+    "paraphrases": [
+      "find all cities which has a city whose name starts with  business_name0"
+    ]
+  },
+  {
+    "sentence": "List all the reviews which rated a business less than review_rating0",
+    "paraphrases": [
+      "what are the names of all the reviews whose rates are below the review percentage"
+    ]
+  },
+  {
+    "sentence": "find all cities which has a \" business_name0 \" category_name0",
+    "paraphrases": [
+      "what are the cities that have a corresponding to each  and what are the names of the cities"
+    ]
+  },
+  {
+    "sentence": "list all the reviews by user_name0",
+    "paraphrases": [
+      "what are the names of all the reviews by user user_name0"
+    ]
+  },
+  {
+    "sentence": "list all the businesses which have a review by user_name0",
+    "paraphrases": [
+      "find all the user_name0 profits which have a characteristic named  user_name0"
+    ]
+  },
+  {
+    "sentence": "list all the businesses which user_name0 rated review_rating0",
+    "paraphrases": [
+      "what are the names of the review_rating0 physicians who rates user_name0"
+    ]
+  },
+  {
+    "sentence": "List all the reviews by user_name0 for category_name0 category_name1",
+    "paraphrases": [
+      "what are the names of all the authors whose job title is category_name0  or  category_name1"
+    ]
+  },
+  {
+    "sentence": "find the number of reviews written for \" business_name0 \" category_name0 in business_state0",
+    "paraphrases": [
+      "return the number of reviews for each brand  return the number of reviews"
+    ]
+  },
+  {
+    "sentence": "List all business_rating0 star category_name0 category_name1",
+    "paraphrases": [
+      "what are the names of the top business_rating0 companies whose job title is business_rating0"
+    ]
+  },
+  {
+    "sentence": "List all the neighborhoods with category_name0 category_name1 in business_city0",
+    "paraphrases": [
+      "find the names of the pilots whose genre is not  business_city0"
+    ]
+  },
+  {
+    "sentence": "find all the category_name0 in business_state0",
+    "paraphrases": [
+      "what are the categories of government  questions  and who have business_state0 or more as its second author"
+    ]
+  },
+  {
+    "sentence": "List all businesses that are category_name0 in business_state0 .",
+    "paraphrases": [
+      "what are the names of every business_state0 in alphabetical order"
+    ]
+  },
+  {
+    "sentence": "Find all the reviews for all category_name0 with more than business_review_count0 reviews",
+    "paraphrases": [
+      "please show the names of all genres of which are less than business_review_count0 albums"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 which have more than business_review_count0 reviews",
+    "paraphrases": [
+      "what are the names of categories that have held more than business_review_count0 reviews"
+    ]
+  },
+  {
+    "sentence": "What are all the category_name0 in \" business_city0 \" ?",
+    "paraphrases": [
+      "what are the names of all categories in alphabetical order"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in business_city0",
+    "paraphrases": [
+      "what are the names of all the subject"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "what are the names of categories  and for which are not in any business_city0"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in business_city0",
+    "paraphrases": [
+      "what are the names of categories that are in business_city0 or category_name0"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "what are the names of categories  ordered alphabetically"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "find all the policy type codes and the number of cities in each category"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in \" business_city0 \" with more than business_review_count0 reviews",
+    "paraphrases": [
+      "what are the names of categories that have greater than business_city0 reviews and where are they located"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in business_city0 with at least business_review_count0 reviews",
+    "paraphrases": [
+      "find all the categories of the business_city0 largest journals"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in \" business_city0 \" with at least business_review_count0 reviews",
+    "paraphrases": [
+      "find all the categories of government  and the number of singers in each category"
+    ]
+  },
+  {
+    "sentence": "Find all users who reviewed category_name0 \" business_name0 \"",
+    "paraphrases": [
+      "list the first name and last name of all distinct customers who have rates of above business_name0"
+    ]
+  },
+  {
+    "sentence": "List the addresses of all business_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "find all the addresses of the campuses in alphabetical order"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 reviewed by user_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "what are the names of categories  and names of each genre"
+    ]
+  },
+  {
+    "sentence": "Which category_name0 in business_city0 were reviewed by user user_name0 ?",
+    "paraphrases": [
+      "what are the names of products that are not in the business_city0 genre"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 reviewed by user_name0",
+    "paraphrases": [
+      "find the genre name of the tv taken by  category_name0"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 reviewed by user_name0 with at least business_rating0 stars",
+    "paraphrases": [
+      "what are the names of categories that are not on average business_rating0 and whosepg are not category_name0"
+    ]
+  },
+  {
+    "sentence": "Find all users who have written tips for \" business_name0 \" in tip_year0",
+    "paraphrases": [
+      "find the branch names and years of opening of all the business_name0 years old"
+    ]
+  },
+  {
+    "sentence": "Find all businesses in business_state0 with a rating below business_rating0",
+    "paraphrases": [
+      "find me the name of allfemale songs whose genre is younger than business_rating0"
+    ]
+  },
+  {
+    "sentence": "Find all category_name1 category_name0 in business_city0",
+    "paraphrases": [
+      "what are the names of categories that are shared by at least business_city0 people"
+    ]
+  },
+  {
+    "sentence": "List all the category_name0 category_name1 in \" business_city0 \"",
+    "paraphrases": [
+      "what are the names of all the categories  ordered by their names and credits"
+    ]
+  },
+  {
+    "sentence": "Find all category_name1 that serve category_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "find the name of all the products that serve categories  and whose products are not  business_city0  products"
+    ]
+  },
+  {
+    "sentence": "Find all business_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "find the locations of all restaurants that are located in the business_city0 state"
+    ]
+  },
+  {
+    "sentence": "Find all business_city0 category_name0 with a rating above business_rating0",
+    "paraphrases": [
+      "find the names of all aircrafts with a rating above business_city0 and have at least business_rating0 stars"
+    ]
+  },
+  {
+    "sentence": "Find all tips about \" business_name0 \" that received more than tip_likes0 likes",
+    "paraphrases": [
+      "what are the names of poker held on which are shared by at least business_name0 students"
+    ]
+  },
+  {
+    "sentence": "Find all reviews about \" business_name0 \" in year review_year0",
+    "paraphrases": [
+      "what are the names of all the reviews  and also what are the names of the reviews"
+    ]
+  },
+  {
+    "sentence": "Find all users who have written tips about businesses in business_city0",
+    "paraphrases": [
+      "who has written a paper about business_city0"
+    ]
+  },
+  {
+    "sentence": "Find all cities in business_state0 in which there is a category_name0 called \" business_name0 \"",
+    "paraphrases": [
+      "what are the names of all cities that are on the business_name0 run busiest"
+    ]
+  },
+  {
+    "sentence": "Find the users who have given tips on category_name0",
+    "paraphrases": [
+      "what are the names of the users who have rated a paper on  category_name0"
+    ]
+  },
+  {
+    "sentence": "In which neighborhoods has user_name0 reviewed a business ?",
+    "paraphrases": [
+      "what are the first names of all user_name0 professors who rated a var1"
+    ]
+  },
+  {
+    "sentence": "Find all tips for \" business_name0 \" in business_state0 .",
+    "paraphrases": [
+      "what are the names of all the tips that are on the business_name0 runys"
+    ]
+  },
+  {
+    "sentence": "List all users who reviewed businesses that are category_name0 .",
+    "paraphrases": [
+      "find the name of the customers who have category_name0 or var1 as a pet"
+    ]
+  },
+  {
+    "sentence": "List all tips for \" business_name0 \" in business_state0 in tip_year0 .",
+    "paraphrases": [
+      "how many tips were made on business_name0 in business_state0 about business_state0"
+    ]
+  },
+  {
+    "sentence": "Find all the tips from a user who has written a review in review_year0",
+    "paraphrases": [
+      "find the names of all the tips that are written by a scientist from the review_year0"
+    ]
+  },
+  {
+    "sentence": "find the number of category_name0 in business_city0",
+    "paraphrases": [
+      "how many different categories are there in the dog  business_city0  industry"
+    ]
+  },
+  {
+    "sentence": "What is the number of category_name0 in business_city0",
+    "paraphrases": [
+      "how many different categories correspond to books made in business_city0"
+    ]
+  },
+  {
+    "sentence": "How many category_name0 exist in business_city0",
+    "paraphrases": [
+      "what is the number of different category ids for templates  ordered by genre ascending"
+    ]
+  },
+  {
+    "sentence": "What is the number of category_name0 in \" business_city0 \" ?",
+    "paraphrases": [
+      "what is the number of different category names  and also what is the id of the subject"
+    ]
+  },
+  {
+    "sentence": "How many category_name0 are there in business_city0 ?",
+    "paraphrases": [
+      "how many different categories are there in the pet ids"
+    ]
+  },
+  {
+    "sentence": "find the number of category_name0 rated more than business_rating0",
+    "paraphrases": [
+      "how many distinct categories have been named continents"
+    ]
+  },
+  {
+    "sentence": "find the total checkins in category_name1 category_name0 in \" business_city0 \"",
+    "paraphrases": [
+      "what are the total number of check cartoons that are in business_city0  except for the title of a song whose title is a prerequisite to books  category_name0"
+    ]
+  },
+  {
+    "sentence": "find the total checkins in category_name0 category_name1 in \" business_city0 \" per day",
+    "paraphrases": [
+      "what are the total checking and savings balances for all male sex is business_city0 students who have also had the prerequisite category_name0"
+    ]
+  },
+  {
+    "sentence": "find the total checkins in category_name0 category_name1 in each state on checkin_day0",
+    "paraphrases": [
+      "what are the total names of the pilots in the state of category_name0 or category_name1"
+    ]
+  },
+  {
+    "sentence": "what is the average rating given in user_name0 reviews",
+    "paraphrases": [
+      "what is the average rating star for each gender"
+    ]
+  },
+  {
+    "sentence": "What is the number of checkins for \" business_name0 \" on checkin_day0",
+    "paraphrases": [
+      "how many business_name0 restaurants are there in the tables"
+    ]
+  },
+  {
+    "sentence": "how many users reviewed \" business_name0 \" in business_city0",
+    "paraphrases": [
+      "how many customers  first notification of loss record and last name"
+    ]
+  },
+  {
+    "sentence": "What is the number of category_name0 in business_city0 rated business_rating0",
+    "paraphrases": [
+      "how many different cities have had milk or egg  ordered by population"
+    ]
+  },
+  {
+    "sentence": "How many tips have been written in tip_year0",
+    "paraphrases": [
+      "how many tips were written by pilots from the tip_year0"
+    ]
+  },
+  {
+    "sentence": "What is the total likes on tips from user_name0",
+    "paraphrases": [
+      "return the total likes for his or her genre"
+    ]
+  },
+  {
+    "sentence": "What is the total likes on tips about \" business_name0 \"",
+    "paraphrases": [
+      "how many likes correspond to each film name"
+    ]
+  },
+  {
+    "sentence": "How many tips has user_name0 written in tip_year0",
+    "paraphrases": [
+      "what are the theme of the tv years and what are the companies"
+    ]
+  },
+  {
+    "sentence": "Return me the number of tips that are written by user_name0 in tip_year0 .",
+    "paraphrases": [
+      "how many tips are written by user  tip_year0  in jun or before"
+    ]
+  },
+  {
+    "sentence": "How many tips has user_name0 written in tip_month0",
+    "paraphrases": [
+      "return me the number of tips that has the date on which he ended his previous job"
+    ]
+  },
+  {
+    "sentence": "How many category_name0 in \" business_city0 \" have a rating above business_rating0 ?",
+    "paraphrases": [
+      "how many different cities have a rating above or below business_city0"
+    ]
+  },
+  {
+    "sentence": "How many category_name0 in business_city0 have a rating above business_rating0 ?",
+    "paraphrases": [
+      "how many different cities have a rating above business_city0 or below business_rating0"
+    ]
+  },
+  {
+    "sentence": "How many people reviewed the category_name0 \" business_name0 \" in business_city0 business_state0 ?",
+    "paraphrases": [
+      "what are the names of all the business_city0 years old or young dorms"
+    ]
+  },
+  {
+    "sentence": "How many people reviewed \" business_name0 \" in review_year0 ?",
+    "paraphrases": [
+      "how many people reviewed a course december and the courseid"
+    ]
+  },
+  {
+    "sentence": "How many business_name0 are there in business_city0 business_state0 ?",
+    "paraphrases": [
+      "how many business citizens live in business_city0 district"
+    ]
+  },
+  {
+    "sentence": "How many reviews does \" business_name0 \" have ?",
+    "paraphrases": [
+      "count the number of reviews for which place is not business_name0"
+    ]
+  },
+  {
+    "sentence": "Find the average number of checkins in category_name0 \" business_name0 \" per day",
+    "paraphrases": [
+      "what are the average number of check beds for each genre and what are the names of the pilots in ascending order"
+    ]
+  },
+  {
+    "sentence": "How many businesses are there in the \" neighborhood_name0 \" neighborhood in business_city0 ?",
+    "paraphrases": [
+      "how many business_city0 are there in the neighborhood_name0 operated by neighborhood_name0"
+    ]
+  },
+  {
+    "sentence": "What is the number of businesses user user_name0 reviews per month ?",
+    "paraphrases": [
+      "how many voting records do we have"
+    ]
+  },
+  {
+    "sentence": "How many reviews has user_name0 written ?",
+    "paraphrases": [
+      "how many reviews has each received"
+    ]
+  },
+  {
+    "sentence": "How many reviews has user_name0 written in review_month0 review_year0 ?",
+    "paraphrases": [
+      "how many reviews have been written by each reviewer"
+    ]
+  },
+  {
+    "sentence": "How many businesses has user_name0 reviewed in review_year0 ?",
+    "paraphrases": [
+      "how many businesses  questions were made by them in the past year"
+    ]
+  },
+  {
+    "sentence": "How many businesses in \" business_city0 \" has user_name0 reviewed in review_year0 ?",
+    "paraphrases": [
+      "find the number of cities in which the business_city0 river is the largest"
+    ]
+  },
+  {
+    "sentence": "How many business_name0 are there in \" business_city0 \" ?",
+    "paraphrases": [
+      "count the number of business restaurants in the usa"
+    ]
+  },
+  {
+    "sentence": "How many users have reviewed category_name0 in business_city0 ?",
+    "paraphrases": [
+      "count the number of customers who have not reviewed any policy"
+    ]
+  },
+  {
+    "sentence": "What is the average rating of reviews written in year review_year0 ?",
+    "paraphrases": [
+      "what is the average rating of reviews for each appelation  and what are the names of the staff"
+    ]
+  },
+  {
+    "sentence": "How many people reviewed restaurant \" business_name0 \" in review_year0 ?",
+    "paraphrases": [
+      "how many people have taught a business_name0 committee in which the business_name0 river runs"
+    ]
+  },
+  {
+    "sentence": "Find the number of reviews on businesses located in \" neighborhood_name0 \" neighborhood",
+    "paraphrases": [
+      "what are the names of the neighborhood_name0 police forces who had the greatest number of reviews"
+    ]
+  },
+  {
+    "sentence": "Return me the number of businesses that are category_name0 .",
+    "paraphrases": [
+      "how many businesses are there in the category  category_name0"
+    ]
+  },
+  {
+    "sentence": "Return me the number of cities that has \" business_name0 \" .",
+    "paraphrases": [
+      "how many cities have ids of cities that have ids between business_name0 and var1"
+    ]
+  },
+  {
+    "sentence": "Return me the number of tips that are written by user_name0 .",
+    "paraphrases": [
+      "how many tips are written by user user_name0"
+    ]
+  },
+  {
+    "sentence": "Find the total checkins in \" neighborhood_name0 \" neighborhood",
+    "paraphrases": [
+      "find the total number of checkouts made for each region of the usa"
+    ]
+  },
+  {
+    "sentence": "Find the total checkins in checkin_day0",
+    "paraphrases": [
+      "find the total check in the city of checkin_day0"
+    ]
+  },
+  {
+    "sentence": "Find the total number of reviews written in review_month0",
+    "paraphrases": [
+      "how many reviews were made by genre review_month0"
+    ]
+  },
+  {
+    "sentence": "Find the number of tips written in each month",
+    "paraphrases": [
+      "find the number of tips written in each city"
+    ]
+  },
+  {
+    "sentence": "How many neighborhoods have a business with rating business_rating0 in business_city0 ?",
+    "paraphrases": [
+      "find the number of cows whose citizenship is not  business_city0"
+    ]
+  },
+  {
+    "sentence": "Give me all the category_name0 category_name1 in business_state0",
+    "paraphrases": [
+      "what are the names of categories that have a subject named  business_state0"
+    ]
+  },
+  {
+    "sentence": "Which category_name1 category_name0 has the most number of reviews",
+    "paraphrases": [
+      "what is the most common subject of the product category"
+    ]
+  },
+  {
+    "sentence": "find the user with the most number of reviews",
+    "paraphrases": [
+      "which user has the most reviews  give me the highest director name"
+    ]
+  },
+  {
+    "sentence": "which neighborhood has the most number of businesses in business_city0",
+    "paraphrases": [
+      "what is the name of the airport that has the most number of aircrafts in the city of business_city0"
+    ]
+  },
+  {
+    "sentence": "Which neighborhood in business_city0 has the category_name1 category_name0 with the highest stars",
+    "paraphrases": [
+      "which regions border business_city0 with the largest star"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 category_name1 in business_city0 with at least business_rating0 stars",
+    "paraphrases": [
+      "what is the genre name of every product  ordered by album title"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 category_name1 in business_city0 with a rating above business_rating0",
+    "paraphrases": [
+      "what are the names of the categories  and ordered by their price ascending"
+    ]
+  },
+  {
+    "sentence": "Find all category_name0 in \" business_city0 \" with at least business_review_count0 reviews and average rating above business_rating0 stars",
+    "paraphrases": [
+      "return me the topic and the average rating for each topic in alphabetical order by reviewer name  ordered by title"
+    ]
+  },
+  {
+    "sentence": "Which category_name0 category_name1 in business_city0 has the highest rating ?",
+    "paraphrases": [
+      "what is the name of the category that is most populated with the lowest rating"
+    ]
+  },
+  {
+    "sentence": "Which category_name1 category_name0 in business_city0 has the highest rating ?",
+    "paraphrases": [
+      "what is the name of the genre that has the highest rating difference"
+    ]
+  },
+  {
+    "sentence": "Which category_name1 category_name0 in business_city0 has the most number of reviews ?",
+    "paraphrases": [
+      "what is the most common genre of submissions"
+    ]
+  },
+  {
+    "sentence": "Find the business with the most number of reviews in review_month0",
+    "paraphrases": [
+      "which business has the most number of reviews  give me the name of the country and the number of reviews"
+    ]
+  }
+]
