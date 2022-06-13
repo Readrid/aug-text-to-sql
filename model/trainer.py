@@ -32,6 +32,8 @@ class Text2SQLTrainer(object):
         self.verbose = verbose
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+        self.model.to(self.device)
+
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_parameters = [
             {
@@ -106,3 +108,13 @@ class Text2SQLTrainer(object):
         data["input_ids"].to(self.device)
         data["attention_mask"].to(self.device)
         data["token_type_ids"].to(self.device)
+
+        data["agg"].to(self.device)
+        data["op"].to(self.device)
+        data["where"].to(self.device)
+        data["select"].to(self.device)
+        data["where_num"].to(self.device)
+        data["select_num"].to(self.device)
+        data["value_start"].to(self.device)
+        data["value_end"].to(self.device)
+

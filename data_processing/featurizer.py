@@ -62,6 +62,16 @@ class SQLFeaturizer(object):
         model_inputs["attention_mask"] = torch.LongTensor(model_inputs["attention_mask"])
         model_inputs["token_type_ids"] = torch.LongTensor(model_inputs["token_type_ids"])
 
+        if include_labels:
+            model_inputs["agg"] = torch.LongTensor(model_inputs["agg"])
+            model_inputs["select"] = torch.LongTensor(model_inputs["select"])
+            model_inputs["select_num"] = torch.LongTensor(model_inputs["select_num"])
+            model_inputs["where_num"] = torch.LongTensor(model_inputs["where_num"])
+            model_inputs["where"] = torch.LongTensor(model_inputs["where"])
+            model_inputs["op"] = torch.LongTensor(model_inputs["op"])
+            model_inputs["value_start"] = torch.LongTensor(model_inputs["value_start"])
+            model_inputs["value_end"] = torch.LongTensor(model_inputs["value_end"])
+
         return model_inputs
 
     def get_input_examples(self, questions: List[str], sql_queries: List[SQLQuery]) -> List[InputExample]:
