@@ -1,4 +1,8 @@
+import os
+
+import numpy as np
 import pandas as pd
+import torch
 from omegaconf import OmegaConf
 
 from data_processing import SQLFeaturizer, SQLDataset
@@ -8,6 +12,15 @@ from model import Text2SQLTrainer, RegSQLNet
 
 def main():
     config = OmegaConf.load("config.yml")
+
+    seed = 42
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    # Torch RNG
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    # Python RNG
+    np.random.seed(seed)
 
     column_names = ["table_name", "col_name", "is_primary_key", "is_foreign_key", "type", "other_ifo"]
     schema = pd.read_csv(config.dataset.csv_data, sep=", ", engine="python", names=column_names)

@@ -66,6 +66,7 @@ class Text2SQLTrainer(object):
         if self.verbose:
             print("START TRAINING")
 
+        torch.random.seed()
         train_dataloader = DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=True)
         train_loop = tqdm(train_dataloader) if self.verbose else train_dataloader
         for epoch in range(self.epochs):
