@@ -28,56 +28,8 @@
     "query-split": "dev",
     "sentences": [
       {
-        "question-split": "1",
-        "text": "what are the names of all the business_rating0 branches that have more than var1 stars",
-        "variables": {
-          "business_rating0": "4.5"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.RATING > business_rating0 ;"
-    ],
-    "variables": [
-      {
-        "example": "4.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
-    "query-split": "dev",
-    "sentences": [
-      {
         "question-split": "5",
         "text": "List all businesses with rating business_rating0",
-        "variables": {
-          "business_rating0": "3.5"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.RATING = business_rating0 ;"
-    ],
-    "variables": [
-      {
-        "example": "3.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "5",
-        "text": "what are the names of allfemale business_rating0",
         "variables": {
           "business_rating0": "3.5"
         }
@@ -121,30 +73,6 @@
   },
   {
     "difficulty": 1,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "9",
-        "text": "what are the ids of all the user_name0 artists whose name starts with  var0",
-        "variables": {
-          "user_name0": "Michelle"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.USER_ID FROM USER AS USERalias0 WHERE USERalias0.NAME = \"user_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
     "query-split": "train",
     "sentences": [
       {
@@ -153,27 +81,11 @@
         "variables": {
           "business_name0": "Whataburger"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.STATE FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Whataburger",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "6",
-        "text": "find the states which are associated with rivers from business_name0",
+        "text": "what are the names of states that are on the largest river",
         "variables": {
           "business_name0": "Whataburger"
         }
@@ -202,33 +114,11 @@
           "business_name0": "MGM Grand Buffet",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.CITY FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "MGM Grand Buffet",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "7",
-        "text": "what are the names of the cities that are  grouped by population  and sort them by population in ascending order",
+        "text": "what are the names of the cities that are in about business_name0",
         "variables": {
           "business_name0": "MGM Grand Buffet",
           "category_name0": "restaurant"
@@ -263,27 +153,11 @@
         "variables": {
           "business_rating0": "1.5"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.CITY FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.RATING < business_rating0 ;"
-    ],
-    "variables": [
-      {
-        "example": "1.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "7",
-        "text": "give me some cities where the investors are not business_rating0",
+        "text": "what cities have lower than average cities",
         "variables": {
           "business_rating0": "1.5"
         }
@@ -311,27 +185,11 @@
         "variables": {
           "business_name0": "Taj Mahal"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.CITY FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Taj Mahal",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "0",
-        "text": "which cities have a corresponding document named  business_name0   give me the cities",
+        "text": "find all cities which has a city whose name starts with  business_name0",
         "variables": {
           "business_name0": "Taj Mahal"
         }
@@ -359,27 +217,11 @@
         "variables": {
           "review_rating0": "1"
         }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM REVIEW AS REVIEWalias0 WHERE REVIEWalias0.RATING < review_rating0 ;"
-    ],
-    "variables": [
-      {
-        "example": "1",
-        "location": "both",
-        "name": "review_rating0",
-        "type": "review_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 1,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "6",
-        "text": "what are the names of all the reviews whose rates are below the maximum rate of a pet",
+        "text": "what are the names of all the reviews whose rates are below the review percentage",
         "variables": {
           "review_rating0": "1"
         }
@@ -430,37 +272,6 @@
   },
   {
     "difficulty": 2,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "4",
-        "text": "what are the names of the categories that have business_rating0 or more people  and what are those ratings",
-        "variables": {
-          "business_rating0": "3.5",
-          "category_name0": "restaurant"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.RATING > business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "3.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
     "query-split": "train",
     "sentences": [
       {
@@ -470,33 +281,11 @@
           "business_name0": "Taj Mahal",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.CITY FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Taj Mahal",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "3",
-        "text": "what are the names of cities that have a corresponding album named  business_name0",
+        "text": "what are the cities that have a corresponding to each  and what are the names of the cities",
         "variables": {
           "business_name0": "Taj Mahal",
           "category_name0": "restaurant"
@@ -531,27 +320,11 @@
         "variables": {
           "user_name0": "Niloofar"
         }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Niloofar",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "3",
-        "text": "for each submission  return me its average attendance and the host name",
+        "text": "what are the names of all the reviews by user user_name0",
         "variables": {
           "user_name0": "Niloofar"
         }
@@ -579,27 +352,11 @@
         "variables": {
           "user_name0": "Niloofar"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Niloofar",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "7",
-        "text": "find all the user_name0 profits which correspond to them",
+        "text": "find all the user_name0 profits which have a characteristic named  user_name0",
         "variables": {
           "user_name0": "Niloofar"
         }
@@ -628,33 +385,11 @@
           "review_rating0": "5",
           "user_name0": "Niloofar"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.RATING = review_rating0 AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "5",
-        "location": "both",
-        "name": "review_rating0",
-        "type": "review_rating"
       },
-      {
-        "example": "Niloofar",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "6",
-        "text": "what are the names of every review_rating0 who rates a bar in ascending order of age",
+        "text": "what are the names of the review_rating0 physicians who rates user_name0",
         "variables": {
           "review_rating0": "5",
           "user_name0": "Niloofar"
@@ -691,39 +426,11 @@
           "category_name1": "restaurant",
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      },
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "find the names of all the authors for category_name0",
+        "text": "what are the names of all the authors whose job title is category_name0  or  category_name1",
         "variables": {
           "category_name0": "Italian",
           "category_name1": "restaurant",
@@ -767,40 +474,11 @@
           "business_state0": "Texas",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.REVIEW_COUNT FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;",
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Cafe Zinho",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "how many reviews are there for each but not in record",
+        "text": "return the number of reviews for each brand  return the number of reviews",
         "variables": {
           "business_name0": "Cafe Zinho",
           "business_state0": "Texas",
@@ -845,39 +523,11 @@
           "category_name0": "Italian",
           "category_name1": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.RATING = business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ;"
-    ],
-    "variables": [
-      {
-        "example": "5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
       },
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "what are the names of all restaurants that are not located in business_rating0 and have a population lower than category_name0",
+        "text": "what are the names of the top business_rating0 companies whose job title is business_rating0",
         "variables": {
           "business_rating0": "5",
           "category_name0": "Italian",
@@ -921,39 +571,11 @@
           "category_name0": "Italian",
           "category_name1": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT NEIGHBORHOODalias0.NEIGHBORHOOD_NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "2",
-        "text": "what are the names of the pilots that have  business_city0  as  active  information",
+        "text": "find the names of the pilots whose genre is not  business_city0",
         "variables": {
           "business_city0": "Madison",
           "category_name0": "Italian",
@@ -1032,51 +654,6 @@
   },
   {
     "difficulty": 2,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "5",
-        "text": "show me the status of each oppose status whose status is not  business_city0",
-        "variables": {
-          "business_city0": "Madison",
-          "business_rating0": "2.5",
-          "category_name0": "Italian",
-          "category_name1": "restaurant"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT NEIGHBORHOODalias0.NEIGHBORHOOD_NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.RATING < business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      },
-      {
-        "example": "2.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      },
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
     "query-split": "train",
     "sentences": [
       {
@@ -1094,33 +671,11 @@
           "business_state0": "Pennsylvania",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Pennsylvania",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "what are the categories of journals for which  business_state0  is an author",
+        "text": "what are the categories of government  questions  and who have business_state0 or more as its second author",
         "variables": {
           "business_state0": "Texas",
           "category_name0": "restaurant"
@@ -1128,7 +683,7 @@
       },
       {
         "question-split": "6",
-        "text": "List all businesses that are category_name0 in business_state0 .",
+        "text": "what are the names of every business_state0 in alphabetical order",
         "variables": {
           "business_state0": "Pennsylvania",
           "category_name0": "restaurant"
@@ -1164,33 +719,11 @@
           "business_review_count0": "100",
           "category_name0": "Pet Groomers"
         }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.REVIEW_COUNT > business_review_count0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "100",
-        "location": "both",
-        "name": "business_review_count0",
-        "type": "business_review_count"
       },
-      {
-        "example": "Pet Groomers",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "8",
-        "text": "what are the names of all the genre pets  and also what are the names of the genres",
+        "text": "please show the names of all genres of which are less than business_review_count0 albums",
         "variables": {
           "business_review_count0": "100",
           "category_name0": "Pet Groomers"
@@ -1226,34 +759,11 @@
           "business_review_count0": "100",
           "category_name0": "Pet Groomers"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.REVIEW_COUNT > business_review_count0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;",
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY BUSINESSalias0.NAME HAVING COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) > business_review_count0 ;"
-    ],
-    "variables": [
-      {
-        "example": "100",
-        "location": "both",
-        "name": "business_review_count0",
-        "type": "business_review_count"
       },
-      {
-        "example": "Pet Groomers",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "find the name of categories for which there are for or more than business_review_count0 reviews",
+        "text": "what are the names of categories that have held more than business_review_count0 reviews",
         "variables": {
           "business_review_count0": "100",
           "category_name0": "Pet Groomers"
@@ -1330,33 +840,11 @@
           "business_city0": "Los Angeles",
           "category_name0": "breweries"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "breweries",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "find all the categories of the business_city0 police forces  and what are the names of the genres",
+        "text": "what are the names of all categories in alphabetical order",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "gyms"
@@ -1364,7 +852,7 @@
       },
       {
         "question-split": "1",
-        "text": "Find all category_name0 in business_city0",
+        "text": "what are the names of all the subject",
         "variables": {
           "business_city0": "Dallas",
           "category_name0": "Bars"
@@ -1372,7 +860,7 @@
       },
       {
         "question-split": "8",
-        "text": "Find all category_name0 in \" business_city0 \"",
+        "text": "what are the names of categories  and for which are not in any business_city0",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "dance schools"
@@ -1380,7 +868,7 @@
       },
       {
         "question-split": "2",
-        "text": "Find all category_name0 in business_city0",
+        "text": "what are the names of categories that are in business_city0 or category_name0",
         "variables": {
           "business_city0": "Pittsburgh",
           "category_name0": "Bistros"
@@ -1388,7 +876,7 @@
       },
       {
         "question-split": "8",
-        "text": "Find all category_name0 in \" business_city0 \"",
+        "text": "what are the names of categories  ordered alphabetically",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "bakeries"
@@ -1396,7 +884,7 @@
       },
       {
         "question-split": "3",
-        "text": "Find all category_name0 in \" business_city0 \"",
+        "text": "find all the policy type codes and the number of cities in each category",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "breweries"
@@ -1433,40 +921,11 @@
           "business_review_count0": "100",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.REVIEW_COUNT > business_review_count0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;",
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY BUSINESSalias0.NAME HAVING COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) > business_review_count0 ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "100",
-        "location": "both",
-        "name": "business_review_count0",
-        "type": "business_review_count"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "what are the names of products that have a price point of business_city0 and are not measured by the product  business_review_count0",
+        "text": "what are the names of categories that have greater than business_city0 reviews and where are they located",
         "variables": {
           "business_city0": "Los Angeles",
           "business_review_count0": "100",
@@ -1520,40 +979,11 @@
           "business_review_count0": "30",
           "category_name0": "Bars"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.REVIEW_COUNT >= business_review_count0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;",
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY BUSINESSalias0.NAME HAVING COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) >= business_review_count0 ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "30",
-        "location": "both",
-        "name": "business_review_count0",
-        "type": "business_review_count"
-      },
-      {
-        "example": "Bars",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "8",
-        "text": "find all the categories whose names are held by lakes in ascending order",
+        "text": "find all the categories of the business_city0 largest journals",
         "variables": {
           "business_city0": "Dallas",
           "business_review_count0": "50",
@@ -1562,7 +992,7 @@
       },
       {
         "question-split": "7",
-        "text": "Find all category_name0 in \" business_city0 \" with at least business_review_count0 reviews",
+        "text": "find all the categories of government  and the number of singers in each category",
         "variables": {
           "business_city0": "Los Angeles",
           "business_review_count0": "30",
@@ -1606,33 +1036,11 @@
           "business_name0": "Mesa Grill",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Mesa Grill",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "list top business_name0 all the customers in category_name0 with email address",
+        "text": "list the first name and last name of all distinct customers who have rates of above business_name0",
         "variables": {
           "business_name0": "Mesa Grill",
           "category_name0": "restaurant"
@@ -1668,33 +1076,11 @@
           "business_city0": "Los Angeles",
           "business_name0": "Walmart"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.FULL_ADDRESS FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.NAME = \"business_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Walmart",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "find the address of the bank branch named  business_city0  in which city is the bank with the email  business_city0",
+        "text": "find all the addresses of the campuses in alphabetical order",
         "variables": {
           "business_city0": "Los Angeles",
           "business_name0": "Walmart"
@@ -1740,39 +1126,11 @@
           "category_name0": "restaurant",
           "user_name0": "Patrick"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Patrick",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "list the number of people who have points or towns named business_city0",
+        "text": "what are the names of categories  and names of each genre",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "restaurant",
@@ -1781,7 +1139,7 @@
       },
       {
         "question-split": "3",
-        "text": "Which category_name0 in business_city0 were reviewed by user user_name0 ?",
+        "text": "what are the names of products that are not in the business_city0 genre",
         "variables": {
           "business_city0": "Dallas",
           "category_name0": "restaurant",
@@ -1824,33 +1182,11 @@
           "category_name0": "Bars",
           "user_name0": "Patrick"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Bars",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
       },
-      {
-        "example": "Patrick",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "what are the names of categories  and names of the genres for which there are anyof tracks",
+        "text": "find the genre name of the tv taken by  category_name0",
         "variables": {
           "category_name0": "Bars",
           "user_name0": "Patrick"
@@ -1887,39 +1223,11 @@
           "category_name0": "Bars",
           "user_name0": "Patrick"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.RATING >= business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "3",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
       },
-      {
-        "example": "Bars",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Patrick",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "7",
-        "text": "what are the names of categories for which there are no ratings",
+        "text": "what are the names of categories that are not on average business_rating0 and whosepg are not category_name0",
         "variables": {
           "business_rating0": "3",
           "category_name0": "Bars",
@@ -1962,33 +1270,11 @@
           "business_name0": "Barrio Cafe",
           "tip_year0": "2015"
         }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM BUSINESS AS BUSINESSalias0 , TIP AS TIPalias0 , USER AS USERalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND TIPalias0.YEAR = tip_year0 AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Barrio Cafe",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "2015",
-        "location": "both",
-        "name": "tip_year0",
-        "type": "tip_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "5",
-        "text": "find the first names of all the users who have written a business_name0 paper but not advise me his or her first names",
+        "text": "find the branch names and years of opening of all the business_name0 years old",
         "variables": {
           "business_name0": "Barrio Cafe",
           "tip_year0": "2015"
@@ -2024,33 +1310,11 @@
           "business_rating0": "2",
           "business_state0": "Texas"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.RATING < business_rating0 AND BUSINESSalias0.STATE = \"business_state0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "2",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
       },
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "find the name of the business_rating0 pilots whose job title is business_rating0",
+        "text": "find me the name of allfemale songs whose genre is younger than business_rating0",
         "variables": {
           "business_rating0": "2",
           "business_state0": "Texas"
@@ -2105,39 +1369,11 @@
           "category_name0": "Seafood",
           "category_name1": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Seafood",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "5",
-        "text": "what are the names of categories  and ordered by ascending",
+        "text": "what are the names of categories that are shared by at least business_city0 people",
         "variables": {
           "business_city0": "Pittsburgh",
           "category_name0": "Hospice",
@@ -2146,7 +1382,7 @@
       },
       {
         "question-split": "6",
-        "text": "List all the category_name0 category_name1 in \" business_city0 \"",
+        "text": "what are the names of all the categories  ordered by their names and credits",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "Italian",
@@ -2155,7 +1391,7 @@
       },
       {
         "question-split": "3",
-        "text": "Find all category_name1 that serve category_name0 in \" business_city0 \"",
+        "text": "find the name of all the products that serve categories  and whose products are not  business_city0  products",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "Seafood",
@@ -2220,37 +1456,6 @@
   },
   {
     "difficulty": 2,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "2",
-        "text": "what are the names of the five youngest reviewers whose rating is above any than any average rating",
-        "variables": {
-          "review_rating0": "4",
-          "user_name0": "Patrick"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE REVIEWalias0.RATING > review_rating0 AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "4",
-        "location": "both",
-        "name": "review_rating0",
-        "type": "review_rating"
-      },
-      {
-        "example": "Patrick",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
     "query-split": "train",
     "sentences": [
       {
@@ -2260,33 +1465,11 @@
           "business_city0": "Los Angeles",
           "business_name0": "Apple Store"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.BUSINESS_ID FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.NAME = \"business_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Apple Store",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "find us in alphabetical order for business_city0",
+        "text": "find the locations of all restaurants that are located in the business_city0 state",
         "variables": {
           "business_city0": "Los Angeles",
           "business_name0": "Apple Store"
@@ -2323,39 +1506,11 @@
           "business_rating0": "4.5",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.RATING > business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "4.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "find the name of the genres whose ratings are above any business_city0",
+        "text": "find the names of all aircrafts with a rating above business_city0 and have at least business_rating0 stars",
         "variables": {
           "business_city0": "Dallas",
           "business_rating0": "4.5",
@@ -2421,38 +1576,6 @@
   },
   {
     "difficulty": 2,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "3",
-        "text": "what are the names of the storms and the names of the regions surrounding business_name0",
-        "variables": {
-          "business_name0": "Flat Top Grill",
-          "category_name0": "restaurant"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT NEIGHBORHOODalias0.NEIGHBORHOOD_NAME FROM BUSINESS AS BUSINESSalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;",
-      "SELECT NEIGHBORHOODalias0.NEIGHBORHOOD_NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Flat Top Grill",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
     "query-split": "train",
     "sentences": [
       {
@@ -2462,33 +1585,11 @@
           "business_name0": "Vintner Grill",
           "tip_likes0": "9"
         }
-      }
-    ],
-    "sql": [
-      "SELECT TIPalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , TIP AS TIPalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND TIPalias0.LIKES > tip_likes0 ;"
-    ],
-    "variables": [
-      {
-        "example": "Vintner Grill",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "9",
-        "location": "both",
-        "name": "tip_likes0",
-        "type": "tip_likes"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "2",
-        "text": "which papers were made on about business_name0 or before that received more than tip_likes0 harris  give me the papers",
+        "text": "what are the names of poker held on which are shared by at least business_name0 students",
         "variables": {
           "business_name0": "Vintner Grill",
           "tip_likes0": "9"
@@ -2524,33 +1625,11 @@
           "business_name0": "Kabob Palace",
           "review_year0": "2014"
         }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.YEAR = review_year0 ;"
-    ],
-    "variables": [
-      {
-        "example": "Kabob Palace",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "2014",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "6",
-        "text": "list all the years of founding and the market of business_name0",
+        "text": "what are the names of all the reviews  and also what are the names of the reviews",
         "variables": {
           "business_name0": "Kabob Palace",
           "review_year0": "2014"
@@ -2585,27 +1664,11 @@
         "variables": {
           "business_city0": "Dallas"
         }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM BUSINESS AS BUSINESSalias0 , TIP AS TIPalias0 , USER AS USERalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "5",
-        "text": "which customers have written a tips about business_city0  give me the customer details and number of tips",
+        "text": "who has written a paper about business_city0",
         "variables": {
           "business_city0": "Dallas"
         }
@@ -2635,39 +1698,11 @@
           "business_state0": "Texas",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.CITY FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "MGM Grand Buffet",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "what are the names of all cities with a status of business_name0  whose name starts with  business_name0",
+        "text": "what are the names of all cities that are on the business_name0 run busiest",
         "variables": {
           "business_name0": "MGM Grand Buffet",
           "business_state0": "Texas",
@@ -2709,27 +1744,11 @@
         "variables": {
           "category_name0": "Pet Groomers"
         }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , TIP AS TIPalias0 , USER AS USERalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Pet Groomers",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "1",
-        "text": "which customers have rated a policy  grouped by ascending crime",
+        "text": "what are the names of the users who have rated a paper on  category_name0",
         "variables": {
           "category_name0": "Pet Groomers"
         }
@@ -2781,38 +1800,6 @@
   },
   {
     "difficulty": 2,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "5",
-        "text": "what are the names of all movies whose rating is below any review person",
-        "variables": {
-          "category_name0": "Bistros",
-          "review_rating0": "1.5"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.RATING < review_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;",
-      "SELECT REVIEWalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.RATING < review_rating0 ;"
-    ],
-    "variables": [
-      {
-        "example": "Bistros",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "1.5",
-        "location": "both",
-        "name": "review_rating0",
-        "type": "review_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
     "query-split": "train",
     "sentences": [
       {
@@ -2821,27 +1808,11 @@
         "variables": {
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT NEIGHBORHOODalias0.NEIGHBORHOOD_NAME FROM BUSINESS AS BUSINESSalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "2",
-        "text": "what are the names of gymnasts who have not reviewed any business fog",
+        "text": "what are the first names of all user_name0 professors who rated a var1",
         "variables": {
           "user_name0": "Michelle"
         }
@@ -2870,33 +1841,11 @@
           "business_name0": "Cafe Zinho",
           "business_state0": "Texas"
         }
-      }
-    ],
-    "sql": [
-      "SELECT TIPalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , TIP AS TIPalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND BUSINESSalias0.STATE = \"business_state0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Cafe Zinho",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "find all the tips held by business_name0  ordered by ascending rating",
+        "text": "what are the names of all the tips that are on the business_name0 runys",
         "variables": {
           "business_name0": "Cafe Zinho",
           "business_state0": "Texas"
@@ -2931,27 +1880,11 @@
         "variables": {
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "2",
-        "text": "what are the names of the users  grouped by genre name ascending",
+        "text": "find the name of the customers who have category_name0 or var1 as a pet",
         "variables": {
           "category_name0": "restaurant"
         }
@@ -2981,39 +1914,11 @@
           "business_state0": "Pennsylvania",
           "tip_year0": "2010"
         }
-      }
-    ],
-    "sql": [
-      "SELECT TIPalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , TIP AS TIPalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND BUSINESSalias0.STATE = \"business_state0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND TIPalias0.YEAR = tip_year0 ;"
-    ],
-    "variables": [
-      {
-        "example": "Cafe Zinho",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "Pennsylvania",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      },
-      {
-        "example": "2010",
-        "location": "both",
-        "name": "tip_year0",
-        "type": "tip_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "how many tips were made on the airport that has a population density of business_name0 and business_state0",
+        "text": "how many tips were made on business_name0 in business_state0 about business_state0",
         "variables": {
           "business_name0": "Cafe Zinho",
           "business_state0": "Pennsylvania",
@@ -3078,37 +1983,6 @@
   },
   {
     "difficulty": 2,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "5",
-        "text": "which customers  first notification of each policy type  give me the customer ids and the number of policies",
-        "variables": {
-          "category_name0": "restaurant",
-          "review_year0": "2010"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.YEAR = review_year0 AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "2010",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
     "query-split": "train",
     "sentences": [
       {
@@ -3117,27 +1991,11 @@
         "variables": {
           "review_year0": "2012"
         }
-      }
-    ],
-    "sql": [
-      "SELECT TIPalias0.TEXT FROM REVIEW AS REVIEWalias0 , TIP AS TIPalias0 , USER AS USERalias0 WHERE REVIEWalias0.YEAR = review_year0 AND USERalias0.USER_ID = REVIEWalias0.USER_ID AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "2012",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "1",
-        "text": "show me the names of the singers whose citizenship is not  review_year0",
+        "text": "find the names of all the tips that are written by a scientist from the review_year0",
         "variables": {
           "review_year0": "2012"
         }
@@ -3162,30 +2020,6 @@
       {
         "question-split": "5",
         "text": "Find all reviews for businesses rated business_rating0",
-        "variables": {
-          "business_rating0": "2.5"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT REVIEWalias0.TEXT FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.RATING = business_rating0 AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "2.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 2,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "5",
-        "text": "return me the last names of the business_rating0 staff whose job title is business_rating0",
         "variables": {
           "business_rating0": "2.5"
         }
@@ -3246,33 +2080,11 @@
           "business_city0": "Madison",
           "category_name0": "escape games"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "escape games",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "8",
-        "text": "how many colors are there in the country of business_city0",
+        "text": "how many different categories are there in the dog  business_city0  industry",
         "variables": {
           "business_city0": "Madison",
           "category_name0": "preschools"
@@ -3280,7 +2092,7 @@
       },
       {
         "question-split": "4",
-        "text": "What is the number of category_name0 in business_city0",
+        "text": "how many different categories correspond to books made in business_city0",
         "variables": {
           "business_city0": "Edinburgh",
           "category_name0": "Pet Groomers"
@@ -3288,7 +2100,7 @@
       },
       {
         "question-split": "4",
-        "text": "How many category_name0 exist in business_city0",
+        "text": "what is the number of different category ids for templates  ordered by genre ascending",
         "variables": {
           "business_city0": "Edinburgh",
           "category_name0": "Pet Groomers"
@@ -3296,7 +2108,7 @@
       },
       {
         "question-split": "8",
-        "text": "What is the number of category_name0 in \" business_city0 \" ?",
+        "text": "what is the number of different category names  and also what is the id of the subject",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "Dentists"
@@ -3304,7 +2116,7 @@
       },
       {
         "question-split": "9",
-        "text": "How many category_name0 are there in business_city0 ?",
+        "text": "how many different categories are there in the pet ids",
         "variables": {
           "business_city0": "Madison",
           "category_name0": "escape games"
@@ -3340,33 +2152,11 @@
           "business_rating0": "3.5",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.RATING > business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "3.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "2",
-        "text": "count the number of clubs whose ratings are above business_rating0",
+        "text": "how many distinct categories have been named continents",
         "variables": {
           "business_rating0": "3.5",
           "category_name0": "restaurant"
@@ -3403,39 +2193,11 @@
           "category_name0": "restaurant",
           "category_name1": "Moroccan"
         }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( CHECKINalias0.COUNT ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , CHECKIN AS CHECKINalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Moroccan",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "what are the names of catalog entries that are not on the east side in the usa",
+        "text": "what are the total number of check cartoons that are in business_city0  except for the title of a song whose title is a prerequisite to books  category_name0",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "restaurant",
@@ -3514,51 +2276,6 @@
   },
   {
     "difficulty": 3,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "4",
-        "text": "what are the total checking and savings balances for male sex is business_city0 singers",
-        "variables": {
-          "business_city0": "Los Angeles",
-          "category_name0": "Moroccan",
-          "category_name1": "restaurant",
-          "checkin_day0": "Friday"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( CHECKINalias0.COUNT ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , CHECKIN AS CHECKINalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CHECKINalias0.DAY = \"checkin_day0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      },
-      {
-        "example": "Moroccan",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      },
-      {
-        "example": "Friday",
-        "location": "both",
-        "name": "checkin_day0",
-        "type": "checkin_day"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
     "query-split": "train",
     "sentences": [
       {
@@ -3569,39 +2286,11 @@
           "category_name0": "Moroccan",
           "category_name1": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT CHECKINalias0.DAY , SUM( CHECKINalias0.COUNT ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , CHECKIN AS CHECKINalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY CHECKINalias0.DAY ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Moroccan",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "4",
-        "text": "what are the names of the pilots that have made the unit of measure for each fourth week",
+        "text": "what are the total checking and savings balances for all male sex is business_city0 students who have also had the prerequisite category_name0",
         "variables": {
           "business_city0": "Los Angeles",
           "category_name0": "Moroccan",
@@ -3645,39 +2334,11 @@
           "category_name1": "Delis",
           "checkin_day0": "Sunday"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.STATE , SUM( CHECKINalias0.COUNT ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , CHECKIN AS CHECKINalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CHECKINalias0.DAY = \"checkin_day0\" GROUP BY BUSINESSalias0.STATE ;"
-    ],
-    "variables": [
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
       },
-      {
-        "example": "Delis",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      },
-      {
-        "example": "Sunday",
-        "location": "both",
-        "name": "checkin_day0",
-        "type": "checkin_day"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "2",
-        "text": "what are the names of the highanded sections of the usa",
+        "text": "what are the total names of the pilots in the state of category_name0 or category_name1",
         "variables": {
           "category_name0": "Italian",
           "category_name1": "Delis",
@@ -3742,37 +2403,6 @@
   },
   {
     "difficulty": 3,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "7",
-        "text": "return me the number of reviews for which there are is not the review_year0",
-        "variables": {
-          "review_year0": "2015",
-          "user_name0": "Niloofar"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE REVIEWalias0.YEAR = review_year0 AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "2015",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      },
-      {
-        "example": "Niloofar",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
     "query-split": "train",
     "sentences": [
       {
@@ -3781,27 +2411,11 @@
         "variables": {
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT AVG ( REVIEWalias0.RATING ) FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "3",
-        "text": "what is the average rating star for each product type",
+        "text": "what is the average rating star for each gender",
         "variables": {
           "user_name0": "Michelle"
         }
@@ -3830,33 +2444,11 @@
           "business_name0": "Cafe Zinho",
           "checkin_day0": "Friday"
         }
-      }
-    ],
-    "sql": [
-      "SELECT CHECKINalias0.COUNT FROM BUSINESS AS BUSINESSalias0 , CHECKIN AS CHECKINalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CHECKINalias0.DAY = \"checkin_day0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Cafe Zinho",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "Friday",
-        "location": "both",
-        "name": "checkin_day0",
-        "type": "checkin_day"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "2",
-        "text": "how many check has each album",
+        "text": "how many business_name0 restaurants are there in the tables",
         "variables": {
           "business_name0": "Cafe Zinho",
           "checkin_day0": "Friday"
@@ -3892,33 +2484,11 @@
           "business_city0": "Pittsburgh",
           "business_name0": "Sushi Too"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( USERalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.NAME = \"business_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Pittsburgh",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Sushi Too",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "4",
-        "text": "what are the distinct customer ids for customers who have not reviewed a mortage loan",
+        "text": "how many customers  first notification of loss record and last name",
         "variables": {
           "business_city0": "Pittsburgh",
           "business_name0": "Sushi Too"
@@ -3955,39 +2525,11 @@
           "business_rating0": "4.5",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.RATING = business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Pittsburgh",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "4.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "4",
-        "text": "how many different cities have  business_city0  as a pet singer",
+        "text": "how many different cities have had milk or egg  ordered by population",
         "variables": {
           "business_city0": "Pittsburgh",
           "business_rating0": "4.5",
@@ -4029,27 +2571,11 @@
         "variables": {
           "tip_year0": "2015"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( TIPalias0.TEXT ) ) FROM TIP AS TIPalias0 WHERE TIPalias0.YEAR = tip_year0 ;"
-    ],
-    "variables": [
-      {
-        "example": "2015",
-        "location": "both",
-        "name": "tip_year0",
-        "type": "tip_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "4",
-        "text": "how many tips were written on tip_year0 since var1",
+        "text": "how many tips were written by pilots from the tip_year0",
         "variables": {
           "tip_year0": "2015"
         }
@@ -4077,27 +2603,11 @@
         "variables": {
           "user_name0": "Niloofar"
         }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( TIPalias0.LIKES ) FROM TIP AS TIPalias0 , USER AS USERalias0 WHERE USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Niloofar",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "6",
-        "text": "how many likes correspond to the pet  user_name0",
+        "text": "return the total likes for his or her genre",
         "variables": {
           "user_name0": "Niloofar"
         }
@@ -4125,27 +2635,11 @@
         "variables": {
           "business_name0": "Cafe Zinho"
         }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( TIPalias0.LIKES ) FROM BUSINESS AS BUSINESSalias0 , TIP AS TIPalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Cafe Zinho",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "1",
-        "text": "how many likes correspond to each police balance",
+        "text": "how many likes correspond to each film name",
         "variables": {
           "business_name0": "Cafe Zinho"
         }
@@ -4196,37 +2690,6 @@
   },
   {
     "difficulty": 3,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "9",
-        "text": "return the sum of likes for business_name0 and user_name0",
-        "variables": {
-          "business_name0": "Cafe Zinho",
-          "user_name0": "Niloofar"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( TIPalias0.LIKES ) FROM BUSINESS AS BUSINESSalias0 , TIP AS TIPalias0 , USER AS USERalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND TIPalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Cafe Zinho",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      },
-      {
-        "example": "Niloofar",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
     "query-split": "train",
     "sentences": [
       {
@@ -4244,33 +2707,11 @@
           "tip_year0": "2010",
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( TIPalias0.TEXT ) ) FROM TIP AS TIPalias0 , USER AS USERalias0 WHERE TIPalias0.YEAR = tip_year0 AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "2010",
-        "location": "both",
-        "name": "tip_year0",
-        "type": "tip_year"
       },
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "how many tips has the pilot  tip_year0  written his or her first name  and include user_name0",
+        "text": "what are the theme of the tv years and what are the companies",
         "variables": {
           "tip_year0": "2014",
           "user_name0": "Michelle"
@@ -4278,7 +2719,7 @@
       },
       {
         "question-split": "5",
-        "text": "Return me the number of tips that are written by user_name0 in tip_year0 .",
+        "text": "how many tips are written by user  tip_year0  in jun or before",
         "variables": {
           "tip_year0": "2010",
           "user_name0": "Michelle"
@@ -4314,33 +2755,11 @@
           "tip_month0": "April",
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( TIPalias0.TEXT ) ) FROM TIP AS TIPalias0 , USER AS USERalias0 WHERE TIPalias0.MONTH = \"tip_month0\" AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "April",
-        "location": "both",
-        "name": "tip_month0",
-        "type": "tip_month"
       },
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "6",
-        "text": "how many tips has each written",
+        "text": "return me the number of tips that has the date on which he ended his previous job",
         "variables": {
           "tip_month0": "April",
           "user_name0": "Michelle"
@@ -4398,37 +2817,6 @@
   },
   {
     "difficulty": 3,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "6",
-        "text": "how many regions do have concerts that are not  business_state0",
-        "variables": {
-          "business_state0": "Texas",
-          "category_name0": "restaurant"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
     "query-split": "train",
     "sentences": [
       {
@@ -4448,39 +2836,11 @@
           "business_rating0": "3.5",
           "category_name0": "Bars"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.RATING > business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "3.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      },
-      {
-        "example": "Bars",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "how many categories have a rating above business_city0 and have a corresponding count of above business_rating0",
+        "text": "how many different cities have a rating above or below business_city0",
         "variables": {
           "business_city0": "Los Angeles",
           "business_rating0": "4",
@@ -4489,7 +2849,7 @@
       },
       {
         "question-split": "8",
-        "text": "How many category_name0 in business_city0 have a rating above business_rating0 ?",
+        "text": "how many different cities have a rating above business_city0 or below business_rating0",
         "variables": {
           "business_city0": "Dallas",
           "business_rating0": "3.5",
@@ -4534,45 +2894,11 @@
           "business_state0": "Texas",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( USERalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.NAME = \"business_name0\" AND BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Texas de Brazil",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      },
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "2",
-        "text": "what are the first names of people who reviewed the topics of business_city0 or business_name0",
+        "text": "what are the names of all the business_city0 years old or young dorms",
         "variables": {
           "business_city0": "Dallas",
           "business_name0": "Texas de Brazil",
@@ -4622,33 +2948,11 @@
           "business_name0": "Bistro Di Napoli",
           "review_year0": "2015"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( USERalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.YEAR = review_year0 AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Bistro Di Napoli",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "2015",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "6",
-        "text": "what are the first names of all business_name0 people who reviewed for review_year0 food in var0",
+        "text": "how many people reviewed a course december and the courseid",
         "variables": {
           "business_name0": "Bistro Di Napoli",
           "review_year0": "2015"
@@ -4713,44 +3017,6 @@
   },
   {
     "difficulty": 3,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "8",
-        "text": "how many categories of journals are there in the continents or in which the area of business is not business_city0",
-        "variables": {
-          "business_city0": "Dallas",
-          "category_name0": "restaurant",
-          "neighborhood_name0": "Hazelwood"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND NEIGHBORHOODalias0.NEIGHBORHOOD_NAME = \"neighborhood_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Hazelwood",
-        "location": "both",
-        "name": "neighborhood_name0",
-        "type": "neighborhood_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
     "query-split": "train",
     "sentences": [
       {
@@ -4761,39 +3027,11 @@
           "business_name0": "Starbucks",
           "business_state0": "Texas"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.BUSINESS_ID ) ) FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.NAME = \"business_name0\" AND BUSINESSalias0.STATE = \"business_state0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Starbucks",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      },
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "4",
-        "text": "how many business singers are there in the us",
+        "text": "how many business citizens live in business_city0 district",
         "variables": {
           "business_city0": "Dallas",
           "business_name0": "Starbucks",
@@ -4835,28 +3073,11 @@
         "variables": {
           "business_name0": "Acacia Cafe"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.REVIEW_COUNT FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" ;",
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Acacia Cafe",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "8",
-        "text": "count the number of reviews for which it was not the smallest number of reviews",
+        "text": "count the number of reviews for which place is not business_name0",
         "variables": {
           "business_name0": "Acacia Cafe"
         }
@@ -4886,33 +3107,11 @@
           "business_name0": "Barrio Cafe",
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT AVG ( CHECKINalias0.COUNT ) , CHECKINalias0.DAY FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CHECKIN AS CHECKINalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY CHECKINalias0.DAY ;"
-    ],
-    "variables": [
-      {
-        "example": "Barrio Cafe",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "what are the average number of checkouts made for the class business_name0",
+        "text": "what are the average number of check beds for each genre and what are the names of the pilots in ascending order",
         "variables": {
           "business_name0": "Barrio Cafe",
           "category_name0": "restaurant"
@@ -4948,33 +3147,11 @@
           "business_city0": "Madison",
           "neighborhood_name0": "Stone Meadows"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND NEIGHBORHOODalias0.NEIGHBORHOOD_NAME = \"neighborhood_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Stone Meadows",
-        "location": "both",
-        "name": "neighborhood_name0",
-        "type": "neighborhood_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "2",
-        "text": "how many poker stadiums are there in the country of business_city0",
+        "text": "how many business_city0 are there in the neighborhood_name0 operated by neighborhood_name0",
         "variables": {
           "business_city0": "Madison",
           "neighborhood_name0": "Stone Meadows"
@@ -5009,27 +3186,11 @@
         "variables": {
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) , REVIEWalias0.MONTH FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.NAME = \"user_name0\" GROUP BY REVIEWalias0.MONTH ;"
-    ],
-    "variables": [
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "5",
-        "text": "how many staff members are there per city color described",
+        "text": "how many voting records do we have",
         "variables": {
           "user_name0": "Michelle"
         }
@@ -5057,27 +3218,11 @@
         "variables": {
           "user_name0": "Adrienne"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Adrienne",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "3",
-        "text": "return me the number of reviews for which there are the user_name0 or more people",
+        "text": "how many reviews has each received",
         "variables": {
           "user_name0": "Adrienne"
         }
@@ -5107,39 +3252,11 @@
           "review_year0": "2014",
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE REVIEWalias0.MONTH = \"review_month0\" AND REVIEWalias0.YEAR = review_year0 AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "March",
-        "location": "both",
-        "name": "review_month0",
-        "type": "review_month"
       },
-      {
-        "example": "2014",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      },
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "6",
-        "text": "what are the names of the pilots  grouped by ascending age",
+        "text": "how many reviews have been written by each reviewer",
         "variables": {
           "review_month0": "March",
           "review_year0": "2014",
@@ -5182,33 +3299,11 @@
           "review_year0": "2010",
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.YEAR = review_year0 AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "2010",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
       },
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "count the number of tv poker players who have had review_year0 or more for commission",
+        "text": "how many businesses  questions were made by them in the past year",
         "variables": {
           "review_year0": "2010",
           "user_name0": "Michelle"
@@ -5245,39 +3340,11 @@
           "review_year0": "2010",
           "user_name0": "Christine"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.YEAR = review_year0 AND USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "San Diego",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "2010",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      },
-      {
-        "example": "Christine",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "3",
-        "text": "how many businesses  on average  are there in the database of the country business_city0",
+        "text": "find the number of cities in which the business_city0 river is the largest",
         "variables": {
           "business_city0": "San Diego",
           "review_year0": "2010",
@@ -5320,33 +3387,11 @@
           "business_city0": "Los Angeles",
           "business_name0": "Target"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.BUSINESS_ID ) ) FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.NAME = \"business_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Target",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "9",
-        "text": "count the number of business restaurants in year business_city0 or business_name0",
+        "text": "count the number of business restaurants in the usa",
         "variables": {
           "business_city0": "Los Angeles",
           "business_name0": "Target"
@@ -5382,33 +3427,11 @@
           "business_city0": "Dallas",
           "category_name0": "Irish Pub"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( USERalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "Irish Pub",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "1",
-        "text": "how many customers are not affected by owners of tracks",
+        "text": "count the number of customers who have not reviewed any policy",
         "variables": {
           "business_city0": "Dallas",
           "category_name0": "Irish Pub"
@@ -5443,27 +3466,11 @@
         "variables": {
           "review_year0": "2014"
         }
-      }
-    ],
-    "sql": [
-      "SELECT AVG ( REVIEWalias0.RATING ) FROM REVIEW AS REVIEWalias0 WHERE REVIEWalias0.YEAR = review_year0 ;"
-    ],
-    "variables": [
-      {
-        "example": "2014",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "4",
-        "text": "what is the average rating of all reviews for the years before review_year0",
+        "text": "what is the average rating of reviews for each appelation  and what are the names of the staff",
         "variables": {
           "review_year0": "2014"
         }
@@ -5492,34 +3499,11 @@
           "business_name0": "Vintner Grill",
           "review_year0": "2010"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( USERalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.YEAR = review_year0 AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;",
-      "SELECT COUNT( DISTINCT ( USERalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.YEAR = review_year0 AND USERalias0.USER_ID = REVIEWalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Vintner Grill",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
       },
-      {
-        "example": "2010",
-        "location": "both",
-        "name": "review_year0",
-        "type": "review_year"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "3",
-        "text": "how many people live in business_name0 for review_year0 food",
+        "text": "how many people have taught a business_name0 committee in which the business_name0 river runs",
         "variables": {
           "business_name0": "Vintner Grill",
           "review_year0": "2010"
@@ -5555,28 +3539,11 @@
         "variables": {
           "neighborhood_name0": "South Summerlin"
         }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( BUSINESSalias0.REVIEW_COUNT ) FROM BUSINESS AS BUSINESSalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND NEIGHBORHOODalias0.NEIGHBORHOOD_NAME = \"neighborhood_name0\" ;",
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) FROM BUSINESS AS BUSINESSalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 , REVIEW AS REVIEWalias0 WHERE NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND NEIGHBORHOODalias0.NEIGHBORHOOD_NAME = \"neighborhood_name0\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "South Summerlin",
-        "location": "both",
-        "name": "neighborhood_name0",
-        "type": "neighborhood_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "7",
-        "text": "how many reviews are there for each block floor",
+        "text": "what are the names of the neighborhood_name0 police forces who had the greatest number of reviews",
         "variables": {
           "neighborhood_name0": "South Summerlin"
         }
@@ -5621,30 +3588,6 @@
   },
   {
     "difficulty": 3,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "7",
-        "text": "how many users are there whose name contains  user_name0",
-        "variables": {
-          "user_name0": "Michelle"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( USERalias0.NAME ) ) FROM USER AS USERalias0 WHERE USERalias0.NAME = \"user_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
     "query-split": "train",
     "sentences": [
       {
@@ -5653,27 +3596,11 @@
         "variables": {
           "category_name0": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "6",
-        "text": "count the number of busiest entrepreneurs whose card is  category_name0",
+        "text": "how many businesses are there in the category  category_name0",
         "variables": {
           "category_name0": "restaurant"
         }
@@ -5701,27 +3628,11 @@
         "variables": {
           "business_name0": "Panda Express"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.CITY ) ) FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.NAME = \"business_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Panda Express",
-        "location": "both",
-        "name": "business_name0",
-        "type": "business_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "5",
-        "text": "how many cities have a black percentage that is not business_name0",
+        "text": "how many cities have ids of cities that have ids between business_name0 and var1",
         "variables": {
           "business_name0": "Panda Express"
         }
@@ -5749,27 +3660,11 @@
         "variables": {
           "user_name0": "Michelle"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( TIPalias0.TEXT ) ) FROM TIP AS TIPalias0 , USER AS USERalias0 WHERE USERalias0.NAME = \"user_name0\" AND USERalias0.USER_ID = TIPalias0.USER_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Michelle",
-        "location": "both",
-        "name": "user_name0",
-        "type": "user_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "7",
-        "text": "how many tips are written by user user_name0 investors",
+        "text": "how many tips are written by user user_name0",
         "variables": {
           "user_name0": "Michelle"
         }
@@ -5797,27 +3692,11 @@
         "variables": {
           "neighborhood_name0": "Brighton Heights"
         }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( CHECKINalias0.COUNT ) FROM BUSINESS AS BUSINESSalias0 , CHECKIN AS CHECKINalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND NEIGHBORHOODalias0.NEIGHBORHOOD_NAME = \"neighborhood_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Brighton Heights",
-        "location": "both",
-        "name": "neighborhood_name0",
-        "type": "neighborhood_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "4",
-        "text": "find the number of final checking flights in the us",
+        "text": "find the total number of checkouts made for each region of the usa",
         "variables": {
           "neighborhood_name0": "Brighton Heights"
         }
@@ -5845,27 +3724,11 @@
         "variables": {
           "checkin_day0": "Sunday"
         }
-      }
-    ],
-    "sql": [
-      "SELECT SUM( CHECKINalias0.COUNT ) FROM CHECKIN AS CHECKINalias0 WHERE CHECKINalias0.DAY = \"checkin_day0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Sunday",
-        "location": "both",
-        "name": "checkin_day0",
-        "type": "checkin_day"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "0",
-        "text": "find the total of checkouts made for the years before checkin_day0",
+        "text": "find the total check in the city of checkin_day0",
         "variables": {
           "checkin_day0": "Sunday"
         }
@@ -5893,27 +3756,11 @@
         "variables": {
           "review_month0": "March"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) FROM REVIEW AS REVIEWalias0 WHERE REVIEWalias0.MONTH = \"review_month0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "March",
-        "location": "both",
-        "name": "review_month0",
-        "type": "review_month"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "3",
-        "text": "return the total number of reviews for each subject",
+        "text": "how many reviews were made by genre review_month0",
         "variables": {
           "review_month0": "March"
         }
@@ -5939,20 +3786,11 @@
         "question-split": "7",
         "text": "Find the number of tips written in each month",
         "variables": {}
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( TIPalias0.TEXT ) ) , TIPalias0.MONTH FROM TIP AS TIPalias0 GROUP BY TIPalias0.MONTH ;"
-    ],
-    "variables": []
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "7",
-        "text": "for each language  return the number of tips written in it",
+        "text": "find the number of tips written in each city",
         "variables": {}
       }
     ],
@@ -5972,33 +3810,11 @@
           "business_city0": "Madison",
           "business_rating0": "5"
         }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( NEIGHBORHOODalias0.NEIGHBORHOOD_NAME ) ) FROM BUSINESS AS BUSINESSalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.RATING = business_rating0 AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 3,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "3",
-        "text": "how many stadiums have a song above business_city0 and have a ticket price lower than business_rating0",
+        "text": "find the number of cows whose citizenship is not  business_city0",
         "variables": {
           "business_city0": "Madison",
           "business_rating0": "5"
@@ -6035,39 +3851,11 @@
           "category_name0": "Moroccan",
           "category_name1": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
       },
-      {
-        "example": "Moroccan",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "4",
-        "text": "what is the genre name of the artist  business_state0  whose first name is  category_name0",
+        "text": "what are the names of categories that have a subject named  business_state0",
         "variables": {
           "business_state0": "Texas",
           "category_name0": "Moroccan",
@@ -6110,34 +3898,11 @@
           "category_name0": "restaurant",
           "category_name1": "Thai"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ORDER BY BUSINESSalias0.REVIEW_COUNT DESC LIMIT 1 ;",
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , REVIEW AS REVIEWalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY BUSINESSalias0.NAME ORDER BY COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) DESC LIMIT 1;"
-    ],
-    "variables": [
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
       },
-      {
-        "example": "Thai",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "7",
-        "text": "what is the most common subject of the product which received the highest highest number of reviews",
+        "text": "what is the most common subject of the product category",
         "variables": {
           "category_name0": "restaurant",
           "category_name1": "Thai"
@@ -6180,42 +3945,17 @@
   },
   {
     "difficulty": 4,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "0",
-        "text": "what is the name of the business with the most checking rooms",
-        "variables": {}
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CHECKIN AS CHECKINalias0 WHERE CHECKINalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY BUSINESSalias0.NAME ORDER BY SUM( CHECKINalias0.COUNT ) DESC LIMIT 1 ;"
-    ],
-    "variables": []
-  },
-  {
-    "difficulty": 4,
     "query-split": "train",
     "sentences": [
       {
         "question-split": "0",
         "text": "find the user with the most number of reviews",
         "variables": {}
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE USERalias0.USER_ID = REVIEWalias0.USER_ID GROUP BY USERalias0.NAME ORDER BY COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) DESC LIMIT 1 ;",
-      "SELECT USERalias0.USER_ID FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE USERalias0.USER_ID = REVIEWalias0.USER_ID GROUP BY USERalias0.USER_ID ORDER BY COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) DESC LIMIT 1 ;"
-    ],
-    "variables": []
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "0",
-        "text": "which user has the most customers  give me the customer name",
+        "text": "which user has the most reviews  give me the highest director name",
         "variables": {}
       }
     ],
@@ -6235,27 +3975,11 @@
         "variables": {
           "business_city0": "Madison"
         }
-      }
-    ],
-    "sql": [
-      "SELECT NEIGHBORHOODalias0.NEIGHBORHOOD_NAME FROM BUSINESS AS BUSINESSalias0 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY NEIGHBORHOODalias0.NEIGHBORHOOD_NAME ORDER BY COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) DESC LIMIT 1 ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "7",
-        "text": "which region has the most number of bike passengers in the country of business_city0",
+        "text": "what is the name of the airport that has the most number of aircrafts in the city of business_city0",
         "variables": {
           "business_city0": "Madison"
         }
@@ -6285,39 +4009,11 @@
           "category_name0": "restaurant",
           "category_name1": "Italian"
         }
-      }
-    ],
-    "sql": [
-      "SELECT NEIGHBORHOODalias0.NEIGHBORHOOD_NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID ORDER BY BUSINESSalias0.RATING DESC LIMIT 1 ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "5",
-        "text": "which region has the most populationplease give me the region name",
+        "text": "which regions border business_city0 with the largest star",
         "variables": {
           "business_city0": "Madison",
           "category_name0": "restaurant",
@@ -6372,45 +4068,11 @@
           "category_name0": "Mexican",
           "category_name1": "restaurant"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.RATING > business_rating0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "3.5",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      },
-      {
-        "example": "Mexican",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "what are the names of categories  and also what are the names of the genres",
+        "text": "what is the genre name of every product  ordered by album title",
         "variables": {
           "business_city0": "Dallas",
           "business_rating0": "4",
@@ -6420,7 +4082,7 @@
       },
       {
         "question-split": "4",
-        "text": "Find all category_name0 category_name1 in business_city0 with a rating above business_rating0",
+        "text": "what are the names of the categories  and ordered by their price ascending",
         "variables": {
           "business_city0": "Dallas",
           "business_rating0": "3.5",
@@ -6506,101 +4168,11 @@
   },
   {
     "difficulty": 4,
-    "query-split": "dev",
-    "sentences": [
-      {
-        "question-split": "2",
-        "text": "what are the names of categories  and what are the names of the top business_city0 countries by number of citizens  list country name and number of citizenships",
-        "variables": {
-          "business_city0": "Dallas",
-          "business_state0": "Texas",
-          "category_name0": "Valet Service",
-          "category_name1": "restaurant"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.STATE = \"business_state0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      },
-      {
-        "example": "Texas",
-        "location": "both",
-        "name": "business_state0",
-        "type": "business_state"
-      },
-      {
-        "example": "Valet Service",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
     "query-split": "test",
     "sentences": [
       {
         "question-split": "8",
         "text": "Find all category_name0 category_name1 in the neighborhood_name0 neighborhood of business_city0",
-        "variables": {
-          "business_city0": "Madison",
-          "category_name0": "Italian",
-          "category_name1": "restaurant",
-          "neighborhood_name0": "Meadowood"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , NEIGHBORHOOD AS NEIGHBORHOODalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND NEIGHBORHOODalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND NEIGHBORHOODalias0.NEIGHBORHOOD_NAME = \"neighborhood_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Madison",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      },
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      },
-      {
-        "example": "Meadowood",
-        "location": "both",
-        "name": "neighborhood_name0",
-        "type": "neighborhood_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "8",
-        "text": "what are the names of all the categories  and also what are the names of the themes for which they serve on committees",
         "variables": {
           "business_city0": "Madison",
           "category_name0": "Italian",
@@ -6652,45 +4224,11 @@
           "business_review_count0": "30",
           "category_name0": "Bars"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND BUSINESSalias0.RATING > business_rating0 AND BUSINESSalias0.REVIEW_COUNT > business_review_count0 AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Los Angeles",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "3",
-        "location": "both",
-        "name": "business_rating0",
-        "type": "business_rating"
-      },
-      {
-        "example": "30",
-        "location": "both",
-        "name": "business_review_count0",
-        "type": "business_review_count"
-      },
-      {
-        "example": "Bars",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "3",
-        "text": "what are the names of products with price lower than average and average rating above business_city0",
+        "text": "return me the topic and the average rating for each topic in alphabetical order by reviewer name  ordered by title",
         "variables": {
           "business_city0": "Los Angeles",
           "business_rating0": "3",
@@ -6769,44 +4307,6 @@
   },
   {
     "difficulty": 4,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "7",
-        "text": "what are the number of categories for which there are no or more expensive topics",
-        "variables": {
-          "business_city0": "Edinburgh",
-          "category_name0": "restaurant",
-          "category_name1": "Egyptian"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT COUNT( DISTINCT ( BUSINESSalias0.NAME ) ) FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ;"
-    ],
-    "variables": [
-      {
-        "example": "Edinburgh",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
-      },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Egyptian",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
     "query-split": "train",
     "sentences": [
       {
@@ -6826,39 +4326,11 @@
           "category_name0": "restaurant",
           "category_name1": "Italian"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ORDER BY BUSINESSalias0.RATING DESC LIMIT 1 ;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Italian",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "8",
-        "text": "what is the genre name of the movie with the highest rating",
+        "text": "what is the name of the category that is most populated with the lowest rating",
         "variables": {
           "business_city0": "Dallas",
           "category_name0": "Indian",
@@ -6867,7 +4339,7 @@
       },
       {
         "question-split": "5",
-        "text": "Which category_name1 category_name0 in business_city0 has the highest rating ?",
+        "text": "what is the name of the genre that has the highest rating difference",
         "variables": {
           "business_city0": "Dallas",
           "category_name0": "restaurant",
@@ -6911,40 +4383,11 @@
           "category_name0": "restaurant",
           "category_name1": "Indian"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" ORDER BY BUSINESSalias0.REVIEW_COUNT DESC LIMIT 1 ;",
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 , CATEGORY AS CATEGORYalias1 , REVIEW AS REVIEWalias0 WHERE BUSINESSalias0.CITY = \"business_city0\" AND CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias0.CATEGORY_NAME = \"category_name0\" AND CATEGORYalias1.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND CATEGORYalias1.CATEGORY_NAME = \"category_name1\" AND REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY BUSINESSalias0.NAME ORDER BY COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) DESC LIMIT 1;"
-    ],
-    "variables": [
-      {
-        "example": "Dallas",
-        "location": "both",
-        "name": "business_city0",
-        "type": "business_city"
       },
-      {
-        "example": "restaurant",
-        "location": "both",
-        "name": "category_name0",
-        "type": "category_name"
-      },
-      {
-        "example": "Indian",
-        "location": "both",
-        "name": "category_name1",
-        "type": "category_name"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+
       {
         "question-split": "0",
-        "text": "which allergy type has the most number of reviews",
+        "text": "what is the most common genre of submissions",
         "variables": {
           "business_city0": "Dallas",
           "category_name0": "restaurant",
@@ -7003,30 +4446,6 @@
   },
   {
     "difficulty": 4,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "6",
-        "text": "find the first name and last name of whose staff member is at least review_rating0",
-        "variables": {
-          "review_rating0": "3"
-        }
-      }
-    ],
-    "sql": [
-      "SELECT USERalias0.NAME FROM REVIEW AS REVIEWalias0 , USER AS USERalias0 WHERE USERalias0.USER_ID = REVIEWalias0.USER_ID GROUP BY USERalias0.NAME HAVING AVG ( REVIEWalias0.RATING ) < review_rating0 ;"
-    ],
-    "variables": [
-      {
-        "example": "3",
-        "location": "both",
-        "name": "review_rating0",
-        "type": "review_rating"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
     "query-split": "train",
     "sentences": [
       {
@@ -7035,27 +4454,11 @@
         "variables": {
           "review_month0": "April"
         }
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , REVIEW AS REVIEWalias0 WHERE REVIEWalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID AND REVIEWalias0.MONTH = \"review_month0\" GROUP BY BUSINESSalias0.NAME ORDER BY COUNT( DISTINCT ( REVIEWalias0.TEXT ) ) DESC LIMIT 1 ;"
-    ],
-    "variables": [
-      {
-        "example": "April",
-        "location": "both",
-        "name": "review_month0",
-        "type": "review_month"
-      }
-    ]
-  },
-  {
-    "difficulty": 4,
-    "query-split": "train",
-    "sentences": [
+      },
+
       {
         "question-split": "8",
-        "text": "what are the names of the business people who have had the greatest number of reviews",
+        "text": "which business has the most number of reviews  give me the name of the country and the number of reviews",
         "variables": {
           "review_month0": "April"
         }
@@ -7080,21 +4483,6 @@
       {
         "question-split": "2",
         "text": "Find the business which has the most number of categories",
-        "variables": {}
-      }
-    ],
-    "sql": [
-      "SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 , CATEGORY AS CATEGORYalias0 WHERE CATEGORYalias0.BUSINESS_ID = BUSINESSalias0.BUSINESS_ID GROUP BY BUSINESSalias0.NAME ORDER BY COUNT( DISTINCT ( CATEGORYalias0.CATEGORY_NAME ) ) DESC LIMIT 1 ;"
-    ],
-    "variables": []
-  },
-  {
-    "difficulty": 4,
-    "query-split": "test",
-    "sentences": [
-      {
-        "question-split": "2",
-        "text": "which business has the most categories  give me the poll result",
         "variables": {}
       }
     ],
