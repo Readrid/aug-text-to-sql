@@ -26,7 +26,7 @@ def standardise_blank_spaces(query: str) -> str:
 
 def capitalise(query: str, variables: List[str] = list()) -> str:
     """
-    Converts all non-quoted sections of the query to uppercase.
+    Converts all non-quoted sections of the query to lowercase.
     :param query:
     :param variables: query variables
     :return: processed query

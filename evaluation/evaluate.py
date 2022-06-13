@@ -143,12 +143,13 @@ class Evaluator:
         result["variable accuracy"] = logical_form_accuracy(pred_queries, real_queries)
 
         average_accuracy = 0
-        for key in ["agg", "select_num", "select", "where_num", "where", "op"]:
+        keys = ["agg", "select_num", "select", "where_num", "where", "op"]
+        for key in keys:
             result[f"{key} accuracy"] = np.average(
                 np.array(prediction_result[key]) == np.array(dataset.model_inputs[key])
             )
             average_accuracy += result[f"{key} accuracy"]
-        result["average accuracy"] = average_accuracy
+        result["average accuracy"] = average_accuracy / len(keys)
 
         return result
 
