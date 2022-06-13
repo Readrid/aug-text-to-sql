@@ -117,4 +117,3 @@ class Text2SQLTrainer(object):
         data["select_num"].to(self.device)
         data["value_start"].to(self.device)
         data["value_end"].to(self.device)
-
