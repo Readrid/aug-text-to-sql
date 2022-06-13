@@ -3,8 +3,11 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 ![CI](https://github.com/Readrid/aug-text-to-sql/actions/workflows/github_ci.yml/badge.svg)
 
+To run training with evaluation set up data paths in `config.yml` and run
 
-! WORK IN PROGRESS !
+```bash
+python train.py
+```
 
 ## Text-to-SQL Model
 
@@ -12,7 +15,7 @@ Text-to-SQL model was inspired by [HydraNet](https://arxiv.org/pdf/2008.04759.pd
 
 ## Paraphrase generation
 
-TODO
+GPT-NEO is used as a paraphrase generation model. 
 
 ## Contributors
 * [Vladimir Fedorov](https://github.com/Readrid)
