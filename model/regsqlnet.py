@@ -70,7 +70,7 @@ class RegSQLNet(nn.Module):
         if select is not None:
             bceloss = nn.BCEWithLogitsLoss(reduction="none")
             cross_entropy = nn.CrossEntropyLoss(reduction="none")
-            l1loss = nn.L1Loss(reduction="none")
+            # l1loss = nn.L1Loss(reduction="none")
 
             loss = cross_entropy(agg_logit, agg) * select.float()
             loss += bceloss(column_func_logit[:, 0], select.float())
